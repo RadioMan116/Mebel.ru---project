@@ -1,0 +1,105 @@
+.salons-list-page {
+    position:relative;
+}
+
+.loader-wrapper {
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0;
+    top: 0px;
+    background:rgba(255,255,255,.8);
+    z-index:999;
+    display:none;
+}
+
+.loader-image {
+    width:100%;
+    height:50vh;
+    position:sticky;
+    left:0;
+    top:20px;
+    background-image:url(../img/svg/loader.svg);
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:120px;
+    z-index:999;
+}
+
+.sorting .sorting-price > div {
+    padding-left:27px;
+}
+
+.sorting .sorting-price > div[data-sort-order="desc"] {
+    background:url('../img/svg/sorting decrease inactive.svg') no-repeat left top;
+}
+
+.sorting .sorting-price > div[data-sort-order="desc"].active {
+    background:url('../img/svg/sorting_decrease_active.svg') no-repeat left top;
+}
+
+.sorting .sorting-price > div[data-sort-order="asc"] {
+    padding-left:27px;
+    background:url('../img/svg/sorting increase inactive.svg') no-repeat left top;
+}
+
+.sorting .sorting-price > div[data-sort-order="asc"].active {
+    padding-left:27px;
+    background:url('../img/svg/sorting_increase_active.svg') no-repeat left top;
+}
+
+.salons-count {
+    color:#f0f0f0;
+    font-size:40px;
+    padding-left:15px;
+    font-weight:300!important;
+}
+
+button:disabled {
+    opacity:.4;
+    cursor:default;
+}
+
+.salons-map-page {
+    min-height:calc(100vh - 113px);
+}
+
+/* YMaps styles */
+ymaps.ymaps-2-1-74-b-cluster-tabs.ymaps-2-1-74-b-cluster-content {
+    height: auto!important;
+}
+
+.baloon-popup .salon-image > imag{
+    width:100%;
+}
+
+.brand-logo {
+    width:95px;
+    float:left;
+    position:absolute;
+    left:20px;
+    top:20px;
+    padding:5px;
+    border-radius:5px;
+    background:#fff;
+}
+
+.brand-logo img {
+    width:100%;
+}
+
+.map-overlay {
+    display:none;
+    background:#fff;
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:-70px;
+    left:0;
+    z-index:10;
+}
+
+body._mapView {
+    height:100vh;
+    overflow:hidden;
+}

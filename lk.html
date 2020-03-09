@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Личный кабинет</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <!-- appstore links-->
+    <!-- seo meta-->
+    <meta name="description" content="Meta description">
+    <meta name="keywords" content="Key, words">
+    <meta name="author" content="Site name">
+    <!-- og meta-->
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="Site name">
+    <meta property="og:url" content="https://projectname.surge.sh">
+    <meta property="og:image" content="https://projectname.surge.sh/img/og/1_1080х607.jpg">
+    <meta property="og:description" content="Site name">
+    <meta name="twitter:title" content="Site name">
+    <meta name="twitter:description" content="Site name">
+    <meta name="twitter:image:src" content="https://projectname.surge.sh/img/og/1_1200х628.jpg">
+    <meta name="twitter:url" content="https://projectname.surge.sh">
+    <!-- STYLE -->
+    <!-- remove for production-->
+    <meta name="robots" content="noindex">
+    <!-- preloader styles-->
+    <style>
+      #barba-wrapper{opacity: 0; -webkit-transition: opacity .35s ease-in-out; -o-transition: opacity .35s ease-in-out; transition: opacity .35s ease-in-out}
+      #barba-wrapper.is-preloaded{opacity: 1}
+
+    </style>
+  <link rel="stylesheet" media="all" href="css/normalize.css">
+  <link rel="stylesheet" media="all" href="css/vendor.css">
+  <link rel="stylesheet" media="all" href="css/app.css">
+  <link rel="stylesheet" media="all" href="css/styles.overwrite.css">
+  <link rel="stylesheet" media="all" href="css/styles.overwrite.mockup.css">
+    <!-- STYLE -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- GRID TEST (remove on production)-->
+    <div class="demo-grid">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div></div>
+          </div>
+          <div class="col">
+            <div></div>
+          </div>
+          <div class="col">
+            <div></div>
+          </div>
+          <div class="col">
+            <div></div>
+          </div>
+          <div class="col">
+            <div></div>
+          </div>
+          <div class="col">
+            <div></div>
+          </div>
+          <div class="col">
+            <div></div>
+          </div>
+          <div class="col">
+            <div></div>
+          </div>
+          <div class="col">
+            <div></div>
+          </div>
+          <div class="col">
+            <div></div>
+          </div>
+          <div class="col">
+            <div></div>
+          </div>
+          <div class="col">
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- GRID TEST (remove on production)-->
+    <div js-show-grid> <span>grid</span></div>
+    <!-- WRAPPER -->
+    <div id="wrapper">
+      <!-- HEADER -->
+      <header class="header">
+          <!-- top-->
+            <div class="header__top">
+              <div class="container">
+                <div class="row">
+                  <div class="header__top-login">
+                    <a href="#" class="auth">
+                      <img src="img/svg/icons/login.svg" class="login">
+                      <span class="icon-text">Войти</span>
+                    </a>
+                    <span class="separator"></span>
+                    <a href="#" class="reg">
+                      Регистрация
+                    </a>
+                  </div>
+                  <ul class="header__top-menu" js-menu-hider>
+                    <li><a href="#">Производители</a></li>
+                    <li><a href="#">Оформить кредит</a></li>
+                    <li><a href="#">Вопросы дизайнерам</a></li>
+                  </ul>
+                  <div class="header__top-sale">
+                    <a href="#" class="selle">
+                      <img src="img/svg/badge.svg" class="product">
+                      <span class="icon-text">Распродажа с витрины</span>
+                    </a>
+                    <a href="#" class="acti">
+                      <span>%</span>&nbsp;Акции
+                    </a>
+                  </div>
+                  <a href="#" class="header__top-only">
+                    <img src="img/svg/icons/support.svg" class="support">
+                    <span class="icon-text">Онлайн помощник</span>
+                  </a>
+              </div>
+            </div>
+          </div>
+            <!-- center-->
+            <div class="header__center">
+              <div class="container">
+                <div class="row">
+                <div class="header__center-logo">
+                  <a href="#">
+                    <img src="img/svg/logo.svg" alt="">
+                  </a>
+                  <a href="#" class="mobile">
+                    <img src="img/svg/logo-mob.svg" alt="">
+                  </a>
+                </div>
+                <div class="header__center-burger">
+                  <div><img src="img/svg/menu.svg" alt=""></div>
+                </div>
+                <div class="header__center-catalot">
+
+                  <ul class="header__center-catalot__list">
+                      <li class="list active">
+                          <a href="/catalog/">Каталог мебели</a>
+                          <ul class="none header__center-catalot__list-tlv">
+                              <li>
+                                  <a href="#">
+                                      <span class="menu_img"><img src="img/menu/kuhni.png"></span>
+                                      <span>Кухни</span>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <span class="menu_img"><img src="img/menu/divan.png"></span>
+                                      <span>Диваны</span>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <span class="menu_img"><img src="img/menu/shkaf.png"></span>
+                                      <span>Шкафы</span>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <span class="menu_img"><img src="img/menu/krovati.png"></span>
+                                      <span>Кровати</span>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <span class="menu_img"><img src="img/menu/matras.png"></span>
+                                      <span>Матрасы</span>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <span class="menu_img"><img src="img/menu/kresla.png"></span>
+                                      <span>Кресла</span>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <span class="menu_img"><img src="img/menu/stol.png"></span>
+                                      <span>Столы</span>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <span class="menu_img"><img src="img/menu/stul.png"></span>
+                                      <span>Стулья</span>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <span class="menu_img"><img src="img/menu/invalid-name.png"></span>
+                                      <span>Комоды</span>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <span class="menu_img"><img src="img/menu/tumba.png"></span>
+                                      <span>Тумбы</span>
+                                  </a>
+                              </li>
+                          </ul>
+                          <span>И сопутствующих товаров</span>
+                      </li>
+                      <li><a href="/salons/map/">Где купить</a><span>Найти на карте</span></li>
+                      <li><a href="/salons/">Магазины</a><span>Вся информация</span></li>
+                      <li><a href="/services/">Сервисы</a><span>Доступные услуги</span></li>
+                  </ul>
+                  <div class="mob_menu none">
+                    <div class="header__top-login">
+                      <a href="#" class="auth">
+                        <img src="img/svg/icons/login.svg" class="login">
+                        <span class="icon-text">Войти</span>
+                      </a>
+                      <span class="separator"></span>
+                      <a href="#" class="reg">
+                        Регистрация
+                      </a>
+                    </div>
+                    <ol>
+                      <li><a href="#">Производители</a></li>
+                      <li><a href="#">Оформить кредит</a></li>
+                      <li><a href="#">Вопросы дизайнерам</a></li>
+                    </ol>
+                    <a href="#" class="maps_link"><img src="img/svg/location.svg" alt="">Санкт-Петербург</a>
+                  </div>
+                </div>
+                <form class="header__center-search " action="#" method="POST" js-header-search>
+                  <div class="header__center-search__input">
+                    <label>
+                      <input type="text" placeholder="Поиск">
+                    </label>
+                  </div>
+                  <div class="header__center-search__cta">
+                    <button class="btn" type="submit"><img src="img/svg/search.svg" alt=""></button>
+                  </div>
+                </form>
+                <div class="header__center-deferred">
+                  <a href="#">
+                    <img src="img/svg/icons/favorite.svg" alt="">
+                    <span class="it">3</span>
+                    <span>Отложенное</span>
+                  </a>
+                </div>
+                <div class="header__center-sale">
+                  <a href="#" class="sale btn btn-red-border">Хотите дешевле?</a>
+                </div>
+                <div class="mobile" id="search"><a href="#"><img src="img/svg/icons/search.svg" alt=""></a></div>
+                <div class="mobile" id="like"><a href="#"><img src="img/svg/icons/favorite.svg" alt=""><span class="it">3</span></a></div>
+                <div class="mobile" id="burger"><span class="span"></span></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- HEADER -->
+      <!-- CRUMBS -->
+      <div class="crumbs">
+        <div class="container">
+          <ul class="crumbs__ul">
+            <li><a href="#">Главная</a></li>
+            <li>Личный кабинет</li>
+          </ul>
+        </div>
+      </div>
+      <!-- CRUMBS -->
+      <!-- PAGE -->
+      <div class="page">
+        <div class="page__content">
+          <div class="lk">
+            <div class="container">
+              <div class="lk__wrapper">
+                <div class="login-title">Личный кабинет <span>Спасибо, что являетесь частью дружной команды <b>mebel.ru</b></span></div>
+                <div class="lk-title">Основные данные</div>
+                  <form class="flex__lk">
+                  <div class="flex__lk-item">
+                    <div class="flex__lk-left">
+                      <div class="input-block">
+                        <label>
+                          <input type="text">
+                          <span>Название компании</span>
+                        </label>
+                      </div>
+                      <div class="select__nal flex_i">
+                      <label class="select__nal-label">
+                         <span class="label_span">Тип торговой точки</span>
+                         <select>
+                           <option value="Салон">Салон</option>
+                           <option value="Магазин">Магазин</option>
+                         </select>
+                       </label>
+                      </div>
+                      <div class="input-block">
+                        <label>
+                          <input type="text">
+                          <span>Ссылка на сайт</span>
+                        </label>
+                      </div>
+                      <div class="lk__left-flex copy-block">
+                        <div class="input-block">
+                          <label>
+                            <input type="text">
+                            <span>Многоканальный телефон</span>
+                          </label>
+                        </div>
+                        <div class="input-block min_">
+                          <label>
+                            <input type="text">
+                            <span>Доб.</span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="add-phone-block"></div>
+                      <span class="add-phone">+ Добавить телефон</span>
+                      <div class="input-block">
+                        <label>
+                          <input type="text">
+                          <span>Ссылка на прайс лист</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="flex__lk-right">
+                      <div class="lk-load-text"><b>Загрузите логотип</b> <span>jpeg, png файлы, размером не более 2 мб</span></div>
+                          <div id="file-upload-form" >
+                          	<input id="file-upload" type="file" name="fileUpload" />
+                            <label class="main-six__file" for="file-upload" id="file-drag">
+                              <div class="main-six__file-text">
+                                LOGO
+                              </div>
+                              <div class="main-six__file-text2"><span>Кликните или перетащите сюда логотип</span></div>
+                              <input type="file" id="sectionFormPhoto"/>
+                            </label>
+                          	<output for="file-upload" id="messages"></output>
+                          </div>
+                        <div class="message ylw">Внимание! После добавления/изменения логотипа Вам необходимо сохранить изменения внизу страницы</div>
+                    </div>
+                  </div>
+                  <div class="flex__lk-item">
+                    <div class="lk-title">Реквизиты</div>
+                    <div class="flex__lk-left">
+                      <div class="lk__left-flex">
+                        <div class="input-block">
+                          <label>
+                            <input type="text">
+                            <span>ИНН</span>
+                          </label>
+                        </div>
+                        <div class="input-block">
+                          <label>
+                            <input type="text">
+                            <span>ОГРН</span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="input-block">
+                        <label>
+                          <input type="text">
+                          <span>БИК банка</span>
+                        </label>
+                      </div>
+                      <div class="input-block">
+                        <label>
+                          <input type="text">
+                          <span>Расчетный счет</span>
+                        </label>
+                      </div>
+                      <div class="input-block">
+                        <label>
+                          <input type="text">
+                          <span>Корр счет</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="flex__lk-right">
+                      <div class="input-block">
+                        <label>
+                          <input type="text">
+                          <span>Юридический адрес</span>
+                        </label>
+                      </div>
+                      <div class="footer__container-get-checkbox">
+                        <label>
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                          <span>Совпадает с фактическим</span>
+                        </label>
+                      </div>
+                      <div class="input-block">
+                        <label>
+                          <input type="text">
+                          <span>Фактический адрес</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex__lk-item">
+                    <div class="flex__lk-left">
+                      <div class="lk-title">Контактное лицо</div>
+                      <div class="input-block">
+                        <label>
+                          <input type="text">
+                          <span>ФИО</span>
+                        </label>
+                      </div>
+                      <div class="input-block">
+                        <label>
+                          <input type="email">
+                          <span>E-mail (импользуется как логин при авторизации)</span>
+                        </label>
+                      </div>
+                      <div class="flex phone-block">
+                        <div class="input-block">
+                          <label>
+                            <input type="text" class="mask-validate">
+                            <span>Телефон</span>
+                          </label>
+                        </div>
+                        <a href="#" class="link-s">Подтвердить номер</a>
+                      </div>
+                    </div>
+                    <div class="flex__lk-right">
+                      <div class="lk-title">Безопасность</div>
+                      <div class="input-block">
+                        <label>
+                          <input type="password">
+                          <span>Старый пароль</span>
+                        </label>
+                      </div>
+                      <div class="flex_password">
+                        <div class="input-block">
+                          <label>
+                            <input type="password">
+                            <span>Новый пароль</span>
+                          </label>
+                        </div>
+                        <div class="input-block">
+                          <label>
+                            <input type="password">
+                            <span>Повторите новый пароль</span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="change-password">
+                        <button class="btn yellow btn-yellow">Сменить пароль</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex__lk-item">
+                    <div class="flex__lk-left">
+                      <div class="footer__container-get-checkbox">
+                        <label>
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                          <span class="flex">Согласен на <a href="#">обработку персональных данных</a></span>
+                        </label>
+                      </div>
+                      <button class="btn red btn-red">Сохранить</button>
+                      <div class="message ylw">Изменения успешно сохранены <span class="close-message"><img src="img/svg/delete.svg" alt=""></span></div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- PAGE -->
+      <!-- FOOTER :: START-->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__wrapper row">
+            <div class="footer__container">
+              <div class="footer__container-logo-mob mobile">
+                <a href="#">
+                  <img src="img/svg/logo.svg" alt="">
+                </a>
+              </div>
+              <div class="footer__container-contacts">
+                <div class="footer__container-contacts-logo">
+                  <a href="#">
+                    <img src="img/svg/logo.svg" alt="">
+                  </a>
+                </div>
+                <div class="footer__container-contacts-copyr">2019 © All right reserved MebelMap</div>
+                <div class="footer__container-contacts-social">
+                  <div class="social-title gr">Присоединяйтесь к нам</div>
+                  <div class="social__link">
+                    <a href="#" class="vk"><img src="img/svg/vk.svg" alt=""></a>
+                    <a href="#" class="vk"><img src="img/svg/fb.svg" alt=""></a>
+                    <a href="#" class="vk"><img src="img/svg/ok.svg" alt=""></a>
+                    <a href="#" class="vk"><img src="img/svg/inst.svg" alt=""></a>
+                    <a href="#" class="vk"><img src="img/svg/yt.svg" alt=""></a>
+                  </div>
+                  <div class="social-title">Нам важно ваше мнение</div>
+                  <a href="#" class="social-button btn btn-grey" data-fancybox data-src="#write-to-us">Напишите нам</a>
+                </div>
+              </div>
+              <div class="footer__container-list">
+                <div class="footer__container-list-title h4">Сервис</div>
+                <ul>
+                  <li><a href="#">Хочу дешевле</a></li>
+                  <li><a href="#">Оформить кредит</a></li>
+                  <li><a href="#">Онлайн помощник</a></li>
+                  <li><a href="#">Вопросы дизайнерам</a></li>
+                </ul>
+              </div>
+              <div class="footer__container-list">
+                <div class="footer__container-list-title h4">Интересное</div>
+                <ul>
+                  <li><a href="#">Магазины на карте</a></li>
+                  <li><a href="#">Распродажи с витрины</a></li>
+                  <li><a href="#">Акции и скидки</a></li>
+                  <li><a href="#">Отзывы о продавцах</a></li>
+                </ul>
+              </div>
+              <div class="footer__container-list">
+                <div class="footer__container-list-title h4">Сотрудничество</div>
+                <ul>
+                  <li><a href="#">Личный кабинет</a></li>
+                  <li><a href="#">Реклама на сайте</a></li>
+                  <li><a href="#">Вакансии</a></li>
+                  <li><a href="#">Пользовательское соглашение</a></li>
+                  <li><a href="#">О компании</a></li>
+                </ul>
+              </div>
+              <div class="footer__container-get">
+                <div class="footer__container-get-title h4">Получать лучшие предложения</div>
+                <div class="footer__container-get-ptitle">Мы помним что вас интересовало</div>
+                <form action="" id="best-offer-futer" class="general-form">
+                  <div class="footer__container-get-input input-block">
+                    <label class="input input-offer-footer" for="best-offer-footer-name">
+                      <input type="text" class="input__item require-field" name="testing1s" required id="best-offer-footer-name">
+                      <span>Имя</span>
+                    </label>
+                    <label class="input input-offer" for="best-offer-footer-tel">
+                      <input type="tel" class="input__item mask-validate phone-valid" name="testing1232" required
+                        id="best-offer-footer-tel">
+                      <span>Телефон</span>
+                    </label>
+                  </div>
+                  
+                    <div class="check footers-offer-privacy">
+                      <input type="checkbox" id="footer-offer" class="check__checkbox checkbox-general">
+                      <label for="footer-offer" class="check__text">
+                        Согласен на <a href="" class="check__text-link">обработку персональных данных</a>
+                      </label>
+                    </div>
+                  
+                  <button type="submit" id="best-offer-submit-footer" class="footer__container-get-button btn red btn-red"
+                    disabled>
+                    Подписаться
+                  </button>
+                </form>
+              </div>
+              <div class="mobile-m copyr">Content 2019 © All right reserved MebelMap</div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- FOOTER -->
+
+      <div class="popup__content write-us modal" id="write-to-us">
+
+        <form class="popup__form general-form" id="write-to-us-form">
+          <label class="input popup__form-input">
+            <span for="user_write">
+              Ваше имя
+            </span>
+            <input type="text" class="input__item require-field" placeholder="Ваше имя" id="user_write" required
+              name="name_user" />
+          </label>
+          <div class="popup__form-group">
+            <label for="tel_write" class="input popup__form-input_s">
+              <span>
+                +7(код) ___ - __ - __
+              </span>
+              <input type="tel" class="input__item mask-validate phone-valid" placeholder="+7(код) ___ - __ - __"
+                id="reviews_tel" required name="tel_write" />
+            </label>
+  
+          </div>
+  
+          <label for="comment" class="input popup__form-input textarea">
+            <span>
+              Сообщение
+            </span>
+            <textarea cols="30" class="input__item require-field" rows="10" placeholder="Комментарий"
+              name="comments"></textarea>
+          </label>
+          <div class="check">
+            <input type="checkbox" id="write_popup" class="check__checkbox checkbox-general">
+            <label for="write_popup" class="check__text">
+              Согласен на <a href="" class="check__text-link">обработку персональных данных</a>
+            </label>
+          </div>
+          <button class="button-danger btn popup__form-submit" disabled type="submit">
+            Оставить отзыв
+          </button>
+        </form>
+      </div>
+  
+      <div class="popup__result popup__result_hidden" id="feedback-write">
+        <h2 class="heading-1">Ваше сообщение принято</h2>
+        <div class="popup__result-group">
+          <div class="popup__result-text">Мы перезвоним вам в течении 15 минут.</div>
+          <div class="popup__result-img">
+            <img src="img/svg/check-feedback.svg" alt="img" />
+          </div>
+        </div>
+      </div>
+      <!-- SCRIPT -->
+      <script src="js/vendor.js"></script>
+      <script src="js/validation.js"></script>
+      <script src="js/vanillaTextMask.js"></script>
+      <script src="js/svg-fill.js"></script>
+      <script src="js/bodyScrollLock.min.js"></script>
+      <script src="js/app.js"></script>
+      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+      <!-- SCRIPT -->
+    </div>
+    <!-- WRAPPER -->
+  </body>
+</html>

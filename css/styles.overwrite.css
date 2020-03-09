@@ -1,0 +1,210 @@
+.salons-list-page {
+    position: relative;
+}
+
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    background: rgba(255, 255, 255, .8);
+    z-index: 999;
+    display: none;
+}
+
+.loader-image {
+    width: 100%;
+    height: 50vh;
+    position: sticky;
+    left: 0;
+    top: 20px;
+    background-image: url(../img/svg/loader.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 120px;
+    z-index: 999;
+}
+
+.banner__wrapper .swiper-slide {
+    min-height:510px;
+}
+.banner__wrapper .swiper-slide .banner__item{
+    height:414px;
+}
+
+.sorting .sorting-price>div,
+[data-reviews-sort] .up {
+    padding-left: 27px;
+}
+
+.sorting .sorting-price>div[data-sort-order="desc"],
+[data-reviews-sort] .up[data-sort-order="desc"] {
+    background: url('../img/svg/sorting decrease inactive.svg') no-repeat left top;
+}
+
+.sorting .sorting-price>div[data-sort-order="desc"].active,
+[data-reviews-sort] .up[data-sort-order="desc"].active {
+    background: url('../img/svg/sorting_decrease_active.svg') no-repeat left top;
+}
+
+.sorting .sorting-price>div[data-sort-order="asc"],
+[data-reviews-sort] .up[data-sort-order="asc"] {
+    padding-left: 27px;
+    background: url('../img/svg/sorting increase inactive.svg') no-repeat left top;
+}
+
+.sorting .sorting-price>div[data-sort-order="asc"].active,
+[data-reviews-sort] .up[data-sort-order="asc"].active {
+    padding-left: 27px;
+    background: url('../img/svg/sorting_increase_active.svg') no-repeat left top;
+}
+
+.salons-count {
+    color: #f0f0f0;
+    font-size: 40px;
+    padding-left: 15px;
+    font-weight: 300 !important;
+}
+
+button:disabled {
+    opacity: .4;
+    cursor: default;
+}
+
+.salons-map-page {
+    min-height: calc(100vh - 113px);
+}
+
+/* YMaps styles */
+ymaps.ymaps-2-1-74-b-cluster-tabs.ymaps-2-1-74-b-cluster-content {
+    height: auto !important;
+}
+
+.baloon-popup .salon-image>imag {
+    width: 100%;
+}
+
+.brand-logo {
+    width: 95px;
+    float: left;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.brand-logo img {
+    width: 100%;
+}
+
+.map-overlay {
+    display: none;
+    background: #fff;
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    /*position:absolute;*/
+    z-index: 10;
+}
+
+.map-overlay .filters {
+    display: none;
+}
+
+body._mapView {
+    /*height:100vh;
+    overflow:hidden;*/
+}
+
+.clusterIcon {
+    width: 44px;
+    height: 44px;
+    background: url(../img/svg/map-pin.svg) no-repeat;
+    cursor: pointer;
+    text-align: center;
+    line-height: 44px;
+    position: absolute;
+    left: -22px;
+    top: -22px;
+}
+
+.calon__card-header .logo img {
+    max-width: 150px;
+}
+
+.comment-block__wrapper .pagination.ajax .btn-grey {
+    display: none;
+}
+
+.tab-block {
+    display: none;
+    transition: .3s all;
+}
+
+.tab-block._active {
+    display: block;
+}
+
+.common__products .pagination .pagination__ul,
+.common__products .pagination .selecta {
+    display: none;
+}
+
+.common__products .pagination button {
+    margin: 0 auto;
+}
+
+.stars-star img {
+    width: 10px;
+    height: 10px;
+}
+
+h2.success,
+p.success {
+    color: #3CAA46;
+}
+
+p.error {
+    color: #ff0000;
+}
+
+.full-map {
+    position: relative;
+}
+
+
+
+
+.common__specif-table tr td:first-child {
+    opacity: 1;
+    color: #a3a4a5;
+}
+
+.city-choose {
+    position: relative;
+}
+
+.cities-list a {
+    width: 100%;
+}
+
+@media (max-width: 756px) {
+    form.intro-filter.padd.map-f.price-f {
+        display: block !important;
+    }
+    .banner__wrapper .swiper-slide {
+        min-height:auto;
+    }
+    .banner__wrapper .swiper-slide .banner__item{
+        height:auto;
+    }
+}
+
+@media (max-width: 756px) {
+    .filters__form__tabs .tabs-tab {
+        display: block;
+    }
+}

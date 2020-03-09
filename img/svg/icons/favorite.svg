@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>icons/favorite</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M6.84000003,13.6240001 C2.72000001,9.88800004 0,7.42400003 0,4.40000002 C0,1.93600001 1.93600001,0 4.40000002,0 C5.79200002,0 7.12800003,0.648000003 8.00000003,1.67200001 C8.87200004,0.648000003 10.208,0 11.6,0 C14.0640001,0 16.0000001,1.93600001 16.0000001,4.40000002 C16.0000001,7.42400003 13.2800001,9.88800004 9.16000004,13.6320001 L8.00000003,14.6800001 L6.84000003,13.6240001 Z" id="path-1"></path>
+    </defs>
+    <g id="icons/favorite" stroke="none" stroke-width="1" fill="#ff2626" fill-rule="evenodd">
+        <g id="favorite" transform="translate(4.000000, 5.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Icon" stroke="#ff2626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

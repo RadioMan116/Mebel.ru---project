@@ -1,0 +1,52 @@
+0000000000000000000000000000000000000000 faefde541f0de90248c1233a8f5a40ce9b3fff40 root <root@mebel.ru> 1581076420 +0300	pull: storing head
+faefde541f0de90248c1233a8f5a40ce9b3fff40 2b5342ecb49183dd4f3a1de061c1aaad5bb2df4c root <root@mebel.ru> 1581422245 +0300	pull: fast-forward
+2b5342ecb49183dd4f3a1de061c1aaad5bb2df4c 2b66eaa683185e4daffea7b9b1f73b415439ba4d root <root@mebel.ru> 1581429415 +0300	pull: fast-forward
+2b66eaa683185e4daffea7b9b1f73b415439ba4d 61f4cf068ccbecad6192f59e805a722966afac27 root <root@mebel.ru> 1581499009 +0300	pull: fast-forward
+61f4cf068ccbecad6192f59e805a722966afac27 9c016ad810845a791f495a4fd315c4083d5c5406 root <root@mebel.ru> 1581499987 +0300	pull: fast-forward
+9c016ad810845a791f495a4fd315c4083d5c5406 761cb00bdf040e056c3a0fe96d2bb2241028f075 root <root@mebel.ru> 1581514400 +0300	pull: fast-forward
+761cb00bdf040e056c3a0fe96d2bb2241028f075 5e6cc45cb9427ca914e40012e141c190290c1199 root <root@mebel.ru> 1581603091 +0300	pull: fast-forward
+5e6cc45cb9427ca914e40012e141c190290c1199 cc09bc018eb9c237d7a26400033882bdc262275a root <root@mebel.ru> 1581609884 +0300	pull: fast-forward
+cc09bc018eb9c237d7a26400033882bdc262275a 02623cdcb8743b9a41f5ece055daa1c237675c8e root <root@mebel.ru> 1581677709 +0300	pull: fast-forward
+02623cdcb8743b9a41f5ece055daa1c237675c8e b97bbabda180bc5fc224417aa3796166f3f01acc root <root@mebel.ru> 1581707890 +0300	pull: fast-forward
+b97bbabda180bc5fc224417aa3796166f3f01acc d047d180536a33bff468c70c8b969b61dd9ebe40 root <root@mebel.ru> 1581929592 +0300	pull: fast-forward
+d047d180536a33bff468c70c8b969b61dd9ebe40 10b17ffddb8b2ad51d531578af563922fce0ddd3 root <root@mebel.ru> 1581933090 +0300	pull: fast-forward
+10b17ffddb8b2ad51d531578af563922fce0ddd3 7a902424cf5cb0a2c87bee2c2286c8378c28805f root <root@mebel.ru> 1581936518 +0300	pull: fast-forward
+7a902424cf5cb0a2c87bee2c2286c8378c28805f 36862e45252eb743728f9144f2191aa865a8032f root <root@mebel.ru> 1582033174 +0300	pull: fast-forward
+36862e45252eb743728f9144f2191aa865a8032f 021f7b48b1700da43227fab3da5fb5da3940eead root <root@mebel.ru> 1582034514 +0300	pull: fast-forward
+021f7b48b1700da43227fab3da5fb5da3940eead 838cce15814e668e91eef4652852b803b12b3adc Ilya Simonov <devdevmebel@mebel.ru> 1582119969 +0300	pull: fast-forward
+838cce15814e668e91eef4652852b803b12b3adc 135f8fa49ede8ec000257e945986b7fc649ba716 Ilya Simonov <devdevmebel@mebel.ru> 1582223321 +0300	pull: fast-forward
+135f8fa49ede8ec000257e945986b7fc649ba716 17d08ee1b7ddae77e9d61c93601f55add745afdb Smirnov Alexey <a.smirnov@riverstart.ru> 1582284098 +0300	pull: fast-forward
+17d08ee1b7ddae77e9d61c93601f55add745afdb 55f03d6f383daff963efb4562208c5e95a1d312c Smirnov Alexey <a.smirnov@riverstart.ru> 1582285723 +0300	pull: fast-forward
+55f03d6f383daff963efb4562208c5e95a1d312c d7fc1204f4a159d273fb0e5eb8bcc12a7d8d4555 Smirnov Alexey <a.smirnov@riverstart.ru> 1582286016 +0300	update by push
+d7fc1204f4a159d273fb0e5eb8bcc12a7d8d4555 04f32ad94aa136232f7f6b0eb9d1a69f7e8b5810 Smirnov Alexey <a.smirnov@riverstart.ru> 1582286374 +0300	fetch origin: fast-forward
+04f32ad94aa136232f7f6b0eb9d1a69f7e8b5810 d7fc1204f4a159d273fb0e5eb8bcc12a7d8d4555 Smirnov Alexey <a.smirnov@riverstart.ru> 1582286681 +0300	update by push
+d7fc1204f4a159d273fb0e5eb8bcc12a7d8d4555 49408b7938dc807d3616aafec3d189e99f77ff03 Smirnov Alexey <a.smirnov@riverstart.ru> 1582796158 +0300	fetch: fast-forward
+49408b7938dc807d3616aafec3d189e99f77ff03 17d34c90d3674ea9c8f893c946835043034b0f55 Smirnov Alexey <a.smirnov@riverstart.ru> 1582801634 +0300	pull: fast-forward
+17d34c90d3674ea9c8f893c946835043034b0f55 4843827b902359389284aaf06001ab6fe87a5f5b Smirnov Alexey <a.smirnov@riverstart.ru> 1582812710 +0300	pull: fast-forward
+4843827b902359389284aaf06001ab6fe87a5f5b b4e149deaa97eca33c1e10dc24d027463f1265a3 Smirnov Alexey <a.smirnov@riverstart.ru> 1582819028 +0300	pull: fast-forward
+b4e149deaa97eca33c1e10dc24d027463f1265a3 6a27c8facaf8b9574a4e0e21170cb51827f752cc Smirnov Alexey <a.smirnov@riverstart.ru> 1582829845 +0300	pull: fast-forward
+6a27c8facaf8b9574a4e0e21170cb51827f752cc c1e1fb115d4cd07568c718fa8e4980df70d13451 Smirnov Alexey <a.smirnov@riverstart.ru> 1582875199 +0300	pull: fast-forward
+c1e1fb115d4cd07568c718fa8e4980df70d13451 81837034c7f06a117cf7f1ba5a92bd1a7f22f9ef Smirnov Alexey <a.smirnov@riverstart.ru> 1582875471 +0300	pull: fast-forward
+81837034c7f06a117cf7f1ba5a92bd1a7f22f9ef bc0a56ae23755e459cccac6f9f58a80cf228516a Smirnov Alexey <a.smirnov@riverstart.ru> 1582890988 +0300	pull: fast-forward
+bc0a56ae23755e459cccac6f9f58a80cf228516a 9957e9fc35cb9eccc622155a32d10635feef51ee Smirnov Alexey <a.smirnov@riverstart.ru> 1582898082 +0300	pull: fast-forward
+9957e9fc35cb9eccc622155a32d10635feef51ee 22dbfb7aa24a04ed7041f63ff220299a92bcfd83 Smirnov Alexey <a.smirnov@riverstart.ru> 1583223244 +0300	pull: fast-forward
+22dbfb7aa24a04ed7041f63ff220299a92bcfd83 125b0b6f303ce5a45099d944d8e1b1b8e9553774 Smirnov Alexey <a.smirnov@riverstart.ru> 1583234500 +0300	pull: fast-forward
+125b0b6f303ce5a45099d944d8e1b1b8e9553774 9de1ba686675f0c03d3ba67875c12f3c0f763295 Smirnov Alexey <a.smirnov@riverstart.ru> 1583239895 +0300	pull: fast-forward
+9de1ba686675f0c03d3ba67875c12f3c0f763295 a48fd4bf4e492210e907791a29ea3833728428e1 Smirnov Alexey <a.smirnov@riverstart.ru> 1583242628 +0300	pull: fast-forward
+a48fd4bf4e492210e907791a29ea3833728428e1 67fdc5d2f9d90968aaf5e773e2c93183645cc2fc Smirnov Alexey <a.smirnov@riverstart.ru> 1583243017 +0300	pull: fast-forward
+67fdc5d2f9d90968aaf5e773e2c93183645cc2fc 5590ae837efeaf35e723dd7442028c7193f02383 Smirnov Alexey <a.smirnov@riverstart.ru> 1583244725 +0300	pull: fast-forward
+5590ae837efeaf35e723dd7442028c7193f02383 3830246f301cd90e1da1ba65b4631a9ad2deb058 Smirnov Alexey <a.smirnov@riverstart.ru> 1583247424 +0300	pull: fast-forward
+3830246f301cd90e1da1ba65b4631a9ad2deb058 e9510b2aceccdcee34a6d9a8634b2fec5864bfde Smirnov Alexey <a.smirnov@riverstart.ru> 1583250577 +0300	pull: fast-forward
+e9510b2aceccdcee34a6d9a8634b2fec5864bfde 139e7fa3de6e6a8d15b124395fcf6091dcc5bd45 Smirnov Alexey <a.smirnov@riverstart.ru> 1583251683 +0300	pull: fast-forward
+139e7fa3de6e6a8d15b124395fcf6091dcc5bd45 d195cfab29413c334738b06d356e7aab3d5ab36b Smirnov Alexey <a.smirnov@riverstart.ru> 1583254909 +0300	pull: fast-forward
+d195cfab29413c334738b06d356e7aab3d5ab36b b40895b58969902c5feda7d1d00a66d5958c0280 Smirnov Alexey <a.smirnov@riverstart.ru> 1583262330 +0300	pull: fast-forward
+b40895b58969902c5feda7d1d00a66d5958c0280 6795f60201493607fbe75952a876f5f58c2de8dc Smirnov Alexey <a.smirnov@riverstart.ru> 1583263995 +0300	pull: fast-forward
+6795f60201493607fbe75952a876f5f58c2de8dc 83bf7d1e1c97c7e0dbe6e835ec7b805349582829 Smirnov Alexey <a.smirnov@riverstart.ru> 1583267577 +0300	pull: fast-forward
+83bf7d1e1c97c7e0dbe6e835ec7b805349582829 6cafdee1f00b7d2354d974bde73ce1f262e282ed Smirnov Alexey <a.smirnov@riverstart.ru> 1583268556 +0300	pull: fast-forward
+6cafdee1f00b7d2354d974bde73ce1f262e282ed 5fc6cf34f1f0f7e783fa42e137d16d32e4974559 Smirnov Alexey <a.smirnov@riverstart.ru> 1583269364 +0300	pull: fast-forward
+5fc6cf34f1f0f7e783fa42e137d16d32e4974559 3c06b13df391cf7572a5ddd457a98481932c187f Smirnov Alexey <a.smirnov@riverstart.ru> 1583269695 +0300	pull: fast-forward
+3c06b13df391cf7572a5ddd457a98481932c187f a4903ed341e71b7a6e747d2072bba1731ed583ae Smirnov Alexey <a.smirnov@riverstart.ru> 1583305470 +0300	pull: fast-forward
+a4903ed341e71b7a6e747d2072bba1731ed583ae 03609eab3bb48f0595ba3d73076626296ab89531 Smirnov Alexey <a.smirnov@riverstart.ru> 1583318167 +0300	pull: fast-forward
+03609eab3bb48f0595ba3d73076626296ab89531 5a64a0f1e1bc5ff4a753058929bd679bb7e5a25f Smirnov Alexey <a.smirnov@riverstart.ru> 1583338416 +0300	pull: fast-forward
+5a64a0f1e1bc5ff4a753058929bd679bb7e5a25f b36914f0800f4af8db1ed5e4f334ead56b7e0a7a Smirnov Alexey <a.smirnov@riverstart.ru> 1583341996 +0300	pull: fast-forward
+b36914f0800f4af8db1ed5e4f334ead56b7e0a7a af190c4aa406b15535ceb7aeefa8177b08bbfd64 Smirnov Alexey <a.smirnov@riverstart.ru> 1583342797 +0300	pull: fast-forward

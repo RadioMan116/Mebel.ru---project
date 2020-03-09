@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    
+    <meta charset="utf-8">
+    <title>Статья новости</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <!-- appstore links-->
+    <!-- seo meta-->
+    <meta name="description" content="Meta description">
+    <meta name="keywords" content="Key, words">
+    <meta name="author" content="Site name">
+    <!-- og meta-->
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="Site name">
+    <meta property="og:url" content="https://projectname.surge.sh">
+    <meta property="og:image" content="https://projectname.surge.sh/img/og/1_1080х607.jpg">
+    <meta property="og:description" content="Site name">
+    <meta name="twitter:title" content="Site name">
+    <meta name="twitter:description" content="Site name">
+    <meta name="twitter:image:src" content="https://projectname.surge.sh/img/og/1_1200х628.jpg">
+    <meta name="twitter:url" content="https://projectname.surge.sh">
+    <!-- STYLE -->
+    <!-- remove for production-->
+    <meta name="robots" content="noindex">
+    <!-- preloader styles-->
+    <style>
+      #barba-wrapper{opacity: 0; -webkit-transition: opacity .35s ease-in-out; -o-transition: opacity .35s ease-in-out; transition: opacity .35s ease-in-out}
+      #barba-wrapper.is-preloaded{opacity: 1}
+
+    </style>
+  <link rel="stylesheet" media="all" href="css/normalize.css">
+  <link rel="stylesheet" media="all" href="css/vendor.css">
+  <link rel="stylesheet" media="all" href="css/app.css">
+  <link rel="stylesheet" media="all" href="css/styles.overwrite.css">
+  <link rel="stylesheet" media="all" href="css/styles.overwrite.mockup.css">
+    <!-- STYLE -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- GRID TEST (remove on production)-->
+    <div class="demo-grid">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div></div>
+          </div>
+          <div class="col">
+            <div></div>
+          </div>
+          <div class="col">
+            <div></div>
+          </div>
+          <div class="col">
+            <div></div>
+          </div>
+          <div class="col">
+            <div></div>
+          </div>
+          <div class="col">
+            <div></div>
+          </div>
+          <div class="col">
+            <div></div>
+          </div>
+          <div class="col">
+            <div></div>
+          </div>
+          <div class="col">
+            <div></div>
+          </div>
+          <div class="col">
+            <div></div>
+          </div>
+          <div class="col">
+            <div></div>
+          </div>
+          <div class="col">
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- GRID TEST (remove on production)-->
+    <div js-show-grid> <span>grid</span></div>
+    <!-- WRAPPER -->
+    <div id="wrapper">
+      <!-- HEADER -->
+      <header class="header">
+          <!-- top-->
+            <div class="header__top">
+              <div class="container">
+                <div class="row">
+                  <div class="header__top-login">
+                    <a href="#" class="auth">
+                      <img src="img/svg/icons/login.svg" class="login">
+                      <span class="icon-text">Войти</span>
+                    </a>
+                    <span class="separator"></span>
+                    <a href="#" class="reg">
+                      Регистрация
+                    </a>
+                  </div>
+                  <ul class="header__top-menu" js-menu-hider>
+                    <li><a href="#">Производители</a></li>
+                    <li><a href="#">Оформить кредит</a></li>
+                    <li><a href="#">Вопросы дизайнерам</a></li>
+                  </ul>
+                  <div class="header__top-sale">
+                    <a href="#" class="selle">
+                      <img src="img/svg/badge.svg" class="product">
+                      <span class="icon-text">Распродажа с витрины</span>
+                    </a>
+                    <a href="#" class="acti">
+                      <span>%</span>&nbsp;Акции
+                    </a>
+                  </div>
+                  <a href="#" class="header__top-only">
+                    <img src="img/svg/icons/support.svg" class="support">
+                    <span class="icon-text">Онлайн помощник</span>
+                  </a>
+              </div>
+            </div>
+          </div>
+            <!-- center-->
+            <div class="header__center">
+              <div class="container">
+                <div class="row">
+                <div class="header__center-logo">
+                  <a href="#">
+                    <img src="img/svg/logo.svg" alt="">
+                  </a>
+                  <a href="#" class="mobile">
+                    <img src="img/svg/logo-mob.svg" alt="">
+                  </a>
+                </div>
+                <div class="header__center-burger">
+                  <div><img src="img/svg/menu.svg" alt=""></div>
+                </div>
+                <div class="header__center-catalot">
+                  <ul class="header__center-catalot__list">
+                    <li class="active"><a href="#">Каталог мебели</a><span>И сопутствующих товаров</span></li>
+                    <li><a href="#">Где купить</a><span>Найти на карте</span></li>
+                    <li><a href="#">Магазины</a><span>Вся информация</span></li>
+                    <li class="list"><a href="#">Сервисы</a>
+                      <ul class="none header__center-catalot__list-tlv">
+                        <li>Текст подкатегории</li>
+                        <li>Текст подкатегории</li>
+                        <li>Текст подкатегории</li>
+                        <li>Текст подкатегории</li>
+                        <li>Текст подкатегории</li>
+                        <li>Текст подкатегории</li>
+                        <li>Текст подкатегории</li>
+                        <li>Текст подкатегории</li>
+                        <li>Текст подкатегории</li>
+                        <li>Текст подкатегории</li>
+                      </ul>
+                      <span>Доступные услуги</span>
+                    </li>
+                  </ul>
+                </div>
+                <form class="header__center-search " action="#" method="POST" js-header-search>
+                  <div class="header__center-search__input">
+                    <label>
+                      <input type="text" placeholder="Поиск">
+                    </label>
+                  </div>
+                  <div class="header__center-search__cta">
+                    <button class="btn" type="submit"><img src="img/svg/search.svg" alt=""></button>
+                  </div>
+                </form>
+                <div class="header__center-deferred">
+                  <a href="#">
+                    <img src="img/svg/icons/favorite.svg" alt="">
+                    <span class="it">3</span>
+                    <span>Отложенное</span>
+                  </a>
+                </div>
+                <div class="header__center-sale">
+                  <a href="#" class="sale btn btn-red-border">Хотите дешевле?</a>
+                </div>
+                <div class="mobile" id="search"><a href="#"><img src="img/svg/icons/search.svg" alt=""></a></div>
+                <div class="mobile" id="like"><a href="#"><img src="img/svg/icons/favorite.svg" alt=""><span class="it">3</span></a></div>
+                <div class="mobile" id="burger"><span class="span"></span></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- HEADER -->
+      <!-- CRUMBS -->
+      <div class="crumbs">
+        <div class="container">
+          <ul class="crumbs__ul">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Полезные статьи</a></li>
+            <li><a href="#">Рубрика 1 <img class="dropp" src="img/svg/drop arr red.svg" alt=""></a></li>
+            <li><a href="#">Подрубрика 1 <img class="dropp" src="img/svg/drop arr red.svg" alt=""></a></li>
+            <li>Кухни в стиле Прованс и Кантри</li>
+          </ul>
+        </div>
+      </div>
+      <!-- CRUMBS -->
+      <!-- PAGE -->
+      <div class="page">
+        <div class="page__content">
+          <div class="news-article">
+            <div class="container">
+              <div class="news-article__banner">
+                <div class="news-article__banner__content">
+                  <h2>Кухни в стиле Прованс и Кантри</h2>
+                  <div class="news-article__banner__bottom auth-and-rate">
+                    <div class="auth-and-rate__author">
+                      <div class="auth-and-rate__img">
+                        <img src="img/user-40.jpeg" alt="">
+                      </div>
+                      <div class="auth-and-rate__author__info">
+                        <div>
+                          <span>Алена Сашина</span>
+                          <span class="rate-score"><img src="img/svg/star.svg" alt=""> 3,7</span>
+                        </div>
+                        <div>
+                          <span>Ведущий дизайнер Кухнисити</span>
+                          <span class="auth-and-rate__date">12.10.2017 в 14:32</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="auth-and-rate__com-rate">
+                      <div class="review">
+                        <a href="#">10 комментариев</a>
+                      </div>
+                      <div class="likes">
+                        <div class="likes-like"><img src="img/svg/like.svg" alt=""> 98 </div>
+                        <div class="likes-dizlike"><img src="img/svg/like.svg" alt=""> 3</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-article__quote">
+                <p>Само название Прованс вызывает в сознании людей картины Южной Франции — лавандовые поля, серебристо зеленые оливковые рощи, скалы, солнце и море. Именно там были созданы рецепты мыла и Провансальского майонеза, как и уникальный стиль интерьера, который в XIX веке распространился почти по всей Европе.</p>
+              </div>
+              <div class="news-article__text-content">
+                <p>Прованс – южный регион Франции с великолепной природой, ярким солнцем, синим морем и чистым небом. Эти отличительные черти можно встретить и в дизайне стиля Прованс.</p>
+                <p>Он привлекает своей простотой и очаровательной стариной. Во многом Прованс перекликается со стилем Кантри.</p>
+                <p>И до сегодняшнего дня этот стиль остается исключительно привлекательным своей простотой, ненавязчивой красотой и старинным очарованием. Это один из самых уютных и домашних стилей в интерьере, на котором можно остановиться, если Вы являетесь почитателем французской элегантности.</p>
+                <p>Стиль Кантри, как и само английское слово «country» имеет два значения:</p>
+                <p>Одно из них – это деревенский стиль, который предусматривает экологический дизайн. В таком интерьере используются преимущественно натуральные природные материалы.</p>
+              </div>
+            </div>
+            <div class="swiper-container news-article__slider">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="img/for-slider.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/for-slider.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/for-slider.jpg" alt="">
+                  </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="container">
+              <div class="news-article__text-content">
+                <p>Главное, что не используется при дизайне кухни в стиле Кантри – это высокотехнологичные материалы:</p>
+                <ul>
+                  <li>- хромированный металл</li>
+                  <li>- пластик</li>
+                  <li>- искусственное стекло</li>
+                </ul>
+                <p>Можно использовать различные имитации экологических декораций и материалов. Но при этом должны сохраниться основополагающие  факторы этого стиля — теплота и уют, изысканность</p>
+                <h2 class="additional-margin">Цветовая гамма</h2>
+                <p>Для стиля Прованс характерны пастельные нюансы с яркими цветными акцентами. Если Вы не являетесь почитателями белых стен,  то можете выбрать пастельные оттенки зеленого, синего или терракотового.</p>
+                <p>В любом случае, цвета должны выглядеть так, как будто их разбавили белой краской. Так как этот стиль предусматривает, чтобы яркая мебель была на фоне бледных стен.</p>
+                <p>Стиль Прованс – это натуральные природные цвета и подходящие им сочные акценты. Белый, терракотовый, бежевый, песочный, светло-коричневый или серый – это отличительные цвета французской области Прованс.</p>
+                <p>Красный цвет в дизайне, напоминает маки,  желтый – горячее солнце, синий – теплое море, зеленый – бескрайние ливады, лиловый – лавандовые поля и южный закат.</p>
+              </div>
+              <div class="news-article__items-slider-wrapper">
+                <h2>Кухни в стиле Прованс</h2>
+                <div class="swiper-container news-article__items-slider container container-">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="news-article__items-slider__item">
+                        <div class="slider__item__img">
+                          <img src="img/20181_come02a_01_PH145420.jpeg" alt="">
+                        </div>
+                        <div class="slider__item__info">
+                          <span>Угловой диван-кровать</span>
+                          <span>Манхэттен</span>
+                          <span>176 990 <span>руб.</span></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="news-article__items-slider__item">
+                        <div class="slider__item__img">
+                          <img src="img/20171_come07a_01_PH137716.jpg" alt="">
+                        </div>
+                        <div class="slider__item__info">
+                          <span>Угловой диван-кровать</span>
+                          <span>Манхэттен</span>
+                          <span>176 990 <span>руб.</span></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="news-article__items-slider__item">
+                        <div class="slider__item__img">
+                          <img src="img/20171_come02a_01_PH137643.jpg" alt="">
+                        </div>
+                        <div class="slider__item__info">
+                          <span>Угловой диван-кровать</span>
+                          <span>Манхэттен</span>
+                          <span>176 990 <span>руб.</span></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="news-article__items-slider__item">
+                        <div class="slider__item__img">
+                          <img src="img/20181_come02a_01_PH145420.jpeg" alt="">
+                        </div>
+                        <div class="slider__item__info">
+                          <span>Угловой диван-кровать</span>
+                          <span>Манхэттен</span>
+                          <span>176 990 <span>руб.</span></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="news-article__items-slider__item">
+                        <div class="slider__item__img">
+                          <img src="img/20171_come07a_01_PH137716.jpg" alt="">
+                        </div>
+                        <div class="slider__item__info">
+                          <span>Угловой диван-кровать</span>
+                          <span>Манхэттен</span>
+                          <span>176 990 руб.</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="news-article__items-slider__item">
+                        <div class="slider__item__img">
+                          <img src="img/20171_come02a_01_PH137643.jpg" alt="">
+                        </div>
+                        <div class="slider__item__info">
+                          <span>Угловой диван-кровать</span>
+                          <span>Манхэттен</span>
+                          <span>176 990 руб.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- If we need navigation buttons -->
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+              </div>
+              <div class="news-article__text-content news-article__materials">
+                <h2>Материалы для кухонь в стиле Прованс и Кантри</h2>
+                <p>Кухня в стиле Прованс и Кантри создает исключительно уютную и теплую атмосферу. Один из этих стилей подойдет людям, которые не любят современный дизайн, который иногда слишком сдержан и холоден. Каждый, кто хоть раз побывал в подобной кухне, останется с впечатлением, что он был среди природы.</p>
+                <p>
+                Как французский Прованс, так и стиль Кантри нуждаются в естественных материалах, таких как:</p>
+                <ul>
+                  <li>- дерево</li>
+                  <li>- камень</li>
+                  <li>- кирпич и терракотовая плитка</li>
+                  <li>- прочный металл</li>
+                </ul>
+              </div>
+              <div class="news-article__comment-block">
+                <div class="comment-block__wrapper">
+                  <div class="comment__field">
+                    <div class="comment__field__textarea">
+                      <textarea name="" id="" cols="30" rows="10" placeholder="Оставить комментарий"></textarea>
+                    </div>
+                    <div class="comment__field__send-msg">
+                      <p>Комментарии публикуются после проверки модераторами. Если вы оскорбили собеседника, использовали ненормативную лексику, то комментарий не будет опубликован.</p>
+                      <input type="submit" value="Отправить" class="btn btn-yellow"/>
+                    </div>
+                  </div>
+                  <div class="comments">
+                    <div class="comments__item">
+                      <div class="comments__item__top">
+                        <div class="comment__item_user">
+                          <div class="comment__user-img rounded">
+                            <img src="img/user-40.jpeg" alt="">
+                          </div>
+                          <div class="comment__user-info">
+                            <span>Константин Торшин</span>
+                            <span>Покупатель</span>
+                          </div>
+                        </div>
+                        <div class="comment-time">
+                          <span>Сегодня в 17:39</span>
+                        </div>
+                      </div>
+                      <div class="comments__item__content">
+                        <p>Приобретали недавно кухню в салоне КонстантиновоМебельКурск. Отличная кухня! Всё под рукой, не маркие материалы. С удовольствием провожу время как за готовкой так и за чтением книг. В цену, указанную на этом сайте, не включена доставка, поэтому высчитывать конечный ценник придется самому. Иногда товары, попавшие в фильтр, в конечном итоге оказывается либо не доставляют в наш город, либо они уже закончились, а информация об их наличии еще осталась.</p>
+                      </div>
+                      <div class="comments__item__bottom">
+                        <span class="show-other-comments" value="2">Показать 2 комментария</span>
+                        <span class="answer-to-comment">Ответить</span>
+                        <div class="comments__item__bottom_right">
+                          <span class="useful">Полезно?</span>
+                          <div class="likes">
+                            <div class="likes-like"><img src="img/svg/like.svg" alt=""> 98 </div>
+                            <div class="likes-dizlike"><img src="img/svg/like.svg" alt=""> 3</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="additional-comments">
+                        <div class="additional-comments__item">
+                          <div class="comments__item__top">
+                            <div class="comment__item_user">
+                              <div class="comment__user-img rounded">
+                                <img src="img/user-40.jpeg" alt="">
+                              </div>
+                              <div class="comment__user-info">
+                                <span>Владимир Костомаров</span>
+                                <span>Покупатель</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="comments__item__content">
+                            <p>Во сколько обошлась доставка в итоге?</p>
+                          </div>
+                          <span class="answer-to-comment">Ответить</span>
+                        </div>
+                        <div class="additional-comments__item">
+                          <div class="comments__item__top">
+                            <div class="comment__item_user">
+                              <div class="comment__user-img rounded">
+                                <img src="img/user-40.jpeg" alt="">
+                              </div>
+                              <div class="comment__user-info">
+                                <span>Владимир Костомаров</span>
+                                <span>Покупатель</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="comments__item__content">
+                            <p>Во сколько обошлась доставка в итоге?</p>
+                          </div>
+                          <span class="answer-to-comment">Ответить</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="comments__item">
+                      <div class="comments__item__top">
+                        <div class="comment__item_user">
+                          <div class="comment__user-img rounded">
+                            <img src="img/user-40.jpeg" alt="">
+                          </div>
+                          <div class="comment__user-info">
+                            <span>Владимир Костомаров</span>
+                            <span>Покупатель</span>
+                          </div>
+                        </div>
+                        <div class="comment-time">
+                          <span>Сегодня в 17:39</span>
+                        </div>
+                      </div>
+                      <div class="comments__item__content">
+                        <p>Отличная кухня! Всё под рукой, не маркие материалы. С удовольствием провожу время как за готовкой так и за чтением книг.</p>
+                      </div>
+                      <div class="comments__item__bottom">
+                        <span class="show-other-comments" value="2">Показать 2 комментария</span>
+                        <span class="answer-to-comment">Ответить</span>
+                        <div class="comments__item__bottom_right">
+                          <span class="useful">Полезно?</span>
+                          <div class="likes">
+                            <div class="likes-like"><img src="img/svg/like.svg" alt=""> 98 </div>
+                            <div class="likes-dizlike"><img src="img/svg/like.svg" alt=""> 3</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="additional-comments">
+                        <div class="additional-comments__item">
+                          <div class="comments__item__top">
+                            <div class="comment__item_user">
+                              <div class="comment__user-img rounded">
+                                <img src="img/user-40.jpeg" alt="">
+                              </div>
+                              <div class="comment__user-info">
+                                <span>Владимир Костомаров</span>
+                                <span>Покупатель</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="comments__item__content">
+                            <p>Во сколько обошлась доставка в итоге?</p>
+                          </div>
+                          <span class="answer-to-comment">Ответить</span>
+                        </div>
+                        <div class="additional-comments__item">
+                          <div class="comments__item__top">
+                            <div class="comment__item_user">
+                              <div class="comment__user-img rounded">
+                                <img src="img/user-40.jpeg" alt="">
+                              </div>
+                              <div class="comment__user-info">
+                                <span>Владимир Костомаров</span>
+                                <span>Покупатель</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="comments__item__content">
+                            <p>Во сколько обошлась доставка в итоге?</p>
+                          </div>
+                          <span class="answer-to-comment">Ответить</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="comments__item">
+                      <div class="comments__item__top">
+                        <div class="comment__item_user">
+                          <div class="comment__user-img rounded">
+                            <img src="img/user-40.jpeg" alt="">
+                          </div>
+                          <div class="comment__user-info">
+                            <span>Анонимный пользователь</span>
+                            <span>Покупатель</span>
+                          </div>
+                        </div>
+                        <div class="comment-time">
+                          <span>Сегодня в 17:39</span>
+                        </div>
+                      </div>
+                      <div class="comments__item__content">
+                        <p>Отличная кухня! Всё под рукой, не маркие материалы. С удовольствием провожу время как за готовкой так и за чтением книг.</p>
+                      </div>
+                      <div class="comments__item__bottom">
+                        <span class="show-other-comments" value="2">Показать 2 комментария</span>
+                        <span class="answer-to-comment">Ответить</span>
+                        <div class="comments__item__bottom_right">
+                          <span class="useful">Полезно?</span>
+                          <div class="likes">
+                            <div class="likes-like"><img src="img/svg/like.svg" alt=""> 98 </div>
+                            <div class="likes-dizlike"><img src="img/svg/like.svg" alt=""> 3</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="additional-comments">
+                        <div class="additional-comments__item">
+                          <div class="comments__item__top">
+                            <div class="comment__item_user">
+                              <div class="comment__user-img rounded">
+                                <img src="img/user-40.jpeg" alt="">
+                              </div>
+                              <div class="comment__user-info">
+                                <span>Владимир Костомаров</span>
+                                <span>Покупатель</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="comments__item__content">
+                            <p>Во сколько обошлась доставка в итоге?</p>
+                          </div>
+                          <span class="answer-to-comment">Ответить</span>
+                        </div>
+                        <div class="additional-comments__item">
+                          <div class="comments__item__top">
+                            <div class="comment__item_user">
+                              <div class="comment__user-img rounded">
+                                <img src="img/user-40.jpeg" alt="">
+                              </div>
+                              <div class="comment__user-info">
+                                <span>Владимир Костомаров</span>
+                                <span>Покупатель</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="comments__item__content">
+                            <p>Во сколько обошлась доставка в итоге?</p>
+                          </div>
+                          <span class="answer-to-comment">Ответить</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mob-600 pagin">
+                    <div class="indic"><span>Вы посмотрели</span>1000 из 1500 моделей</div>
+                    <a class="pagin-a btn btn-grey" href="#wrapper">Наверх <img src="img/svg/arrow-copy.svg" alt="" class="arrow"></a>
+                  </div>
+                  <div class="ajax-load">
+                    <div class="btn btn-grey">Загрузить еще</div>
+                  </div>
+                </div>
+              </div>
+              <div class="more-articles-from-auth">
+                <h2>Еще статьи в этого автора</h2>
+                <div class="more-articles__items articles swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="more-articles__items__item">
+                        <div class="articles-block">
+                          <div class="top-sl">
+                            <div class="articles-block-img">
+                              <img src="img/bitmap1.jpg" alt="">
+                            </div>
+                            <h3>Пусть ваш дом сияет и выделяется на фоне других</h3>
+                            <div class="articles-block-text">Создайте дома торжественную обстановку. Вот несколько советов, как сверкать и в новогоднюю ночь, и в любой другой день, чтобы он не был скучным!</div>
+                          </div>
+                          <div class="articles-block-user">
+                            <div class="articles-block-user__top">
+                              <div class="user__top-img">
+                                <img src="img/bitmap2.jpg" alt="">
+                              </div>
+                              <div class="midle">
+                                <div class="user__top-name">
+                                  <span class="name">Алена Сашина</span>
+                                  <span class="star"><img src="img/svg/star.svg" alt=""> 3,7</span>
+                                  <a href="#">шкафдиван.ру</a>
+                                </div>
+                              </div>
+                              <div class="bottom">
+                                <div class="review">
+                                  <a href="#">10 комментариев</a>
+                                </div>
+                                <div class="likes">
+                                  <div class="likes-like"><img src="img/svg/like.svg" alt=""> 98 </div>
+                                  <div class="likes-dizlike"><img src="img/svg/like.svg" alt=""> 3</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="more-articles__items__item">
+                        <div class="articles-block">
+                          <div class="top-sl">
+                            <div class="articles-block-img">
+                              <img src="img/bitmap1.jpg" alt="">
+                            </div>
+                            <h3>Пусть ваш дом сияет и выделяется на фоне других</h3>
+                            <div class="articles-block-text">Создайте дома торжественную обстановку. Вот несколько советов, как сверкать и в новогоднюю ночь, и в любой другой день, чтобы он не был скучным!</div>
+                          </div>
+                          <div class="articles-block-user">
+                            <div class="articles-block-user__top">
+                              <div class="user__top-img">
+                                <img src="img/bitmap2.jpg" alt="">
+                              </div>
+                              <div class="midle">
+                                <div class="user__top-name">
+                                  <span class="name">Алена Сашина</span>
+                                  <span class="star"><img src="img/svg/star.svg" alt=""> 3,7</span>
+                                  <a href="#">шкафдиван.ру</a>
+                                </div>
+                              </div>
+                              <div class="bottom">
+                                <div class="review">
+                                  <a href="#">10 комментариев</a>
+                                </div>
+                                <div class="likes">
+                                  <div class="likes-like"><img src="img/svg/like.svg" alt=""> 98 </div>
+                                  <div class="likes-dizlike"><img src="img/svg/like.svg" alt=""> 3</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="more-articles__items__item">
+                        <div class="articles-block">
+                          <div class="top-sl">
+                            <div class="articles-block-img">
+                              <img src="img/bitmap1.jpg" alt="">
+                            </div>
+                            <h3>Пусть ваш дом сияет и выделяется на фоне других</h3>
+                            <div class="articles-block-text">Создайте дома торжественную обстановку. Вот несколько советов, как сверкать и в новогоднюю ночь, и в любой другой день, чтобы он не был скучным!</div>
+                          </div>
+                          <div class="articles-block-user">
+                            <div class="articles-block-user__top">
+                              <div class="user__top-img">
+                                <img src="img/bitmap2.jpg" alt="">
+                              </div>
+                              <div class="midle">
+                                <div class="user__top-name">
+                                  <span class="name">Алена Сашина</span>
+                                  <span class="star"><img src="img/svg/star.svg" alt=""> 3,7</span>
+                                  <a href="#">шкафдиван.ру</a>
+                                </div>
+                              </div>
+                              <div class="bottom">
+                                <div class="review">
+                                  <a href="#">10 комментариев</a>
+                                </div>
+                                <div class="likes">
+                                  <div class="likes-like"><img src="img/svg/like.svg" alt=""> 98 </div>
+                                  <div class="likes-dizlike"><img src="img/svg/like.svg" alt=""> 3</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="more-articles__items__item">
+                        <div class="articles-block">
+                          <div class="top-sl">
+                            <div class="articles-block-img">
+                              <img src="img/bitmap1.jpg" alt="">
+                            </div>
+                            <h3>Пусть ваш дом сияет и выделяется на фоне других</h3>
+                            <div class="articles-block-text">Создайте дома торжественную обстановку. Вот несколько советов, как сверкать и в новогоднюю ночь, и в любой другой день, чтобы он не был скучным!</div>
+                          </div>
+                          <div class="articles-block-user">
+                            <div class="articles-block-user__top">
+                              <div class="user__top-img">
+                                <img src="img/bitmap2.jpg" alt="">
+                              </div>
+                              <div class="midle">
+                                <div class="user__top-name">
+                                  <span class="name">Алена Сашина</span>
+                                  <span class="star"><img src="img/svg/star.svg" alt=""> 3,7</span>
+                                  <a href="#">шкафдиван.ру</a>
+                                </div>
+                              </div>
+                              <div class="bottom">
+                                <div class="review">
+                                  <a href="#">10 комментариев</a>
+                                </div>
+                                <div class="likes">
+                                  <div class="likes-like"><img src="img/svg/like.svg" alt=""> 98 </div>
+                                  <div class="likes-dizlike"><img src="img/svg/like.svg" alt=""> 3</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- PAGE -->
+      <!-- FOOTER :: START-->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__wrapper row">
+            <div class="footer__container">
+              <div class="footer__container-logo-mob mobile">
+                <a href="#">
+                  <img src="img/svg/logo.svg" alt="">
+                </a>
+              </div>
+              <div class="footer__container-contacts">
+                <div class="footer__container-contacts-logo">
+                  <a href="#">
+                    <img src="img/svg/logo.svg" alt="">
+                  </a>
+                </div>
+                <div class="footer__container-contacts-copyr">2019 © All right reserved MebelMap</div>
+                <div class="footer__container-contacts-social">
+                  <div class="social-title gr">Присоединяйтесь к нам</div>
+                  <div class="social__link">
+                    <a href="#" class="vk"><img src="img/svg/vk.svg" alt=""></a>
+                    <a href="#" class="vk"><img src="img/svg/fb.svg" alt=""></a>
+                    <a href="#" class="vk"><img src="img/svg/ok.svg" alt=""></a>
+                    <a href="#" class="vk"><img src="img/svg/inst.svg" alt=""></a>
+                    <a href="#" class="vk"><img src="img/svg/yt.svg" alt=""></a>
+                  </div>
+                  <div class="social-title">Нам важно ваше мнение</div>
+                  <a href="#" class="social-button btn btn-grey" data-fancybox data-src="#write-to-us">Напишите нам</a>
+                </div>
+              </div>
+              <div class="footer__container-list">
+                <div class="footer__container-list-title h4">Сервис</div>
+                <ul>
+                  <li><a href="#">Хочу дешевле</a></li>
+                  <li><a href="#">Оформить кредит</a></li>
+                  <li><a href="#">Онлайн помощник</a></li>
+                  <li><a href="#">Вопросы дизайнерам</a></li>
+                </ul>
+              </div>
+              <div class="footer__container-list">
+                <div class="footer__container-list-title h4">Интересное</div>
+                <ul>
+                  <li><a href="#">Магазины на карте</a></li>
+                  <li><a href="#">Распродажи с витрины</a></li>
+                  <li><a href="#">Акции и скидки</a></li>
+                  <li><a href="#">Отзывы о продавцах</a></li>
+                </ul>
+              </div>
+              <div class="footer__container-list">
+                <div class="footer__container-list-title h4">Сотрудничество</div>
+                <ul>
+                  <li><a href="#">Личный кабинет</a></li>
+                  <li><a href="#">Реклама на сайте</a></li>
+                  <li><a href="#">Вакансии</a></li>
+                  <li><a href="#">Пользовательское соглашение</a></li>
+                  <li><a href="#">О компании</a></li>
+                </ul>
+              </div>
+              <div class="footer__container-get">
+                <div class="footer__container-get-title h4">Получать лучшие предложения</div>
+                <div class="footer__container-get-ptitle">Мы помним что вас интересовало</div>
+                <form action="" id="best-offer-futer" class="general-form">
+                  <div class="footer__container-get-input input-block">
+                    <label class="input input-offer-footer" for="best-offer-footer-name">
+                      <input type="text" class="input__item require-field" name="testing1s" required id="best-offer-footer-name">
+                      <span>Имя</span>
+                    </label>
+                    <label class="input input-offer" for="best-offer-footer-tel">
+                      <input type="tel" class="input__item mask-validate phone-valid" name="testing1232" required
+                        id="best-offer-footer-tel">
+                      <span>Телефон</span>
+                    </label>
+                  </div>
+                  
+                    <div class="check footers-offer-privacy">
+                      <input type="checkbox" id="footer-offer" class="check__checkbox checkbox-general">
+                      <label for="footer-offer" class="check__text">
+                        Согласен на <a href="" class="check__text-link">обработку персональных данных</a>
+                      </label>
+                    </div>
+                  
+                  <button type="submit" id="best-offer-submit-footer" class="footer__container-get-button btn red btn-red"
+                    disabled>
+                    Подписаться
+                  </button>
+                </form>
+              </div>
+              <div class="mobile-m copyr">Content 2019 © All right reserved MebelMap</div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- FOOTER -->
+      <!-- MODALS-->
+      <div class="popup-dialog mfp-hide none" id="mobile-navi">
+      </div>
+      <div class="popup-dialog mfp-hide none" id="callback">
+      </div>
+
+      <div class="popup__content write-us modal" id="write-to-us">
+
+        <form class="popup__form general-form" id="write-to-us-form">
+          <label class="input popup__form-input">
+            <span for="user_write">
+              Ваше имя
+            </span>
+            <input type="text" class="input__item require-field" placeholder="Ваше имя" id="user_write" required
+              name="name_user" />
+          </label>
+          <div class="popup__form-group">
+            <label for="tel_write" class="input popup__form-input_s">
+              <span>
+                +7(код) ___ - __ - __
+              </span>
+              <input type="tel" class="input__item mask-validate phone-valid" placeholder="+7(код) ___ - __ - __"
+                id="reviews_tel" required name="tel_write" />
+            </label>
+  
+          </div>
+  
+          <label for="comment" class="input popup__form-input textarea">
+            <span>
+              Сообщение
+            </span>
+            <textarea cols="30" class="input__item require-field" rows="10" placeholder="Комментарий"
+              name="comments"></textarea>
+          </label>
+          <div class="check">
+            <input type="checkbox" id="write_popup" class="check__checkbox checkbox-general">
+            <label for="write_popup" class="check__text">
+              Согласен на <a href="" class="check__text-link">обработку персональных данных</a>
+            </label>
+          </div>
+          <button class="button-danger btn popup__form-submit" disabled type="submit">
+            Оставить отзыв
+          </button>
+        </form>
+      </div>
+  
+      <div class="popup__result popup__result_hidden" id="feedback-write">
+        <h2 class="heading-1">Ваше сообщение принято</h2>
+        <div class="popup__result-group">
+          <div class="popup__result-text">Мы перезвоним вам в течении 15 минут.</div>
+          <div class="popup__result-img">
+            <img src="img/svg/check-feedback.svg" alt="img" />
+          </div>
+        </div>
+      </div>
+      <!-- MODALS -->
+      <!-- SCRIPT -->
+      <script src="js/vendor.js"></script>
+      <script src="js/validation.js"></script>
+      <script src="js/vanillaTextMask.js"></script>
+      <script src="js/svg-fill.js"></script>
+      <script src="js/bodyScrollLock.min.js"></script>
+      <script src="js/app.js"></script>
+
+      <!-- SCRIPT -->
+    </div>
+    <!-- WRAPPER -->
+  </body>
+</html>

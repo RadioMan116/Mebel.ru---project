@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="item/mid-tall" transform="translate(-70.000000, -360.000000)">
+            <g id="item">
+                <g id="name" transform="translate(16.000000, 343.000000)">
+                    <g id="x" transform="translate(54.000000, 17.000000)">
+                        <circle id="Oval" fill="#F2F249" cx="8" cy="8" r="8"></circle>
+                        <polygon fill="#1A1A1A" points="10.868709 5 8.75492341 7.89333333 11 11 9.71334792 11 7.98030635 8.57333333 6.22100656 11 5 11 7.23194748 7.94666667 5.13129103 5 6.41794311 5 8.01969365 7.26666667 9.64770241 5"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

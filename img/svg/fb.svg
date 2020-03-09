@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>fb</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Footer-/-Desktop" transform="translate(-118.000000, -235.000000)" fill="#477DB3" fill-rule="nonzero">
+            <g id="footer">
+                <g id="social" transform="translate(60.000000, 195.000000)">
+                    <g id="fb" transform="translate(48.000000, 30.000000)">
+                        <path d="M27.5,10 L12.5,10 C11.12125,10 10,11.12125 10,12.5 L10,27.5 C10,28.87875 11.12125,30 12.5,30 L20,30 L20,23.125 L17.5,23.125 L17.5,20 L20,20 L20,17.5 C20,15.42875 21.67875,13.75 23.75,13.75 L26.25,13.75 L26.25,16.875 L25,16.875 C24.31,16.875 23.75,16.81 23.75,17.5 L23.75,20 L26.875,20 L25.625,23.125 L23.75,23.125 L23.75,30 L27.5,30 C28.87875,30 30,28.87875 30,27.5 L30,12.5 C30,11.12125 28.87875,10 27.5,10 Z"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

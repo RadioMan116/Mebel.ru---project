@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>gallery</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop/catalog-4-v-ryad" transform="translate(-1207.000000, -1778.000000)" fill="#D1D1D1">
+            <g id="sorting" transform="translate(59.000000, 1741.000000)">
+                <g id="icon" transform="translate(1133.000000, 22.000000)">
+                    <path d="M24,22 L24,17 C24,15.8954305 24.8954305,15 26,15 L33,15 C34.1045695,15 35,15.8954305 35,17 L35,24 C35,25.1045695 34.1045695,26 33,26 L28,26 L27,26 C26.4477153,26 26,26.4477153 26,27 L26,28 L26,33 C26,34.1045695 25.1045695,35 24,35 L17,35 C15.8954305,35 15,34.1045695 15,33 L15,26 C15,24.8954305 15.8954305,24 17,24 L21.9999995,24 L23,24 C23.5522847,24 24,23.5522847 24,23 L24,22 Z M17,16 L21,16 C21.5522847,16 22,16.4477153 22,17 L22,21 C22,21.5522847 21.5522847,22 21,22 L17,22 C16.4477153,22 16,21.5522847 16,21 L16,17 C16,16.4477153 16.4477153,16 17,16 Z M29,28 L33,28 C33.5522847,28 34,28.4477153 34,29 L34,33 C34,33.5522847 33.5522847,34 33,34 L29,34 C28.4477153,34 28,33.5522847 28,33 L28,29 C28,28.4477153 28.4477153,28 29,28 Z" id="gallery"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

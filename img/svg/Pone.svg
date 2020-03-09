@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop/pcard-divan-opisanie" transform="translate(-924.000000, -1426.000000)" fill="#FF2626">
+            <g id="support" transform="translate(900.000000, 1139.000000)">
+                <g id="#2" transform="translate(24.000000, 14.000000)">
+                    <path d="M3.62,280.79 C5.06,283.62 7.38,285.93 10.21,287.38 L12.41,285.18 C12.68,284.91 13.08,284.82 13.43,284.94 C14.55,285.31 15.76,285.51 17,285.51 C17.55,285.51 18,285.96 18,286.51 L18,290 C18,290.55 17.55,291 17,291 C7.61,291 0,283.39 0,274 C0,273.45 0.45,273 1,273 L4.5,273 C5.05,273 5.5,273.45 5.5,274 C5.5,275.25 5.7,276.45 6.07,277.57 C6.18,277.92 6.1,278.31 5.82,278.59 L3.62,280.79 L3.62,280.79 Z" id="Icon"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

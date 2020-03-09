@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог мебели</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <!-- appstore links-->
+    <!-- seo meta-->
+    <meta name="description" content="Meta description">
+    <meta name="keywords" content="Key, words">
+    <meta name="author" content="Site name">
+    <!-- og meta-->
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="Site name">
+    <meta property="og:url" content="https://projectname.surge.sh">
+    <meta property="og:image" content="https://projectname.surge.sh/img/og/1_1080х607.jpg">
+    <meta property="og:description" content="Site name">
+    <meta name="twitter:title" content="Site name">
+    <meta name="twitter:description" content="Site name">
+    <meta name="twitter:image:src" content="https://projectname.surge.sh/img/og/1_1200х628.jpg">
+    <meta name="twitter:url" content="https://projectname.surge.sh">
+    <!-- STYLE -->
+    <!-- remove for production-->
+    <meta name="robots" content="noindex">
+    <!-- preloader styles-->
+    <style>
+      #barba-wrapper{opacity: 0; -webkit-transition: opacity .35s ease-in-out; -o-transition: opacity .35s ease-in-out; transition: opacity .35s ease-in-out}
+      #barba-wrapper.is-preloaded{opacity: 1}
+
+    </style>
+  <link rel="stylesheet" media="all" href="css/normalize.css">
+  <link rel="stylesheet" media="all" href="css/vendor.css">
+  <link rel="stylesheet" media="all" href="css/app.css">
+  <link rel="stylesheet" media="all" href="css/styles.overwrite.css">
+  <link rel="stylesheet" media="all" href="css/styles.overwrite.mockup.css">
+    <!-- STYLE -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- GRID TEST (remove on production)-->
+    <div class="demo-grid">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div></div>
+          </div>
+          <div class="col">
+            <div></div>
+          </div>
+          <div class="col">
+            <div></div>
+          </div>
+          <div class="col">
+            <div></div>
+          </div>
+          <div class="col">
+            <div></div>
+          </div>
+          <div class="col">
+            <div></div>
+          </div>
+          <div class="col">
+            <div></div>
+          </div>
+          <div class="col">
+            <div></div>
+          </div>
+          <div class="col">
+            <div></div>
+          </div>
+          <div class="col">
+            <div></div>
+          </div>
+          <div class="col">
+            <div></div>
+          </div>
+          <div class="col">
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- GRID TEST (remove on production)-->
+    <div js-show-grid> <span>grid</span></div>
+    <!-- WRAPPER -->
+    <div id="wrapper">
+      <!-- HEADER -->
+      <header class="header">
+          <!-- top-->
+            <div class="header__top">
+              <div class="container">
+                <div class="row">
+                  <div class="header__top-login">
+                    <a href="#" class="auth">
+                      <img src="img/svg/icons/login.svg" class="login">
+                      <span class="icon-text">Войти</span>
+                    </a>
+                    <span class="separator"></span>
+                    <a href="#" class="reg">
+                      Регистрация
+                    </a>
+                  </div>
+                  <ul class="header__top-menu" js-menu-hider>
+                    <li><a href="#">Производители</a></li>
+                    <li><a href="#">Оформить кредит</a></li>
+                    <li><a href="#">Вопросы дизайнерам</a></li>
+                  </ul>
+                  <div class="header__top-sale">
+                    <a href="#" class="selle">
+                      <img src="img/svg/badge.svg" class="product">
+                      <span class="icon-text">Распродажа с витрины</span>
+                    </a>
+                    <a href="#" class="acti">
+                      <span>%</span>&nbsp;Акции
+                    </a>
+                  </div>
+                  <a href="#" class="header__top-only">
+                    <img src="img/svg/icons/support.svg" class="support">
+                    <span class="icon-text">Онлайн помощник</span>
+                  </a>
+              </div>
+            </div>
+          </div>
+            <!-- center-->
+            <div class="header__center">
+              <div class="container">
+                <div class="row">
+                <div class="header__center-logo">
+                  <a href="#">
+                    <img src="img/svg/logo.svg" alt="">
+                  </a>
+                  <a href="#" class="mobile">
+                    <img src="img/svg/logo-mob.svg" alt="">
+                  </a>
+                </div>
+                <div class="header__center-burger">
+                  <div><img src="img/svg/menu.svg" alt=""></div>
+                </div>
+                <div class="header__center-catalot">
+
+                <ul class="header__center-catalot__list">
+
+                						<li class="list active">
+                				<a href="/catalog/">Каталог мебели</a>
+                				<ul class="none header__center-catalot__list-tlv">
+                					                    	<li>
+                						  <a href="/catalog/kitchens/">
+                						    <span class="menu_img"><img src="/frontend/img/kuhni.png"></span>
+                						    <span>Кухни</span>
+                						  </a>
+                						</li>
+                                                        	<li>
+                						  <a href="/catalog/sofas/">
+                						    <span class="menu_img"><img src="/frontend/img/divan.png"></span>
+                						    <span>Диваны</span>
+                						  </a>
+                						</li>
+                                                        	<li>
+                						  <a href="/catalog/cabinets/">
+                						    <span class="menu_img"><img src="/frontend/img/shkaf.png"></span>
+                						    <span>Шкафы</span>
+                						  </a>
+                						</li>
+                                                      </ul>
+                				<span>И сопутствующих товаров</span>
+                			</li>
+
+
+                						<li><a href="/salons/map/">Где купить</a><span>Найти на карте</span></li>
+
+
+                						<li><a href="/salons/">Магазины</a><span>Вся информация</span></li>
+
+
+                						<li><a href="/services/">Сервисы</a><span>Доступные услуги</span></li>
+
+
+
+                </ul>
+                </div>
+                <form class="header__center-search " action="#" method="POST" js-header-search>
+                  <div class="header__center-search__input">
+                    <label>
+                      <input type="text" placeholder="Поиск">
+                    </label>
+                  </div>
+                  <div class="header__center-search__cta">
+                    <button class="btn" type="submit"><img src="img/svg/search.svg" alt=""></button>
+                  </div>
+                </form>
+                <div class="header__center-deferred">
+                  <a href="#">
+                    <img src="img/svg/icons/favorite.svg" alt="">
+                    <span class="it">3</span>
+                    <span>Отложенное</span>
+                  </a>
+                </div>
+                <div class="header__center-sale">
+                  <a href="#" class="sale btn btn-red-border">Хотите дешевле?</a>
+                </div>
+                <div class="mobile" id="search"><a href="#"><img src="img/svg/icons/search.svg" alt=""></a></div>
+                <div class="mobile" id="like"><a href="#"><img src="img/svg/icons/favorite.svg" alt=""><span class="it">3</span></a></div>
+                <div class="mobile" id="burger"><span class="span"></span></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- HEADER -->
+      <!-- CRUMBS -->
+      <div class="crumbs">
+        <div class="container">
+          <ul class="crumbs__ul">
+            <li><a href="#">Главная</a></li>
+            <li>Каталог мебели</li>
+          </ul>
+          <H1>Каталог мебели</H1>
+        </div>
+      </div>
+      <!-- CRUMBS -->
+      <!-- PAGE -->
+      <div class="page">
+        <div class="page__content">
+          <!-- CATALOG -->
+          <div class="catalog">
+            <div class="container">
+              <div class="catalog__wrapper">
+                <h2 class="catalog__wrapper-title">Кухни <span>1270 моделей</span></h2>
+                <div class="catalog__items">
+                  <a href="#" class="catalog__items-item">
+                    <span class="item-img">
+                      <img src="img/catalog/dizainerskie-kuhni.png"
+     srcset="img/dizainerskie-kuhni@2x.png 2x,
+             img/dizainerskie-kuhni@3x.png 3x"
+     class="dizainerskie-kuhni">
+                    </span>
+                    <span class="item-title">Дизайнерские кухни</span>
+                  </a>
+                  <a href="#" class="catalog__items-item">
+                    <span class="item-img">
+                      <img src="img/catalog/pryamiye-kuhni.png"
+     srcset="img/pryamiye-kuhni@2x.jpg 2x,
+             img/pryamiye-kuhni@3x.jpg 3x"
+     class="pryamiye-kuhni">
+                    </span>
+                    <span class="item-title">Прямые кухни</span>
+                  </a>
+                  <a href="#" class="catalog__items-item">
+                    <span class="item-img">
+                      <img src="img/catalog/p-obraz-kuhni.png"
+     srcset="img/p-obraz-kuhni@2x.jpg 2x,
+             img/p-obraz-kuhni@3x.jpg 3x"
+     class="p-obraz-kuhni">
+                    </span>
+                    <span class="item-title">П-образные кухни</span>
+                  </a>
+                  <a href="#" class="catalog__items-item">
+                    <span class="item-img">
+                      <img src="img/catalog/ostrov-kuhni.png"
+     srcset="img/ostrov-kuhni@2x.jpg 2x,
+             img/ostrov-kuhni@3x.jpg 3x"
+     class="ostrov-kuhni">
+                    </span>
+                    <span class="item-title">Кухни с островом</span>
+                  </a>
+                  <a href="#" class="catalog__items-item">
+                    <span class="item-img">
+                      <img src="img/catalog/poluostrov-kuhni.png"
+     srcset="img/poluostrov-kuhni@2x.jpg 2x,
+             img/poluostrov-kuhni@3x.jpg 3x"
+     class="poluostrov-kuhni">
+                    </span>
+                    <span class="item-title">Кухни с полуостровом</span>
+                  </a>
+                  <a href="#" class="catalog__items-item">
+                    <span class="item-img">
+                      <img src="img/catalog/bitmap.png"
+     srcset="img/bitmap@2x.jpg 2x,
+             img/bitmap@3x.jpg 3x"
+     class="Bitmap">
+                    </span>
+                    <span class="item-title">Угловые кухни</span>
+                  </a>
+                  <a href="#" class="catalog__items-item">
+                    <span class="item-img">
+                      <img src="img/catalog/barka-kuhni.png"
+     srcset="img/barka-kuhni@2x.jpg 2x,
+             img/barka-kuhni@3x.jpg 3x"
+     class="barka-kuhni">
+                    </span>
+                    <span class="item-title">Кухни с барной стойкой</span>
+                  </a>
+                </div>
+                <h2 class="catalog__wrapper-title">Диваны <span>1270 моделей</span></h2>
+                <div class="catalog__items">
+                  <a href="#" class="catalog__items-item">
+                    <span class="item-img">
+                      <img src="img/catalog/divan-pryamoy.png"
+     srcset="img/divan-pryamoy@2x.jpg 2x,
+             img/divan-pryamoy@3x.jpg 3x"
+     class="divan-pryamoy">
+                    </span>
+                    <span class="item-title">Прямые диваны</span>
+                  </a>
+                  <a href="#" class="catalog__items-item">
+                    <span class="item-img">
+                      <img src="img/catalog/divany-polukrug.png"
+     srcset="img/divany-polukrug@2x.jpg 2x,
+             img/divany-polukrug@3x.jpg 3x"
+     class="divany-polukrug">
+                    </span>
+                    <span class="item-title">Полукруглые диваны</span>
+                  </a>
+                  <a href="#" class="catalog__items-item">
+                    <span class="item-img">
+                      <img src="img/catalog/divani-krovati.png"
+     srcset="img/divani-krovati@2x.jpg 2x,
+             img/divani-krovati@3x.jpg 3x"
+     class="divani-krovati">
+                    </span>
+                    <span class="item-title">Диваны-кровати</span>
+                  </a>
+                  <a href="#" class="catalog__items-item">
+                    <span class="item-img">
+                      <img src="img/catalog/divani-ugol.png"
+     srcset="img/divani-ugol@2x.png 2x,
+             img/divani-ugol@3x.png 3x"
+     class="divani-ugol">
+                    </span>
+                    <span class="item-title">Угловые диваны</span>
+                  </a>
+                  <a href="#" class="catalog__items-item">
+                    <span class="item-img">
+                      <img src="img/catalog/modul-divani.png"
+     srcset="img/modul-divani@2x.jpg 2x,
+             img/modul-divani@3x.jpg 3x"
+     class="modul-divani">
+                    </span>
+                    <span class="item-title">Модульные диваны</span>
+                  </a>
+                </div>
+                <h2 class="catalog__wrapper-title">Шкафы <span>1270 моделей</span></h2>
+                <div class="catalog__items">
+                  <a href="#" class="catalog__items-item">
+                    <span class="item-img">
+                      <img src="img/catalog/kupe-shkafi.png"
+     srcset="img/kupe-shkafi@2x.jpg 2x,
+             img/kupe-shkafi@3x.jpg 3x"
+     class="kupe-shkafi">
+                    </span>
+                    <span class="item-title">Шкафы-купе</span>
+                  </a>
+                  <a href="#" class="catalog__items-item">
+                    <span class="item-img">
+                      <img src="img/catalog/garderob-shkafi.png"
+     srcset="img/garderob-shkafi@2x.jpg 2x,
+             img/garderob-shkafi@3x.jpg 3x"
+     class="garderob-shkafi">
+                    </span>
+                    <span class="item-title">Гардеробные системы</span>
+                  </a>
+                  <a href="#" class="catalog__items-item">
+                    <span class="item-img">
+                      <img src="img/catalog/transformery-shkafi.png"
+     srcset="img/transformery-shkafi@2x.jpg 2x,
+             img/transformery-shkafi@3x.jpg 3x"
+     class="transformery-shkafi">
+                    </span>
+                    <span class="item-title">Шкафы-трансформеры</span>
+                  </a>
+                  <a href="#" class="catalog__items-item">
+                    <span class="item-img">
+                      <img src="img/catalog/raspashnie-shkafi.png"
+     srcset="img/raspashnie-shkafi@2x.jpg 2x,
+             img/raspashnie-shkafi@3x.jpg 3x"
+     class="raspashnie-shkafi">
+                    </span>
+                    <span class="item-title">Распашные шкафы</span>
+                  </a>
+                  <a href="#" class="catalog__items-item">
+                    <span class="item-img">
+                      <img src="img/catalog/stellaji-shkafi.png"
+     srcset="img/stellaji-shkafi@2x.png 2x,
+             img/stellaji-shkafi@3x.png 3x"
+     class="stellaji-shkafi">
+                    </span>
+                    <span class="item-title">Стеллажи</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- CATALOG -->
+          <!-- LOOK -->
+          <div class="look">
+            <div class="container">
+              <div class="look__wrapper">
+                <H2>Часто ищут</H2>
+                <div class="look__list">
+                  <div class="look__list-item"><a href="#">Диваны-кровати</a></div>
+                  <div class="look__list-item"><a href="#">Диваны коричневого цвета</a></div>
+                  <div class="look__list-item"><a href="#">Диваны-кровати</a></div>
+                  <div class="look__list-item"><a href="#">Диваны коричневого цвета</a></div>
+                  <div class="look__list-item"><a href="#">Диваны коричневого цвета</a></div>
+                  <div class="look__list-item"><a href="#">Диваны</a></div>
+                  <div class="look__list-item"><a href="#">Диваны-кровати</a></div>
+                  <div class="look__list-item"><a href="#">Диваны модульные с отсеками для хранения</a></div>
+                  <div class="look__list-item"><a href="#">Диваны-кровати</a></div>
+                  <div class="look__list-item"><a href="#">Диваны коричневого цвета</a></div>
+                  <div class="look__list-item"><a href="#">Диваны-кровати</a></div>
+                  <div class="look__list-item"><a href="#">Диваны коричневого цвета</a></div>
+                  <div class="look__list-item"><a href="#">Диваны-кровати</a></div>
+                  <div class="look__list-item"><a href="#">Диваны коричневого цвета</a></div>
+                  <div class="look__list-item"><a href="#">Диваны-кровати</a></div>
+                  <div class="look__list-item"><a href="#">Диваны коричневого цвета</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- LOOK -->
+          <!-- SEO -->
+          <div class="seo">
+            <div class="container">
+              <div class="seo__wrapper">
+                <h2>Заголовок SEO текста про Mebelmap и преимущества </h2>
+                <img src="img/promo.jpg" srcset="img/promo@2x.jpg 2x, img/promo@3x.jpg 3x" class="promo">
+                <p>
+                  Кожаная мебель не собирает пыль и шерсть домашних животных. Уборка заключается в еженедельной протирке влажной тряпкой, за исключением тех редких случаев, когда мебель необходимо обрабатывать специальными кондиционерами. Кожа не так быстро впитывает жидкости, как текстиль. И убрать следы от разлившегося вина или  еды можно без последствий, если сделать это быстро. Кожаная мебель отлично подойдет, если в доме маленькие дети – с кожи легче удалить пятна, чем с ткани. В отличие от синтетических материалов и шерсти, кожа не электризует одежду. Можете сколько угодно двигаться на диване, не переживая, что одежда начнет липнуть к телу. Если выделка кожи хорошая - диван обладает приятным запахом, а если его натереть специализированным ароматическим маслом, запах становится еще лучше.
+                </p>
+                <p>
+                  <b>
+                    Минусы кожаного дивана — это классика мебели, показатель статуса и престижа. В меру строгий, но в то же время изящный и универсальный, он продолжает завоевывать сердца покупателей. В этой статье мы собрали все достоинства и недостатки, которые стоит учитывать при покупке дивана из натуральной кожи.
+                  </b>
+                </p>
+                <p>
+                  Да, на коже спать неудобно: простыня сминается, кожа холодная или липнет к телу. Но если вы все же хотите использовать кожаный диван для сна, присмотритесь к матрасам-топерам. Они созданы специально для организации спального места на диване. Если зимой в квартире не жарко, садиться на кожаную мебель некомфортно. Дивану нужно время, чтобы прогреться до температуры тела. Количество этого времени зависит от качества кожи: чем оно выше, тем быстрее ее температура адаптируется к температуре тела.
+                </p>
+                <p>
+                  Кожаная мебель не терпит прямых солнечных лучей, резких перепадов температуры и пересушенного воздуха. От этого она сохнет, трескается и выгорает. Поэтому перед покупкой подумайте, не будет ли попадать на диван солнце из окна или нагревать радиатор отопления. Помимо этого, производители рекомендуют поддерживать в помещении влажность в диапазоне 40-60 процентов.
+                </p>
+                <p>
+                  Чтобы кожа оставалась прочной, не вытягивалась, не трескалась и не теряла первоначального блеска, ее нужно обрабатывать специальными кондиционерами. Стоят они недешево, но перетяжка испорченной мебели может выйти еще дороже.
+                </p>
+              </p>
+              </div>
+            </div>
+          </div>
+          <!-- SEO -->
+          <!-- HELP -->
+          <div class="help no_image-block">
+            <div class="container">
+              <div class="help__wrapper">
+                <div class="img"><img src="img/asd (1).png" alt=""></div>
+                <div class="help__text">
+                  <div class="help__text-title">Нужна помощь в подборе лучших предложений?</div>
+                  <div class="help__text-p">Оставьте заявку, и наши менеджеры подберут для Вас уютную кухню от 144 000
+                    руб. до 176 000 руб!</div>
+                  <form action="" class="general-form" id="best-offers">
+                    <div>
+                      <div class="flex input-block best-offer">
+                        <label class="input input-offer" for="best-offer-name">
+                          <input type="text" class="input__item require-field" name="testing1" required
+                            id="best-offer-name">
+                          <span>Имя</span>
+                        </label>
+                        <label class="input input-offer" for="best-offer-tel">
+                          <input type="tel" class="input__item mask-validate phone-valid" name="testing2" required
+                            id="best-offer-tel">
+                          <span>Телефон</span>
+                        </label>
+                        <button type="submit" class="footer__container-get-button btn red btn-red" disabled
+                          id="best-offer-submit">
+                          Подписаться
+                        </button>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="footer-checkbox">
+                        <div class="check other-pages">
+                          <input type="checkbox" id="write_popup" class="check__checkbox checkbox-general">
+                          <label for="write_popup" class="check__text">
+                            Согласен на <a href="" class="check__text-link">обработку персональных данных</a>
+                          </label>
+                        </div>
+                        <div class="checkbox-sl">
+                          <label>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <span>Я хочу следить за появлениям лучших предложений</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- HELP -->
+          <!-- SHOWS -->
+          <div class="shows">
+            <div class="container container-">
+              <div class="shows__wrapper">
+                <div class="top">
+                  <H2>Вы смотрели</H2>
+                 </div>
+                <div class="swiper-container swiper-articles">
+                  <div class="swiper-wrapper">
+                    <a href="" class="swiper-slide  products__block-product product show-prod">
+                      <div class="product-img"><img src="img/1gp.jpg" alt=""></div>
+                      <div class="product__wrapper">
+                        <div class="product-title">Угловой диван-кровать</div>
+                        <div class="product-name">Манхэттен</div>
+                        <div class="product-price">176 990 <span>руб.</span></div>
+                      </div>
+                    </a>
+                    <a href="" class="swiper-slide  products__block-product product show-prod">
+                      <div class="product-img"><img src="img/1gp.jpg" alt=""></div>
+                      <div class="product__wrapper">
+                        <div class="product-title">Угловой диван-кровать</div>
+                        <div class="product-name">Манхэттен</div>
+                        <div class="product-price">176 990 <span>руб.</span></div>
+                      </div>
+                    </a>
+                    <a href="" class="swiper-slide  products__block-product product show-prod">
+                      <div class="product-img"><img src="img/1gp.jpg" alt=""></div>
+                      <div class="product__wrapper">
+                        <div class="product-title">Угловой диван-кровать</div>
+                        <div class="product-name">Манхэттен</div>
+                        <div class="product-price">176 990 <span>руб.</span></div>
+                      </div>
+                    </a>
+                    <a href="" class="swiper-slide  products__block-product product show-prod">
+                      <div class="product-img"><img src="img/1gp.jpg" alt=""></div>
+                      <div class="product__wrapper">
+                        <div class="product-title">Угловой диван-кровать</div>
+                        <div class="product-name">Манхэттен</div>
+                        <div class="product-price">176 990 <span>руб.</span></div>
+                      </div>
+                    </a>
+                    <a href="" class="swiper-slide  products__block-product product show-prod">
+                      <div class="product-img"><img src="img/1gp.jpg" alt=""></div>
+                      <div class="product__wrapper">
+                        <div class="product-title">Угловой диван-кровать</div>
+                        <div class="product-name">Манхэттен</div>
+                        <div class="product-price">176 990 <span>руб.</span></div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- Add Arrows -->
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- SHOWS -->
+        </div>
+      </div>
+      <!-- PAGE -->
+      <!-- FOOTER :: START-->
+      <footer class="footer footer_new">
+        <div class="footer__inner">
+            <div class="container">
+                <div class="footer__wrapper row">
+                    <div class="footer__container">
+                  <div class="footer__container-logo-mob mobile">
+                    <a href="#">
+                      <img src="img/svg/logo.svg" alt="">
+                    </a>
+                  </div>
+                  <div class="footer__container-contacts">
+                    <div class="footer__container-contacts-logo">
+                      <a href="#">
+                        <img src="img/svg/logo.svg" alt="">
+                      </a>
+                    </div>
+                    <div class="footer__container-contacts-copyr">2019 © All right reserved MebelMap</div>
+                    <div class="footer__container-contacts-social">
+                      <div class="social-title gr">Присоединяйтесь к нам</div>
+                      <div class="social__link">
+                        <a href="#" class="vk"><img src="img/svg/vk.svg" alt=""></a>
+                        <a href="#" class="vk"><img src="img/svg/fb.svg" alt=""></a>
+                        <a href="#" class="vk"><img src="img/svg/ok.svg" alt=""></a>
+                        <a href="#" class="vk"><img src="img/svg/inst.svg" alt=""></a>
+                        <a href="#" class="vk"><img src="img/svg/yt.svg" alt=""></a>
+                      </div>
+                      <div class="social-title">Нам важно ваше мнение</div>
+                      <a href="#" class="social-button btn btn-grey" data-fancybox data-src="#write-to-us">Напишите нам</a>
+                    </div>
+                  </div>
+                  <div class="footer__container-list">
+                    <div class="footer__container-list-title h4">Сервис</div>
+                    <ul>
+                      <li><a href="#">Хочу дешевле</a></li>
+                      <li><a href="#">Оформить кредит</a></li>
+                      <li><a href="#">Онлайн помощник</a></li>
+                      <li><a href="#">Вопросы дизайнерам</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer__container-list">
+                    <div class="footer__container-list-title h4">Интересное</div>
+                    <ul>
+                      <li><a href="#">Магазины на карте</a></li>
+                      <li><a href="#">Распродажи с витрины</a></li>
+                      <li><a href="#">Акции и скидки</a></li>
+                      <li><a href="#">Отзывы о продавцах</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer__container-list">
+                    <div class="footer__container-list-title h4">Сотрудничество</div>
+                    <ul>
+                      <li><a href="#">Личный кабинет</a></li>
+                      <li><a href="#">Реклама на сайте</a></li>
+                      <li><a href="#">Вакансии</a></li>
+                      <li><a href="#">Пользовательское соглашение</a></li>
+                      <li><a href="#">О компании</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer__container-get">
+                    <div class="footer__container-get-title h4">Получать лучшие предложения</div>
+                    <div class="footer__container-get-ptitle">Мы помним что вас интересовало</div>
+                    <form action="" id="best-offer-futer" class="general-form">
+                      <div class="footer__container-get-input input-block">
+                        <label class="input input-offer-footer" for="best-offer-footer-name">
+                          <input type="text" class="input__item require-field" name="testing1s" required id="best-offer-footer-name">
+                          <span>Имя</span>
+                        </label>
+                        <label class="input input-offer" for="best-offer-footer-tel">
+                          <input type="tel" class="input__item mask-validate phone-valid" name="testing1232" required
+                            id="best-offer-footer-tel">
+                          <span>Телефон</span>
+                        </label>
+                      </div>
+                      
+                        <div class="check footers-offer-privacy">
+                          <input type="checkbox" id="footer-offer" class="check__checkbox checkbox-general">
+                          <label for="footer-offer" class="check__text">
+                            Согласен на <a href="" class="check__text-link">обработку персональных данных</a>
+                          </label>
+                        </div>
+                      
+                      <button type="submit" id="best-offer-submit-footer" class="footer__container-get-button btn red btn-red"
+                        disabled>
+                        Подписаться
+                      </button>
+                    </form>
+                  </div>
+                  <div class="mobile-m copyr">Content 2019 © All right reserved MebelMap</div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <ul>
+                    <li><a href="https://mebel.ru/legal/rules/">Офёрта на оказание услуг mebel.ru</a></li>
+                    <li><a href="https://mebel.ru/legal/tech-requiretments/">Правила оформления xml</a></li>
+                    <li><a href="https://mebel.ru/user_agreement/">Политика конфиденциальности</a></li>
+                    <li><a href="https://mebel.ru/legal/rules/">Пользовательское соглашение</a></li>
+                    <li><a href="https://mebel.ru/legal/general/">Общие условия оказания услуг</a></li>
+                </ul>
+            </div>
+        </div>
+      </footer>
+      <!-- FOOTER -->
+      <!-- MODALS-->
+      <div class="popup-dialog mfp-hide none" id="mobile-navi">
+      </div>
+      <div class="popup-dialog mfp-hide none" id="callback">
+      </div>
+
+      <div class="popup__content write-us modal" id="write-to-us">
+
+        <form class="popup__form general-form" id="write-to-us-form">
+          <label class="input popup__form-input">
+            <span for="user_write">
+              Ваше имя
+            </span>
+            <input type="text" class="input__item require-field" placeholder="Ваше имя" id="user_write" required
+              name="name_user" />
+          </label>
+          <div class="popup__form-group">
+            <label for="tel_write" class="input popup__form-input_s">
+              <span>
+                +7(код) ___ - __ - __
+              </span>
+              <input type="tel" class="input__item mask-validate phone-valid" placeholder="+7(код) ___ - __ - __"
+                id="reviews_tel" required name="tel_write" />
+            </label>
+  
+          </div>
+  
+          <label for="comment" class="input popup__form-input textarea">
+            <span>
+              Сообщение
+            </span>
+            <textarea cols="30" class="input__item require-field" rows="10" placeholder="Комментарий"
+              name="comments"></textarea>
+          </label>
+          <div class="check">
+            <input type="checkbox" id="write_popup" class="check__checkbox checkbox-general">
+            <label for="write_popup" class="check__text">
+              Согласен на <a href="" class="check__text-link">обработку персональных данных</a>
+            </label>
+          </div>
+          <button class="button-danger btn popup__form-submit" disabled type="submit">
+            Оставить отзыв
+          </button>
+        </form>
+      </div>
+  
+      <div class="popup__result popup__result_hidden" id="feedback-write">
+        <h2 class="heading-1">Ваше сообщение принято</h2>
+        <div class="popup__result-group">
+          <div class="popup__result-text">Мы перезвоним вам в течении 15 минут.</div>
+          <div class="popup__result-img">
+            <img src="img/svg/check-feedback.svg" alt="img" />
+          </div>
+        </div>
+      </div>
+      <!-- MODALS -->
+      <!-- SCRIPT -->
+      <script src="js/vendor.js"></script>
+      <script src="js/validation.js"></script>
+      <script src="js/vanillaTextMask.js"></script>
+      <script src="js/svg-fill.js"></script>
+      <script src="js/bodyScrollLock.min.js"></script>
+      <script src="js/app.js"></script>
+
+      <!-- SCRIPT -->
+    </div>
+    <!-- WRAPPER -->
+  </body>
+</html>

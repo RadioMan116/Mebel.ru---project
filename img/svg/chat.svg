@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop/pcard-divan-FAQ" transform="translate(-944.000000, -785.000000)" fill="#4D7399" fill-rule="nonzero">
+            <g id="price" transform="translate(900.000000, 385.000000)">
+                <g id="btn" transform="translate(24.000000, 384.000000)">
+                    <path d="M42.5,22 C43.328,22 44,22.672 44,23.5 L44,34 C44,34.828 43.328,35.5 42.5,35.5 L39.5,35.5 L39.5,40 L35,35.5 L27.5,35.5 L30.242,32.5 L39.5,32.5 C40.328,32.5 41,31.828 41,31 L41,22 L42.5,22 Z M21.5,16 L36.5,16 C37.328,16 38,16.672 38,17.5 L38,28 C38,28.828 37.328,29.5 36.5,29.5 L29,29.5 L24.5,34 L24.5,29.5 L21.5,29.5 C20.672,29.5 20,28.828 20,28 L20,17.5 C20,16.672 20.672,16 21.5,16 Z" id="Combined-Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

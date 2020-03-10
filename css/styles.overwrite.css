@@ -26,13 +26,6 @@
     z-index: 999;
 }
 
-.banner__wrapper .swiper-slide {
-    min-height:510px;
-}
-.banner__wrapper .swiper-slide .banner__item{
-    height:414px;
-}
-
 .sorting .sorting-price>div,
 [data-reviews-sort] .up {
     padding-left: 27px;
@@ -194,12 +187,6 @@ p.error {
 @media (max-width: 756px) {
     form.intro-filter.padd.map-f.price-f {
         display: block !important;
-    }
-    .banner__wrapper .swiper-slide {
-        min-height:auto;
-    }
-    .banner__wrapper .swiper-slide .banner__item{
-        height:auto;
     }
 }
 

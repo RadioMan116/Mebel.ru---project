@@ -346,7 +346,7 @@ _document.ready(function () {
   //     form.find('.input-field').removeClass('error');
   //   }
 
-  //   // send form 
+  //   // send form
 
   //  $('form').on('submit', function(){
   //    //отправка
@@ -486,7 +486,12 @@ _document.ready(function () {
       }
     });
 
-    $('ul.crumbs__ul').scrollLeft(1000);
+	  $('ul.crumbs__ul').scrollLeft(1000);
+	  (() => {
+	  	let headerPresented = document.querySelector('.header__center-presented');
+	  	let headerCenterCatalotList = document.querySelector('.header__center-catalot__list li');
+	  	headerCenterCatalotList.append(headerPresented);
+	  })()
   }
   $('.content__block .photo__block .right .img img').hover(function () {
     var img = $(this).attr('src');

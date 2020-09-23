@@ -223,15 +223,15 @@
 										<li>
 											<a href="#">
 												<span class="menu_img"><img src="img/menu/invalid-name.png"></span>
-												<span>Комоды</span>
+												<span>Комоды и тумбы</span>
 											</a>
 										</li>
-										<li>
+										<!-- <li>
 											<a href="#">
 												<span class="menu_img"><img src="img/menu/tumba.png"></span>
 												<span>Тумбы</span>
 											</a>
-										</li>
+										</li> -->
 									</ul>
 									<span>И сопутствующих товаров</span>
 								</li>
@@ -248,9 +248,9 @@
               </div>
 			</form> -->
 						<div class="header__center-presented">
-							<h3>
+							<div class="header__center-presented__title">
 								У нас представлено:
-							</h3>
+							</div>
 							<div class="header__center-presented__text">
 								9 876
 								<span>
@@ -287,8 +287,8 @@
 						</div>
 						<div class="mobile" id="compare"><a href="#"><img src="img/svg/compare.svg" alt=""><span
 									class="it">3</span></a></div>
-						<div class="mobile" id="like"><a href="#"><img src="img/svg/icons/favorite.svg" alt=""><span
-									class="it">3</span></a></div>
+						<div class="mobile" id="like">
+							<a href="#"><img src="img/svg/icons/favorite.svg" alt=""><span class="it">3</span></a></div>
 						<div class="mobile" id="burger"><span class="span"></span></div>
 					</div>
 				</div>
@@ -368,17 +368,19 @@
 							<div class="category-toggle col-5">
 								<div class="slide-main-page swiper-container">
 									<div class="category-toggle-top swiper-wrapper">
-										<div class="tab-1 tab active swiper-slide">Диваны</div>
+										<div class="tab-1 tab active swiper-slide">Кухни</div>
+										<div class="tab-1 tab  swiper-slide">Диваны</div>
 										<div class="tab-1 tab swiper-slide">Шкафы</div>
-										<div class="tab-1 tab swiper-slide">Кухни</div>
-										<div class="tab-1 tab swiper-slide">Кресла</div>
+										<div class="tab-1 tab swiper-slide">Матрасы</div>
 										<div class="tab-1 tab swiper-slide">Кровати</div>
+										<div class="tab-1 tab swiper-slide">Кресла</div>
 										<div class="tab-1 tab swiper-slide">Столы</div>
 										<div class="tab-1 tab swiper-slide">Стулья</div>
-										<div class="tab-1 tab swiper-slide">Комоды</div>
-										<div class="tab-1 tab swiper-slide">Тумбы</div>
-										<div class="tab-1 tab swiper-slide">Матрасы</div>
-										<div class="swiper-slide"></div>
+										<div class="tab-1 tab swiper-slide">Комоды и тумбы</div>
+										<div class="tab-1 tab swiper-slide">Садовая мебель</div>
+
+										<!-- <div class="tab-1 tab swiper-slide">Тумбы</div> -->
+										<!-- <div class="swiper-slide"></div> -->
 									</div>
 								</div>
 								<div class="category-toggle-center">
@@ -1560,7 +1562,7 @@
 										<img src="img/svg/logo.svg" alt="">
 									</a>
 								</div>
-								<div class="footer__container-contacts-copyr">2019 © All right reserved MebelMap</div>
+
 								<div class="footer__container-contacts-social">
 									<div class="social-title gr">Присоединяйтесь к нам</div>
 									<div class="social__link">
@@ -1586,8 +1588,8 @@
 								<div class="footer__container-list-title h4">Интересное</div>
 								<ul>
 									<li><a href="#">Магазины на карте</a></li>
-									<li><a href="#">Распродажи с витрины</a></li>
-									<li><a href="#">Акции и скидки</a></li>
+									<li><a class="red" href="#">Распродажи с витрины</a></li>
+									<li><a class="red" href="#">Акции и скидки</a></li>
 								</ul>
 							</div>
 
@@ -1605,8 +1607,7 @@
 									</div>
 
 									<div class="check footers-offer-privacy">
-										<input type="checkbox" id="footer-offer"
-											class="check__checkbox checkbox-general">
+										<input type="checkbox" id="footer-offer" class="check__checkbox ">
 										<label for="footer-offer" class="check__text">
 											Согласен на <a href="" class="check__text-link">обработку
 												персональных
@@ -1615,12 +1616,11 @@
 									</div>
 
 									<button type="submit" id="best-offer-submit-footer"
-										class="footer__container-get-button btn red btn-red" disabled>
+										class="footer__container-get-button btn red btn-red">
 										Подписаться
 									</button>
 								</form>
 							</div>
-							<div class="mobile-m copyr">Content 2019 © All right reserved MebelMap</div>
 						</div>
 					</div>
 				</div>
@@ -1636,12 +1636,6 @@
 						</li>
 						<li>
 							<a href="#">
-								<img src="img/stores-login-icon.svg" alt="" class="store-cabinet">
-								Кабинет магазина
-							</a>
-						</li>
-						<li>
-							<a href="#">
 								Пользовательское соглашение
 							</a>
 						</li>
@@ -1652,8 +1646,17 @@
 						</li>
 						<li>
 							<a href="#">
+								<img src="img/stores-login-icon.svg" alt="" class="store-cabinet">
+								Кабинет магазина
+							</a>
+						</li>
+						<li>
+							<a href="#">
 								Вся дополнительная информация
 							</a>
+						</li>
+						<li>
+							<div class="footer__bottom-copyr">2020 ООО «Мебель.ру»</div>
 						</li>
 					</ul>
 				</div>
@@ -2054,214 +2057,286 @@
 
 								<div class="swiper-slide products__block-item product">
 									<div class="container-catalog">
-										<div class="product-img">
-											<img src="img/div.png" alt="" class="pc-600">
-
-											<div class="t-mobile mob-600 product-corusel swiper-container">
-												<div class="swiper-pagination"></div>
-												<div class="swiper-wrapper">
-													<div class="swiper-slide"><img src="img/mob/0639356_PE699539_S5.JPG"
-															alt=""></div>
-													<div class="swiper-slide"><img src="img/mob/0639356_PE699539_S5.JPG"
-															alt=""></div>
-													<div class="swiper-slide"><img src="img/mob/0639356_PE699539_S5.JPG"
-															alt=""></div>
-													<div class="swiper-slide"><img src="img/mob/0639356_PE699539_S5.JPG"
-															alt=""></div>
-													<div class="swiper-slide"><img src="img/mob/0639356_PE699539_S5.JPG"
-															alt=""></div>
-												</div>
-											</div>
-										</div>
+										<a href="/catalog/sofas/modulnye-divany/106-kreslo-i-divan-divan-brif-shokolad/"
+											class="product-img"><img
+												src="https://mebel.ru/upload/resize_cache/iblock/c99/246_180_2/c990c9a7866bcb4a191ae50a93a3aa40.jpg"
+												alt=""></a>
 										<div class="product__wrapper">
-											<div class="product-title">Угловой диван-кровать</div>
-											<div class="product-name">Манхэттен</div>
-											<div class="mobile-categorys">
-												<div class="mobile-categorys__item">
-													<span class="mobile-categorys__item-left">Обшивка:</span>
-													<span class="mobile-categorys__item-right">Велюр</span>
-												</div>
-												<div class="mobile-categorys__item">
-													<span class="mobile-categorys__item-left">Конфигуация:</span>
-													<span class="mobile-categorys__item-right">Угловая</span>
-												</div>
-												<div class="mobile-categorys__item">
-													<div class="mobile-categorys__item-list">
-														<span class="mobile-categorys__item-left">Длина</span>
-														<span class="mobile-categorys__item-right">247см</span>
-														<a href="#" class="mobile-categorys__item-list-close">
-															<img src="img/svg/x.svg" alt="">
-														</a>
-													</div>
-
-													<div class="mobile-categorys__item-list">
-														<span class="mobile-categorys__item-left">Ширина</span>
-														<span class="mobile-categorys__item-right">247см</span>
-														<a href="#" class="mobile-categorys__item-list-close">
-															<img src="img/svg/x.svg" alt="">
-														</a>
-													</div>
-
-													<div class="mobile-categorys__item-list">
-														<span class="mobile-categorys__item-left">Высота</span>
-														<span class="mobile-categorys__item-right">247см</span>
-
-													</div>
-												</div>
+											<div class="product-title">Модульные диваны</div>
+											<a href="/catalog/sofas/modulnye-divany/106-kreslo-i-divan-divan-brif-shokolad/"
+												class="product-name">Кресло и диван Диван Бриф (Шоколад)</a>
+											<div class="product-price">12860 <span>руб.</span>
+												<a href="#" class="like-mobile-price">
+													<img src="/frontend/img/svg/favorite.svg" alt="">
+												</a>
 											</div>
-											<div class="product-price">176 990 <span>руб.</span>
-												<span class="product-bonus">+3 990 руб.</span>
-											</div>
-											<div class="product-link"><a href="#">название сайта.ру</a></div>
+											<div class="product-link" target="_blank"><a href=""></a></div>
 											<div class="category-more">
 												<div class="stars">
 													<div class="stars-star">
-
-														<img src="img/svg/star-new.svg" alt=""
-															class="stars-item star-hover svg">
-														<img src="img/svg/star-new.svg" alt=""
-															class="stars-item star-hover svg">
-														<img src="img/svg/star-new.svg" alt="" class="stars-item svg">
-														<img src="img/svg/star-new.svg" alt="" class="stars-item svg">
-														<img src="img/svg/star-new.svg" alt="" class="stars-item svg">
-
+														<svg xmlns="http://www.w3.org/2000/svg" id="Capa_1"
+															enable-background="new 0 0 448.941 448.941" height="512"
+															viewBox="0 0 448.941 448.941" width="512"
+															class="stars-item svg replaced-svg">
+															<path
+																d="m448.941 168.353h-161.338l-63.132-168.353-63.132 168.353h-161.339l121.478 106.293-65.36 174.295 168.353-84.176 168.353 84.176-65.361-174.296z">
+															</path>
+														</svg>
+														<svg xmlns="http://www.w3.org/2000/svg" id="Capa_1"
+															enable-background="new 0 0 448.941 448.941" height="512"
+															viewBox="0 0 448.941 448.941" width="512"
+															class="stars-item svg replaced-svg">
+															<path
+																d="m448.941 168.353h-161.338l-63.132-168.353-63.132 168.353h-161.339l121.478 106.293-65.36 174.295 168.353-84.176 168.353 84.176-65.361-174.296z">
+															</path>
+														</svg>
+														<svg xmlns="http://www.w3.org/2000/svg" id="Capa_1"
+															enable-background="new 0 0 448.941 448.941" height="512"
+															viewBox="0 0 448.941 448.941" width="512"
+															class="stars-item svg replaced-svg">
+															<path
+																d="m448.941 168.353h-161.338l-63.132-168.353-63.132 168.353h-161.339l121.478 106.293-65.36 174.295 168.353-84.176 168.353 84.176-65.361-174.296z">
+															</path>
+														</svg>
+														<svg xmlns="http://www.w3.org/2000/svg" id="Capa_1"
+															enable-background="new 0 0 448.941 448.941" height="512"
+															viewBox="0 0 448.941 448.941" width="512"
+															class="stars-item svg replaced-svg">
+															<path
+																d="m448.941 168.353h-161.338l-63.132-168.353-63.132 168.353h-161.339l121.478 106.293-65.36 174.295 168.353-84.176 168.353 84.176-65.361-174.296z">
+															</path>
+														</svg>
+														<svg xmlns="http://www.w3.org/2000/svg" id="Capa_1"
+															enable-background="new 0 0 448.941 448.941" height="512"
+															viewBox="0 0 448.941 448.941" width="512"
+															class="stars-item svg replaced-svg">
+															<path
+																d="m448.941 168.353h-161.338l-63.132-168.353-63.132 168.353h-161.339l121.478 106.293-65.36 174.295 168.353-84.176 168.353 84.176-65.361-174.296z">
+															</path>
+														</svg>
 													</div>
-													<div class="stars-review"><a href="#">1257 отзывов</a></div>
+													<div class="stars-review"><a
+															href="/catalog/sofas/modulnye-divany/106-kreslo-i-divan-divan-brif-shokolad/#reviews">0&nbsp;отзывов</a>
+													</div>
 												</div>
 												<div class="more-link">
+
 													<div class="more-link__item">
+
 														<span class="more__detall">
-															<img src="img/svg/icons/more dots.svg" alt="">
+
+															<!--<img src="/frontend/img/svg/icons/more dots.svg" alt="">-->
+
 															<span class="more__detall-popup">
+
 																<span class="popup-title">Действия</span>
+
 																<ul class="popup-ul">
+
 																	<li>
+
 																		<a href="#">
+
 																			<svg width="24px" height="24px"
 																				viewBox="0 0 24 24" version="1.1"
 																				xmlns="http://www.w3.org/2000/svg"
 																				xmlns:xlink="http://www.w3.org/1999/xlink">
+
 																				<g id="icons/edit" stroke="none"
 																					stroke-width="1" fill="none"
 																					fill-rule="evenodd">
+
 																					<path
 																						d="M15.5367434,11.2913471 L8.05146201,18.7766285 C7.86392563,18.9641648 7.60957172,19.0695217 7.34435523,19.0695217 L5.93014166,19.0695217 C5.37785691,19.0695217 4.93014166,18.6218064 4.93014166,18.0695217 L4.93014166,16.6553081 C4.93014166,16.3900916 5.0354985,16.1357377 5.22303488,15.9482013 L12.7083163,8.46291994 L15.5367434,11.2913471 Z M14.1225298,7.04595879 L15.5353696,5.63311904 C15.9258939,5.24259474 16.5590588,5.24259474 16.9495831,5.63311904 L18.3602284,7.04376426 C18.7507527,7.43428855 18.7507527,8.06745353 18.3602284,8.45797782 L16.9473886,9.87081758 L14.1225298,7.04595879 Z"
 																						id="Combined-Shape"
 																						fill="#A0A0A0"></path>
+
 																				</g>
+
 																			</svg>
+
 																			<span>Написать заметку</span>
+
 																		</a>
+
 																	</li>
+
 																	<li>
+
 																		<a href="#">
+
 																			<svg width="24px" height="24px"
 																				viewBox="0 0 24 24" version="1.1"
 																				xmlns="http://www.w3.org/2000/svg"
 																				xmlzxns:xlink="http://www.w3.org/1999/xlink">
+
 																				<g id="icons/share" stroke="none"
 																					stroke-width="1" fill="none"
 																					fill-rule="evenodd">
+
 																					<path
 																						d="M16,20 L7.769,20 C5,20 5,17.415 5,16.565 L5,12 C5,11.448 5.448,11 6,11 L7.769,11 C8.321,11 8.769,11.448 8.769,12 C8.769,12.552 8.321,13 7.769,13 L7,13 L7,16.565 C7,18 7.257,18 7.769,18 L16,18 C16.932,18 17,17.861 17,17 L17,13 L16,13 C15.447,13 15,12.552 15,12 C15,11.448 15.447,11 16,11 L18,11 C18.553,11 19,11.448 19,12 L19,17 C19,18.99 17.99,20 16,20 Z M11,7.47348372 L10.366,8.1296 C10.17,8.3326 9.909,8.4346 9.647,8.4346 C9.397,8.4346 9.146,8.3416 8.952,8.1536 C8.555,7.7696 8.544,7.1366 8.928,6.7396 L11.2670922,4.31998654 C11.2864605,4.29912606 11.3067078,4.27909282 11.3277748,4.25994593 C11.5109356,4.09260116 11.7508177,3.9996 12,3.9996 C12.0938614,3.9996 12.1860557,4.0128178 12.2743228,4.03814393 C12.4560777,4.08982382 12.6166204,4.19158534 12.7401869,4.32752555 L15.071,6.7396 C15.455,7.1366 15.444,7.7696 15.048,8.1536 C14.651,8.5386 14.019,8.5276 13.634,8.1296 L13,7.47348372 L13,12.9131 C13,13.4661 12.553,13.9131 12,13.9131 C11.448,13.9131 11,13.4661 11,12.9131 L11,7.47348372 Z"
 																						id="Combined-Shape"
 																						fill="#A0A0A0"></path>
+
 																				</g>
+
 																			</svg>
+
 																			<span>Подельться</span>
+
 																		</a>
+
 																	</li>
+
 																	<li>
+
 																		<a href="#">
+
 																			<svg width="24px" height="24px"
 																				viewBox="0 0 24 24" version="1.1"
 																				xmlns="http://www.w3.org/2000/svg"
 																				xmlns:xlink="http://www.w3.org/1999/xlink">
+
 																				<g id="icons/copy" stroke="none"
 																					stroke-width="1" fill="none"
 																					fill-rule="evenodd">
+
 																					<g id="Group"
 																						transform="translate(4.000000, 4.000000)"
 																						fill="#A0A0A0">
+
 																						<rect id="Rectangle" x="0" y="0"
 																							width="2" height="12"
 																							rx="1"></rect>
+
 																						<rect id="Rectangle" x="0" y="0"
 																							width="12" height="2"
 																							rx="1"></rect>
+
 																						<path
 																							d="M6,14 L14,14 L14,6 L6,6 L6,14 Z M5,16 C4.44771525,16 4,15.5522847 4,15 L4,5 C4,4.44771525 4.44771525,4 5,4 L15,4 C15.5522847,4 16,4.44771525 16,5 L16,15 C16,15.5522847 15.5522847,16 15,16 L5,16 Z"
 																							id="Combined-Shape"
 																							transform="translate(10.000000, 10.000000) scale(-1, -1) translate(-10.000000, -10.000000) ">
+
 																						</path>
+
 																					</g>
+
 																				</g>
+
 																			</svg>
+
 																			<span>Скопировать ссылку</span>
+
 																		</a>
+
 																	</li>
+
 																	<li>
+
 																		<a href="#">
+
 																			<svg width="24px" height="24px"
 																				viewBox="0 0 24 24" version="1.1"
 																				xmlns="http://www.w3.org/2000/svg"
 																				xmlns:xlink="http://www.w3.org/1999/xlink">
+
 																				<g id="icons/error" stroke="none"
 																					stroke-width="1" fill="none"
 																					fill-rule="evenodd">
+
 																					<circle id="Oval" stroke="#A0A0A0"
 																						stroke-width="2" cx="12" cy="12"
 																						r="7">
+
 																					</circle>
+
 																					<rect id="Rectangle" fill="#A0A0A0"
 																						transform="translate(12.000000, 12.000000) rotate(45.000000) translate(-12.000000, -12.000000) "
 																						x="11" y="4" width="2"
 																						height="16" rx="1"></rect>
+
 																				</g>
+
 																			</svg>
+
 																			<span class="red">Сообщить об ошибке</span>
+
 																		</a>
+
 																	</li>
+
 																	<li>
+
 																		<a href="#">
+
 																			<svg width="24px" height="24px"
 																				viewBox="0 0 24 24" version="1.1"
 																				xmlns="http://www.w3.org/2000/svg"
 																				xmlns:xlink="http://www.w3.org/1999/xlink">
+
 																				<defs>
+
 																					<path
 																						d="M12.0004342,3.00000205 C13.0618664,3.00124494 14.0421212,3.56828474 14.5693444,4.48254409 L21.5748635,16.4623252 C22.1216972,17.3870202 22.1334901,18.5332508 21.6057975,19.469001 C21.0781049,20.4047512 20.0911494,20.987763 19.0071095,20.9983464 L4.98197452,20.9983133 C3.90559172,20.9895567 2.91604934,20.4059225 2.3876035,19.4681477 C1.85915765,18.5303729 1.87247884,17.3816146 2.41887447,16.4625441 L9.42603375,4.47998176 C9.95868096,3.56277758 10.9396827,2.99875995 12.0004342,3.00000205 Z M11.1552101,5.48494478 L4.14169005,17.4783466 C3.95760811,17.7880006 3.95314999,18.1724487 4.13000179,18.4862881 C4.3068536,18.8001276 4.63801781,18.995449 4.99010945,18.9983464 L18.9973026,18.9983945 C19.3568098,18.9948687 19.6871082,18.7997556 19.863708,18.4865937 C20.0403077,18.1734318 20.036361,17.7898297 19.8508745,17.4761487 L12.8398365,5.48691741 C12.6662933,5.18598758 12.3454766,5.00040745 11.9980923,5.00000068 C11.650708,4.9995939 11.3294576,5.1844222 11.1552101,5.48494478 Z M11.9901095,17.9983464 C11.4378247,17.9983464 10.9901095,17.5506311 10.9901095,16.9983464 C10.9901095,16.4460616 11.4378247,15.9983464 11.9901095,15.9983464 C12.5423942,15.9983464 12.9901095,16.4460616 12.9901095,16.9983464 C12.9901095,17.5506311 12.5423942,17.9983464 11.9901095,17.9983464 Z M10.9901095,7.99834639 L12.9901095,7.99834639 L12.9901095,14.9983464 L10.9901095,14.9983464 L10.9901095,7.99834639 Z"
 																						id="path-1"></path>
+
 																				</defs>
+
 																				<g id="icons/claim" stroke="none"
 																					stroke-width="1" fill="none"
 																					fill-rule="evenodd">
+
 																					<mask id="mask-2" fill="white">
+
 																						<use xlink:href="#path-1"></use>
+
 																					</mask>
+
 																					<use id="Shape" fill="#A0A0A0"
 																						fill-rule="nonzero"
 																						xlink:href="#path-1"></use>
+
 																				</g>
+
 																			</svg>
+
 																			<span class="red">Пожаловаться</span>
+
 																		</a>
+
 																	</li>
+
 																</ul>
+
 															</span>
+
 														</span>
+
 													</div>
 
 													<div class="more-link__item">
-														<a href="#" class="compar">
-															<img src="img/svg/icons/compar.svg" alt="">
+
+														<a href="javascript:void(0);" data-item_id="16245"
+															class="compar">
+
+															<img src="/frontend/img/svg/icons/compar.svg" alt="">
+
 														</a>
+
 													</div>
+
 													<div class="more-link__item">
-														<a href="#" class="likesa"><img
-																src="img/svg/icons/favorite1.svg" alt=""></a>
+
+														<a href="javascript:void(0);" class="likesa fav_action"
+															data-type="product" data-id="16245" data-action="add"><img
+																src="/frontend/img/svg/icons/favorite1.svg" alt=""></a>
+
 													</div>
+
 												</div>
+
 											</div>
 										</div>
 									</div>
@@ -3471,7 +3546,7 @@
 							<a href="#">Диваны <span>156</span></a>
 							<a href="#">Диваны-еврокнижки дёшево <span>24</span></a>
 							<a href="#">Диваны модульные с отсеками для хранения <span>11</span></a>
-							<a href="#">Еще подборки</a>
+							<a class="red" href="#">Еще подборки</a>
 						</div>
 					</div>
 				</div>
@@ -3535,6 +3610,8 @@
 		<script src="js/vanillaTextMask.js"></script>
 		<script src="js/svg-fill.js"></script>
 		<script src="js/bodyScrollLock.min.js"></script>
+		<script src="js/jquery.matchHeight-min.js"></script>
+		<script src="js/masonry.pkgd.min.js"></script>
 		<script src="js/app.js"></script>
 
 		<!-- SCRIPT -->

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <defs>
+    <path d="M6.84 13.921C2.72 10.1035 0 7.58583 0 4.49591C0 1.9782 1.936 0 4.4 0C5.792 0 7.128 0.662125 8 1.70845C8.872 0.662125 10.208 0 11.6 0C14.064 0 16 1.9782 16 4.49591C16 7.58583 13.28 10.1035 9.16 13.9292L8 15L6.84 13.921Z" id="path_1" />
+    <rect width="24" height="24" id="artboard_1" />
+    <clipPath id="clip_1">
+      <use xlink:href="#artboard_1" clip-rule="evenodd" />
+    </clipPath>
+    <clipPath id="mask_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="icons/favorite" clip-path="url(#clip_1)">
+    <g id="favorite" transform="translate(4 5)">
+      <path d="M6.84 13.921C2.72 10.1035 0 7.58583 0 4.49591C0 1.9782 1.936 0 4.4 0C5.792 0 7.128 0.662125 8 1.70845C8.872 0.662125 10.208 0 11.6 0C14.064 0 16 1.9782 16 4.49591C16 7.58583 13.28 10.1035 9.16 13.9292L8 15L6.84 13.921Z" id="Icon" fill="none" stroke="#4C7399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+  </g>
+</svg>

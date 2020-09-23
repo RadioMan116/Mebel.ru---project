@@ -1,0 +1,108 @@
+// main: app.scss
+
+.vacancy {
+	blockquote {
+		margin-bottom: 32px;
+
+		p {
+			font-size: 20px;
+			line-height: 1.7;
+			letter-spacing: 0.12px;
+		}
+	}
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 0px 32px;
+	}
+
+	&__col {
+		padding: 0 40px;
+		width: 50%;
+		flex-shrink: 0;
+	}
+
+	&__title {
+		font-size: 24px;
+		font-weight: 300;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.33;
+		letter-spacing: normal;
+		color: var(--black);
+		margin-bottom: 16px;
+		text-align: center;
+	}
+
+	ul {
+		list-style: none;
+		margin: 0 0 24px 8px;
+		padding: 0;
+
+		> li {
+			position: relative;
+			padding: 0 0 0 16px;
+			margin-bottom: 16px;
+
+			&:before {
+				width: 6px;
+				height: 6px;
+				background-color: var(--off-yellow);
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 8px;
+				border-radius: 50%;
+			}
+		}
+
+		ol, ul {
+			padding-top: 16px;
+		}
+	}
+
+	@media (max-width: 767px) {
+		blockquote {
+			margin: -16px -16px 32px;
+			padding: 40px 20px 32px;
+
+			p {
+				font-size: 14px;
+				line-height: 1.71;
+			}
+
+			&:after {
+				top: 16px;
+				left: 16px;
+			}
+
+			&:before {
+				bottom: 108px;
+				right: 16px;
+			}
+		}
+
+		&__row {
+			flex-direction: column;
+			margin: 0;
+		}
+
+		&__col {
+			width: 100%;
+			padding: 0;
+			flex-shrink: 0;
+		}
+
+		&__title {
+			font-size: 18px;
+			font-weight: 300;
+			text-align: center;
+			margin-bottom: 16px;
+		}
+
+		ul {
+			margin: 0 0 16px 8px;
+		}
+	}
+}

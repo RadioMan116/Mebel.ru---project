@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="58px" height="58px" viewBox="0 0 58 58" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <defs>
+    <path d="M29 58C45.0163 58 58 45.0163 58 29C58 12.9837 45.0163 0 29 0C12.9837 0 0 12.9837 0 29C0 45.0163 12.9837 58 29 58Z" id="path_1" />
+    <path d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40Z" transform="translate(9 9)" id="path_2" />
+  </defs>
+  <g id="Picture-pin">
+    <g id="hover">
+      <g id="area">
+        <use xlink:href="#path_1" fill="none" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="2" />
+        <use stroke="none" fill="#FFFFFF" fill-opacity="0.101960786" xlink:href="#path_1" />
+      </g>
+      <g id="area">
+        <use xlink:href="#path_2" fill="none" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="2" />
+        <use stroke="none" fill="#FFFFFF" fill-opacity="0.101960786" xlink:href="#path_2" />
+      </g>
+      <path d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16Z" transform="translate(21 21)" id="area" fill="#F2F249" stroke="none" />
+    </g>
+  </g>
+</svg>

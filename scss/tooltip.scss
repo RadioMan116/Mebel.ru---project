@@ -1,0 +1,198 @@
+[data-tippy-root] {
+	.more {
+
+		// .more__detall-popup
+		&__detall-popup {
+			display: flex;
+			position: static;
+			flex-direction: column;
+			width: 220px;
+			background: unset;
+			// padding: 0;
+			box-shadow: unset;
+			border: unset;
+
+			&:before {
+				display: none;
+			}
+
+			.popup-ul {
+				li {
+					padding: 5px 16px;
+					-webkit-transition: .3s;
+					-o-transition: .3s;
+					transition: .3s;
+
+					a {
+						display: -ms-flex;
+						display: -webkit-box;
+						display: -ms-flexbox;
+						display: flex;
+						-webkit-box-align: center;
+						-ms-flex-align: center;
+						align-items: center;
+						font-size: 14px;
+						color: var(--black);
+
+						span {
+							font-size: 14px !important;
+							padding-left: 4px
+						}
+					}
+
+					&:hover {
+						background-color: #f9fafc
+					}
+
+					&:hover svg,
+					&:hover svg * {
+						fill: #1a1a1a
+					}
+				}
+			}
+
+			.red {}
+
+			.popup-title {
+				font-size: 16px;
+				font-weight: 700;
+				letter-spacing: .1px;
+				color: var(--black);
+				padding: 0 16px;
+				padding-bottom: 12px;
+				display: block;
+			}
+		}
+	}
+
+	.tippy-box {
+		.tippy-content {
+			.news-gallery__card {
+				position: static;
+				transform: unset;
+
+				&:before {
+					display: none;
+				}
+			}
+		}
+	}
+
+	.tooltip-close {
+		@media (max-width: 767px) {
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 32px;
+			height: 32px;
+
+			&:before,
+			&:after {
+				position: absolute;
+				left: 50%;
+				margin: -1px 0 0 -8px;
+				top: 50%;
+				height: 2px;
+				width: 16px;
+				background: #a5a5a6;
+				content: '';
+				transform-origin: 50% 50%;
+			}
+
+			&:before {
+				transform: rotate(-45deg);
+			}
+
+			&:after {
+				transform: rotate(45deg);
+			}
+		}
+	}
+}
+
+.more_ {
+	.tippy-content {
+		padding: 0;
+	}
+}
+
+@media (max-width: 600px) {
+	.new-four {
+		.swiper {
+			.more__detall-popup {
+				min-height: 200px;
+				width: 176px;
+				left: 0px;
+				right: unset;
+
+				&:before {
+					display: none;
+				}
+
+				.popup-title {
+					font-size: 14px;
+				}
+
+				ul li {
+					padding: 2px 10px;
+
+					a span {
+						font-size: 10px !important;
+					}
+				}
+			}
+		}
+
+		&.new-list {
+			.swiper {
+				.more__detall-popup {
+					width: 224px;
+					right: 2px;
+					left: unset;
+
+					&:before {
+						display: none;
+					}
+
+					.popup-title {
+						font-size: 16px;
+					}
+
+					ul li {
+						padding: 2px 10px;
+
+						a span {
+							font-size: 14px !important;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.brands__catalog {
+		.swiper {
+			.more__detall-popup {
+				width: 224px;
+				right: 2px;
+				left: unset;
+
+				&:before {
+					display: none;
+				}
+
+				.popup-title {
+					font-size: 16px;
+				}
+
+				ul li {
+					padding: 2px 10px;
+
+					a span {
+						font-size: 14px !important;
+					}
+				}
+			}
+		}
+	}
+}

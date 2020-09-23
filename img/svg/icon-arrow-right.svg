@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <g id="icon/-arrow/-up" transform="matrix(-4.371139E-08 1 -1 -4.371139E-08 16 0)" opacity="0.299967438">
+    <path d="M1.14167 0.195L3.72833 2.78167L6.315 0.195C6.575 -0.065 6.995 -0.065 7.255 0.195L7.255 0.195C7.515 0.455 7.515 0.875 7.255 1.135L4.195 4.195C3.935 4.455 3.515 4.455 3.255 4.195L0.195 1.135C-0.065 0.875 -0.065 0.455 0.195 0.195L0.195 0.195C0.455 -0.0583333 0.881667 -0.065 1.14167 0.195Z" transform="matrix(1 -1.748456E-07 -1.748456E-07 -1 4.271667 10.38833)" id="Shape" fill="#A0A0A0" stroke="none" />
+  </g>
+</svg>

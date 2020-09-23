@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Modals</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="theme-color" content="#fff">
+	<meta name="format-detection" content="telephone=no">
+	<!-- appstore links-->
+	<!-- seo meta-->
+	<meta name="description" content="Meta description">
+	<meta name="keywords" content="Key, words">
+	<meta name="author" content="Site name">
+	<!-- og meta-->
+	<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#ffc40d">
+	<meta name="theme-color" content="#ffffff">
+	<meta property="og:title" content="Site name">
+	<meta property="og:url" content="https://projectname.surge.sh">
+	<meta property="og:image" content="https://projectname.surge.sh/img/og/1_1080х607.jpg">
+	<meta property="og:description" content="Site name">
+	<meta name="twitter:title" content="Site name">
+	<meta name="twitter:description" content="Site name">
+	<meta name="twitter:image:src" content="https://projectname.surge.sh/img/og/1_1200х628.jpg">
+	<meta name="twitter:url" content="https://projectname.surge.sh">
+	<!-- STYLE -->
+	<!-- remove for production-->
+	<meta name="robots" content="noindex">
+	<!-- preloader styles-->
+	<style>
+		#barba-wrapper {
+			opacity: 0;
+			-webkit-transition: opacity .35s ease-in-out;
+			-o-transition: opacity .35s ease-in-out;
+			transition: opacity .35s ease-in-out
+		}
+
+		#barba-wrapper.is-preloaded {
+			opacity: 1
+		}
+	</style>
+	<link rel="stylesheet" media="all" href="css/normalize.css">
+	<link rel="stylesheet" media="all" href="css/vendor.css">
+	<link rel="stylesheet" media="all" href="css/app.css">
+	<link rel="stylesheet" media="all" href="css/styles.overwrite.css">
+	<link rel="stylesheet" media="all" href="css/styles.overwrite.mockup.css">
+	<link rel="stylesheet" media="all" href="css/new-style.css">
+
+	<!-- STYLE -->
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<!-- GRID TEST (remove on production)-->
+	<div class="demo-grid">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div></div>
+				</div>
+				<div class="col">
+					<div></div>
+				</div>
+				<div class="col">
+					<div></div>
+				</div>
+				<div class="col">
+					<div></div>
+				</div>
+				<div class="col">
+					<div></div>
+				</div>
+				<div class="col">
+					<div></div>
+				</div>
+				<div class="col">
+					<div></div>
+				</div>
+				<div class="col">
+					<div></div>
+				</div>
+				<div class="col">
+					<div></div>
+				</div>
+				<div class="col">
+					<div></div>
+				</div>
+				<div class="col">
+					<div></div>
+				</div>
+				<div class="col">
+					<div></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- GRID TEST (remove on production)-->
+	<div js-show-grid> <span>grid</span></div>
+	<!-- WRAPPER -->
+	<div id="wrapper">
+		<!-- HEADER -->
+		<header class="header">
+			<!-- top-->
+			<div class="header__top">
+				<div class="container">
+					<div class="row">
+						<!-- <div class="header__top-login">
+							<a href="#" class="auth">
+								<img src="img/svg/icons/login.svg" class="login">
+								<span class="icon-text">Войти</span>
+							</a>
+							<span class="separator"></span>
+							<a href="#" class="reg">
+								Регистрация
+							</a>
+						</div> -->
+						<a href="#" class="location-mag">
+							<img src="img/svg/location.svg" alt="">
+							<span class="location-mag__text">
+								Санкт-Петербург
+							</span>
+						</a>
+						<ul class="header__top-menu" js-menu-hider>
+							<li><a href="#">Как купить дешевле</a></li>
+							<li><a href="#">Оформить кредит</a></li>
+							<li><a href="#">Магазины на карте</a></li>
+						</ul>
+						<div class="header__top-sale">
+							<a href="#" class="selle">
+								<img src="img/svg/badge.svg" class="product">
+								<span class="icon-text">Распродажа с витрины</span>
+							</a>
+							<a href="#" class="acti">
+								<span>%</span>&nbsp;Акции
+							</a>
+						</div>
+
+						<!-- <a href="#" class="header__top-only">
+							<img src="img/svg/icons/support.svg" class="support">
+							<span class="icon-text">Онлайн помощник</span>
+						</a> -->
+					</div>
+				</div>
+			</div>
+			<!-- center-->
+			<div class="header__center">
+				<div class="container">
+					<div class="row">
+						<div class="header__center-logo">
+							<a href="#">
+								<img src="img/svg/logo.svg" alt="">
+							</a>
+							<a href="#" class="mobile">
+								<img src="img/svg/logo-mob.svg" alt="">
+							</a>
+						</div>
+						<div class="header__center-burger">
+							<div><img src="img/svg/menu.svg" alt=""></div>
+						</div>
+						<div class="header__center-catalot">
+							<ul class="header__center-catalot__list">
+								<li class="active"><a href="#">Каталог мебели</a><span>И сопутствующих товаров</span>
+								</li>
+								<li><a href="#">Где купить</a><span>Найти на карте</span></li>
+								<li><a href="#">Магазины</a><span>Вся информация</span></li>
+								<li class="list"><a href="#">Сервисы</a>
+									<ul class="none header__center-catalot__list-tlv">
+										<li>Текст подкатегории</li>
+										<li>Текст подкатегории</li>
+										<li>Текст подкатегории</li>
+										<li>Текст подкатегории</li>
+										<li>Текст подкатегории</li>
+										<li>Текст подкатегории</li>
+										<li>Текст подкатегории</li>
+										<li>Текст подкатегории</li>
+										<li>Текст подкатегории</li>
+										<li>Текст подкатегории</li>
+									</ul>
+									<span>Доступные услуги</span>
+								</li>
+							</ul>
+						</div>
+						<form class="header__center-search " action="#" method="POST" js-header-search>
+							<div class="header__center-search__input">
+								<label>
+									<input type="text" placeholder="Поиск">
+								</label>
+							</div>
+							<div class="header__center-search__cta">
+								<button class="btn" type="submit"><img src="img/svg/search.svg" alt=""></button>
+							</div>
+						</form>
+						<div class="header__center-deferred">
+							<a href="#">
+								<img src="img/svg/icons/favorite.svg" alt="">
+								<span class="it">3</span>
+								<span>Отложенное</span>
+							</a>
+						</div>
+						<div class="header__center-deferred">
+							<a href="#">
+								<img src="img/svg/icons/favorite.svg" alt="">
+								<span class="it">3</span>
+								<span>Отложенное</span>
+							</a>
+						</div>
+						<div class="mobile" id="search"><a href="#"><img src="img/svg/icons/search.svg" alt=""></a>
+						</div>
+						<div class="mobile" id="like"><a href="#"><img src="img/svg/icons/favorite.svg" alt=""><span
+									class="it">3</span></a></div>
+						<div class="mobile" id="burger"><span class="span"></span></div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- HEADER -->
+		<!-- PAGE -->
+		<div class="page">
+			<div class="page__content">
+				<div class="container">
+					<div class="buttons">
+
+						<div class="header__center-sale">
+							<a href="#" class="sale btn btn-red-border" popup="cheaper-popup">Хотите дешевле?</a>
+						</div>
+
+						<ul>
+							<li class="not_cl" popup="review-popup">test</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- PAGE -->
+		<!-- FOOTER :: START-->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__wrapper row">
+					<div class="footer__container">
+						<div class="footer__container-logo-mob mobile">
+							<a href="#">
+								<img src="img/svg/logo.svg" alt="">
+							</a>
+						</div>
+						<div class="footer__container-contacts">
+							<div class="footer__container-contacts-logo">
+								<a href="#">
+									<img src="img/svg/logo.svg" alt="">
+								</a>
+							</div>
+							<div class="footer__container-contacts-copyr">2019 © All right reserved MebelMap</div>
+							<div class="footer__container-contacts-social">
+								<div class="social-title gr">Присоединяйтесь к нам</div>
+								<div class="social__link">
+									<a href="#" class="vk"><img src="img/svg/vk.svg" alt=""></a>
+									<a href="#" class="vk"><img src="img/svg/fb.svg" alt=""></a>
+									<a href="#" class="vk"><img src="img/svg/ok.svg" alt=""></a>
+									<a href="#" class="vk"><img src="img/svg/inst.svg" alt=""></a>
+									<a href="#" class="vk"><img src="img/svg/yt.svg" alt=""></a>
+								</div>
+								<div class="social-title">Нам важно ваше мнение</div>
+								<a href="#" class="social-button btn btn-grey" data-fancybox
+									data-src="#write-to-us">Напишите нам</a>
+							</div>
+						</div>
+						<div class="footer__container-list">
+							<div class="footer__container-list-title h4">Сервис</div>
+							<ul>
+								<li><a href="#">Хочу дешевле</a></li>
+								<li><a href="#">Оформить кредит</a></li>
+								<li><a href="#">Онлайн помощник</a></li>
+								<li><a href="#">Вопросы дизайнерам</a></li>
+							</ul>
+						</div>
+						<div class="footer__container-list">
+							<div class="footer__container-list-title h4">Интересное</div>
+							<ul>
+								<li><a href="#">Магазины на карте</a></li>
+								<li><a href="#">Распродажи с витрины</a></li>
+								<li><a href="#">Акции и скидки</a></li>
+								<li><a href="#">Отзывы о продавцах</a></li>
+							</ul>
+						</div>
+						<div class="footer__container-list">
+							<div class="footer__container-list-title h4">Сотрудничество</div>
+							<ul>
+								<li><a href="#">Личный кабинет</a></li>
+								<li><a href="#">Реклама на сайте</a></li>
+								<li><a href="#">Вакансии</a></li>
+								<li><a href="#">Пользовательское соглашение</a></li>
+								<li><a href="#">О компании</a></li>
+							</ul>
+						</div>
+						<div class="footer__container-get">
+							<div class="footer__container-get-title h4">Получать лучшие предложения</div>
+							<div class="footer__container-get-ptitle">Мы помним что вас интересовало</div>
+							<form action="" id="best-offer-futer" class="general-form">
+								<div class="footer__container-get-input input-block">
+									<label class="input input-offer-footer" for="best-offer-footer-name">
+										<input type="text" class="input__item require-field" name="testing1s" required
+											id="best-offer-footer-name">
+										<span>Имя</span>
+									</label>
+									<label class="input input-offer" for="best-offer-footer-tel">
+										<input type="tel" class="input__item mask-validate phone-valid"
+											name="testing1232" required id="best-offer-footer-tel">
+										<span>Телефон</span>
+									</label>
+								</div>
+
+								<div class="check footers-offer-privacy">
+									<input type="checkbox" id="footer-offer" class="check__checkbox checkbox-general">
+									<label for="footer-offer" class="check__text">
+										Согласен на <a href="" class="check__text-link">обработку персональных
+											данных</a>
+									</label>
+								</div>
+
+								<button type="submit" id="best-offer-submit-footer"
+									class="footer__container-get-button btn red btn-red" disabled>
+									Подписаться
+								</button>
+							</form>
+
+						</div>
+						<div class="mobile-m copyr">Content 2019 © All right reserved MebelMap</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- FOOTER -->
+		<!-- MODALS-->
+
+		<!-- MODALS -->
+		<!-- SCRIPT -->
+		<script src="js/vendor.js"></script>
+		<script src="js/validation.js"></script>
+		<script src="js/vanillaTextMask.js"></script>
+		<script src="js/svg-fill.js"></script>
+		<script src="js/bodyScrollLock.min.js"></script>
+		<script src="js/app.js"></script>
+		<div class="popup cheaper-popup">
+			<div class="popup__wrapper">
+				<span class="popup-close"></span>
+				<h1>Хочу дешевле</h1>
+				<div class="reservation__content">
+					<div class="reservation__content__left">
+						<span>Оставьте ваши контакты и мы свяжемся с вами для поиска более выгодной цены</span>
+						<form action="" id="cheaper" class="general-form">
+							<div class="footer__container-get-input input-block">
+								<label class="input input-offer" for="cheaper-email">
+									<input type="email" id="mail" required name="email" class="input__item mail-input">
+									<span>Email</span>
+								</label>
+							</div>
+							<div class="footer__container-get-input input-block">
+								<label class="input input-offer" for="cheaper-name">
+									<input type="text" class="input__item " name="testing1s" id="cheaper-name">
+									<span>Ваше имя (необязательно)</span>
+								</label>
+							</div>
+							<div class="footer__container-get-input input-block">
+								<label class="input input-offer" for="cheaper-tel">
+									<input type="tel" class="input__item mask-validate phone-valid" name="testing1232"
+										id="cheaper-tel">
+									<span>+7(код) _ _ _ - _ _ - _ _ (необязательно)</span>
+								</label>
+							</div>
+
+							<div class="check footers-offer-privacy">
+								<input type="checkbox" id="cheaper-offer" class="check__checkbox ">
+								<label for="cheaper-offer" class="check__text">
+									Согласен на <a href="" class="check__text-link">обработку
+										персональных
+										данных</a>
+								</label>
+							</div>
+							<button disabled type="submit" id="cheaper-submit"
+								class="footer__container-get-button btn red btn-red">
+								Отправить
+							</button>
+						</form>
+
+					</div>
+					<div class="reservation__content__right">
+						<div class="reservation__content__img">
+							<img src="img/20181_come02a_01_PH145420.jpeg" alt="">
+						</div>
+						<div class="reservation__content__right__info">
+							<span>Премиальная дизайнерская кухня</span>
+							<span>Synthesis</span>
+							<span>176 990 <span>руб.</span></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script>
+				// MaskedPhone();
+				const cheaperForm = $('#cheaper');
+
+				function thecheaperForm() {
+					cheaperForm.validate({
+						submitHandler: function (form) {
+							const _form = $(form);
+							const url = _form.attr('action');
+							const thnxModal = '#subscribe-user';
+							var data = _form.serialize();
+							sendAjaxForm(url, data, thnxModal);
+						},
+					});
+					mailValid(cheaperForm);
+					// phoneValid(cheaperForm);
+					MaskedPhone(cheaperForm);
+					// requiredInput(cheaperForm);
+				}
+				thecheaperForm();
+				// mailValid($('#cheaper'));
+			</script>
+		</div>
+		<!-- SCRIPT -->
+	</div>
+	<!-- WRAPPER  -->
+</body>
+</html>

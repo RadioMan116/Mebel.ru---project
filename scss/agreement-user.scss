@@ -1,0 +1,150 @@
+// main: app.scss
+
+.agreement-user {
+	font-size: 14px;
+	line-height: 1.71;
+	color: var(--black);
+
+	a {
+		text-decoration: underline;
+	}
+
+	&__section {
+		margin-bottom: 32px;
+	}
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 -40px 32px;
+	}
+
+	&__col {
+		padding: 0 40px;
+		width: 50%;
+		flex-shrink: 0;
+	}
+
+	&__payments {
+		margin-bottom: 32px;
+
+		img {
+			max-width: 100%;
+		}
+	}
+
+	&__icon {
+		margin-bottom: 8px;
+	}
+
+	&__title {
+		font-size: 24px;
+		font-weight: 300;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.33;
+		letter-spacing: normal;
+		color: var(--black);
+		margin-bottom: 16px;
+
+		&_center {
+			text-align: center;
+		}
+	}
+
+	ul {
+		list-style: none;
+		margin: 0 0 24px 8px;
+		padding: 0;
+
+		> li {
+			position: relative;
+			padding: 0 0 0 16px;
+			margin-bottom: 16px;
+
+			&:before {
+				width: 6px;
+				height: 6px;
+				background-color: var(--off-yellow);
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 8px;
+				border-radius: 50%;
+			}
+		}
+
+		ol, ul {
+			padding-top: 16px;
+		}
+	}
+
+	ol {
+		list-style: none;
+		margin: 0 0 24px 8px;
+		padding: 0;
+		counter-reset: section;
+
+		> li {
+			position: relative;
+			padding: 0 0 0 16px;
+			margin-bottom: 16px;
+
+			&:before {
+				font-size: 14px;
+				font-weight: bold;
+				line-height: 1.71;
+				color: var(--cadet-blue);
+				position: absolute;
+				left: 0;
+				counter-increment: section;
+				content: counter(section) ".";
+			}
+		}
+	}
+
+	@media (max-width: 767px) {
+		font-size: 12px;
+		line-height: 1.67;
+
+		p {
+			font-size: 12px;
+			line-height: 1.67;
+		}
+
+		&__section {
+			margin-bottom: 32px;
+		}
+
+		&__row {
+			flex-direction: column;
+			margin: 0 0 32px;
+		}
+
+		&__col {
+			padding: 0;
+			width: 100%;
+		}
+
+		&__icon {
+			display: flex;
+			justify-content: center;
+			margin-bottom: 8px;
+		}
+
+		&__title {
+			font-size: 18px;
+			text-align: center;
+			margin-bottom: 8px;
+		}
+
+		ol {
+			> li {
+				&:before {
+					font-size: 12px;
+					line-height: 1.60;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,3932 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Статья новости</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="theme-color" content="#fff">
+	<meta name="format-detection" content="telephone=no">
+	<!-- appstore links-->
+	<!-- seo meta-->
+	<meta name="description" content="Meta description">
+	<meta name="keywords" content="Key, words">
+	<meta name="author" content="Site name">
+	<!-- og meta-->
+	<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#ffc40d">
+	<meta name="theme-color" content="#ffffff">
+	<meta property="og:title" content="Site name">
+	<meta property="og:url" content="https://projectname.surge.sh">
+	<meta property="og:image" content="https://projectname.surge.sh/img/og/1_1080х607.jpg">
+	<meta property="og:description" content="Site name">
+	<meta name="twitter:title" content="Site name">
+	<meta name="twitter:description" content="Site name">
+	<meta name="twitter:image:src" content="https://projectname.surge.sh/img/og/1_1200х628.jpg">
+	<meta name="twitter:url" content="https://projectname.surge.sh">
+	<!-- STYLE -->
+	<!-- remove for production-->
+	<meta name="robots" content="noindex">
+	<!-- preloader styles-->
+	<style>
+		#barba-wrapper {
+			opacity: 0;
+			-webkit-transition: opacity .35s ease-in-out;
+			-o-transition: opacity .35s ease-in-out;
+			transition: opacity .35s ease-in-out
+		}
+
+		#barba-wrapper.is-preloaded {
+			opacity: 1
+		}
+
+	</style>
+	<link rel="stylesheet" media="all" href="css/normalize.css">
+	<link rel="stylesheet" media="all" href="css/vendor.css">
+	<link rel="stylesheet" media="all" href="css/app.css">
+	<link rel="stylesheet" media="all" href="css/styles.overwrite.css">
+	<link rel="stylesheet" media="all" href="css/styles.overwrite.mockup.css">
+	<link rel="stylesheet" media="all" href="css/new-style-fix.css">
+	<!-- STYLE -->
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<!-- GRID TEST (remove on production)-->
+	<div class="demo-grid">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div></div>
+				</div>
+				<div class="col">
+					<div></div>
+				</div>
+				<div class="col">
+					<div></div>
+				</div>
+				<div class="col">
+					<div></div>
+				</div>
+				<div class="col">
+					<div></div>
+				</div>
+				<div class="col">
+					<div></div>
+				</div>
+				<div class="col">
+					<div></div>
+				</div>
+				<div class="col">
+					<div></div>
+				</div>
+				<div class="col">
+					<div></div>
+				</div>
+				<div class="col">
+					<div></div>
+				</div>
+				<div class="col">
+					<div></div>
+				</div>
+				<div class="col">
+					<div></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- GRID TEST (remove on production)-->
+	<div js-show-grid> <span>grid</span></div>
+	<!-- WRAPPER -->
+	<div id="wrapper">
+		<!-- HEADER -->
+		<header class="header">
+			<!-- top-->
+			<div class="header__top">
+				<div class="container">
+					<div class="row">
+						<a href="#" data-city-code="KAZAN" class="location-mag" popup="cities-popup">
+							<img src="img/svg/location.svg">
+							<span class="location-mag__text">Казань</span>
+						</a>
+						<ul class="header__top-menu" js-menu-hider="">
+							<li><a href="/b2b/" class="selected">Корпоративным клиентам</a></li>
+							<li><span ajax-modal="WANT_CHEAPER">Как купить дешевле</span></li>
+							<li><span ajax-modal="CREDIT">Оформить кредит</span></li>
+							<li><a href="/salons/map/" class="selected">Магазины на карте</a></li>
+						</ul>
+						<div class="header__top-sale">
+							<a href="/actions/" class="acti">
+								<span>%</span>&nbsp;Акции
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- center-->
+			<div class="header__center ">
+				<div class="container">
+					<div class="row">
+						<div class="header__center-logo">
+							<a href="/">
+								<img src="img/svg/logo.svg" alt="Онлайн гипермаркет мебели">
+							</a>
+							<a href="/" class="mobile">
+								<img src="img/svg/logo-mob.svg" alt="">
+							</a>
+						</div>
+						<div class="header__center-burger">
+							<div><img src="img/svg/menu.svg" alt=""></div>
+						</div>
+						<div class="header__center-catalot">
+							<ul class="header__center-catalot__list">
+								<li class="list active">
+									<a href="/catalog/">Каталог мебели</a>
+									<ul class="none header__center-catalot__list-tlv">
+										<li>
+											<a href="/catalog/kitchens/">
+												<span class="menu_img"><img
+														src="/upload/iblock/af6/af678d1ac38e6fdb9e8466de592c1a6c.png"></span>
+												<span>Кухни</span>
+											</a>
+										</li>
+										<li>
+											<a href="/catalog/sofas/">
+												<span class="menu_img"><img
+														src="/upload/iblock/504/504532606b0fe3543b458ee5e225fab4.png"></span>
+												<span>Диваны</span>
+											</a>
+										</li>
+										<li>
+											<a href="/catalog/cabinets/">
+												<span class="menu_img"><img
+														src="/upload/iblock/f54/f54fd259ad0661d4498d38b444227ea5.png"></span>
+												<span>Шкафы</span>
+											</a>
+										</li>
+										<li>
+											<a href="/catalog/matrases/">
+												<span class="menu_img"><img
+														src="/upload/resize_cache/iblock/1dc/120_80_0/1dc411b7c2f1bbacd32f0a71b96efa42.png"></span>
+												<span>Матрасы</span>
+											</a>
+										</li>
+										<li>
+											<a href="/catalog/beds/">
+												<span class="menu_img"><img
+														src="/upload/iblock/994/9945f881f82a47da25306b3993f0f388.png"></span>
+												<span>Кровати</span>
+											</a>
+										</li>
+										<li>
+											<a href="/catalog/armchairs/">
+												<span class="menu_img"><img
+														src="/upload/iblock/a85/a8543371166540c9856fd6579d76af2f.png"></span>
+												<span>Кресла</span>
+											</a>
+										</li>
+										<li>
+											<a href="/catalog/tables/">
+												<span class="menu_img"><img
+														src="/upload/iblock/8e8/8e836a5a09af73264354a8654dfff0d0.png"></span>
+												<span>Столы</span>
+											</a>
+										</li>
+										<li>
+											<a href="/catalog/chairs/">
+												<span class="menu_img"><img
+														src="/upload/iblock/ff8/ff877a0f365a8d5198ab69a528f0c721.png"></span>
+												<span>Стулья</span>
+											</a>
+										</li>
+										<li>
+											<a href="/catalog/komody-tumby/">
+												<span class="menu_img"><img
+														src="/upload/iblock/fa0/fa0b31911912a575e5d59ce3e65477fe.png"></span>
+												<span>Комоды и тумбы</span>
+											</a>
+										</li>
+										<li>
+											<a href="/catalog/sadovaya-mebel/">
+												<span class="menu_img"><img
+														src="/upload/resize_cache/iblock/af4/120_80_0/af4cd2ec6533d0fda66ae3b94d35288f.png"></span>
+												<span>Садовая мебель</span>
+											</a>
+										</li>
+									</ul>
+									<span>И сопутствующих товаров</span>
+								</li>
+								<li><a href="/salons/map/">Где купить</a><span>Найти на карте</span></li>
+								<li><a href="/salons/">Магазины</a><span>Вся информация</span></li>
+								<li><a href="/services/">Сервисы</a><span>Доступные услуги</span></li>
+							</ul>
+							<div class="mob_menu none">
+								<div class="header__top-login">
+									<a href="/auth/" class="auth">
+										<img src="img/svg/icons/login.svg" class="login">
+										<span class="icon-text">Войти</span>
+									</a>
+									<span class="separator"></span>
+									<a href="/auth/registration.php" class="reg">
+										Регистрация
+									</a>
+								</div>
+								<ol>
+									<li><a href="javascript:void(0);" ajax-modal="MANUFACTURERS">Производители</a></li>
+									<li><a href="javascript:void(0);" ajax-modal="CREDIT">Оформить кредит</a></li>
+									<li><a href="javascript:void(0);" ajax-modal="QUESTIONS_DESIGNERS">Вопросы
+											дизайнерам</a>
+									</li>
+								</ol>
+								<a href="javascript:void(0);" popup="cities-popup" class="maps_link"><img
+										src="img/svg/location.svg" alt="">Казань</a>
+							</div>
+						</div>
+						<form class="header__center-search " action="/search/index.php" method="POST"
+							js-header-search="">
+							<div class="header__center-search__input search-filed" style="padding:0;border:0">
+								<label>
+									<input type="text" placeholder="Поиск" name="q">
+								</label>
+							</div>
+							<div class="header__center-search__cta">
+								<button class="btn" type="submit"><img src="img/svg/search.svg" alt=""></button>
+							</div>
+						</form>
+						<div class="header__center-deferred">
+							<a href="/catalog/compare/" class="header__center-deferred-link">
+								<img src="img/svg/icons/compare.svg" alt="">
+								<span class="js_compare"></span>
+								<span>Сравнение</span>
+							</a>
+						</div>
+						<div class="header__center-deferred">
+							<a href="/favorites/">
+								<img src="img/svg/icons/favorite1.svg" alt="">
+								<span class="js_favorite it" style="display:none;"></span>
+								<span>Отложенное</span>
+							</a>
+						</div>
+						<div class="mobile" id="search"><a href="/search/"><img src="img/svg/icons/search.svg"
+									alt=""></a></div>
+						<div class="mobile  " id="compare">
+							<a href="/catalog/compare/">
+								<span></span>
+							</a>
+						</div>
+						<div class="mobile " id="like">
+							<a href="/favorites/">
+								<span></span>
+							</a>
+						</div>
+						<div class="mobile" id="burger"><span class="span"></span></div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- HEADER -->
+		<!-- CRUMBS -->
+		<div class="crumbs">
+			<div class="container">
+				<ul class="crumbs__ul" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+					<li class="crumbs__ul-list">
+						<a itemprop="item" href="/" title="Главная">
+							<span itemprop="name">Главная</span></a>
+						<meta itemprop="position" content="1">
+					</li>
+					<li class="crumbs__ul-list">
+						<a itemprop="item" href="/articles/" title="Статьи">
+							<span itemprop="name">Статьи</span></a>
+						<meta itemprop="position" content="2">
+					</li>
+					<li class="crumbs__ul-list">
+						<a itemprop="item" href="/articles/dostupno-kazhdomu-dizaynerskie-proekty/"
+							title="Доступно каждому: дизайнерские проекты">
+							<span itemprop="name">Доступно каждому: дизайнерские проекты</span></a>
+						<meta itemprop="position" content="3">
+					</li>
+					<li class="crumbs__ul-list"><span itemprop="name">2 проекта светлых маленьких кухонь: неоклассика
+							или
+							современность?</span>
+						<meta itemprop="position" content="4">
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- CRUMBS -->
+		<!-- PAGE -->
+		<div class="page">
+			<div class="page__content">
+				<div class="news-article">
+					<div class="container">
+						<div class="news-article__banner">
+							<div class="news-article__banner__content">
+								<h2>Кухни в стиле Прованс и Кантри</h2>
+								<div class="news-article__banner__bottom auth-and-rate">
+									<div class="auth-and-rate__author">
+										<div class="auth-and-rate__img">
+											<img src="img/user-40.jpeg" alt="">
+										</div>
+										<div class="auth-and-rate__author__info">
+											<div>
+												<span>Алена Сашина</span>
+												<span class="rate-score"><img src="img/svg/star.svg" alt=""> 3,7</span>
+											</div>
+											<div>
+												<span>Ведущий дизайнер Кухнисити</span>
+												<span class="auth-and-rate__date">12.10.2017 в 14:32</span>
+											</div>
+										</div>
+									</div>
+									<div class="auth-and-rate__com-rate">
+										<div class="review">
+											<a href="#">10 комментариев</a>
+										</div>
+										<div class="likes">
+											<div class="likes-like"><img src="img/svg/like.svg" alt=""> 98 </div>
+											<div class="likes-dizlike"><img src="img/svg/like.svg" alt=""> 3</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="news-article__quote">
+							<div class="news-article__quote-inner">
+								<p>Само название Прованс вызывает в сознании людей картины Южной Франции — лавандовые
+									поля,
+									серебристо зеленые оливковые рощи, скалы, солнце и море. Именно там были созданы
+									рецепты
+									мыла и Провансальского майонеза, как и уникальный стиль интерьера, который в XIX
+									веке
+									распространился почти по всей Европе.</p>
+							</div>
+						</div>
+						<div class="news-article__text-content">
+							<p>Прованс – южный регион Франции с великолепной природой, ярким солнцем, синим морем и
+								чистым небом. Эти отличительные черти можно встретить и в дизайне стиля Прованс.</p>
+							<p>Он привлекает своей простотой и очаровательной стариной. Во многом Прованс перекликается
+								со стилем Кантри.</p>
+						</div>
+					</div>
+					<div class="swiper-container news-article__slider">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="img/1gp.jpg" data-fancybox="news-article"> <img src="img/for-slider.jpg"
+										alt=""></a>
+							</div>
+							<div class="swiper-slide">
+								<a href="img/1gp.jpg" data-fancybox="news-article"> <img src="img/for-slider.jpg"
+										alt=""></a>
+							</div>
+							<div class="swiper-slide">
+								<a href="img/1gp.jpg" data-fancybox="news-article"> <img src="img/for-slider.jpg"
+										alt=""></a>
+							</div>
+							<div class="swiper-slide">
+								<a href="img/1gp.jpg" data-fancybox="news-article"> <img src="img/for-slider.jpg"
+										alt=""></a>
+							</div>
+							<div class="swiper-slide">
+								<a href="img/1gp.jpg" data-fancybox="news-article"> <img src="img/for-slider.jpg"
+										alt=""></a>
+							</div>
+							<div class="swiper-slide">
+								<a href="img/1gp.jpg" data-fancybox="news-article"> <img src="img/for-slider.jpg"
+										alt=""></a>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+						<!-- If we need navigation buttons -->
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
+					<div class="container">
+						<div class="news-article__text-content">
+							<p>И до сегодняшнего дня этот стиль остается исключительно привлекательным своей простотой,
+								ненавязчивой красотой и старинным очарованием. Это один из самых уютных и домашних
+								стилей в интерьере, на котором можно остановиться, если Вы являетесь почитателем
+								французской элегантности.</p>
+							<p>Стиль Кантри, как и само английское слово «country» имеет два значения:</p>
+							<p>Одно из них – это деревенский стиль, который предусматривает экологический дизайн. В
+								таком интерьере используются преимущественно натуральные природные материалы.</p>
+						</div>
+						<div class="news-article__big-image">
+							<div class="news-article__big-pic">
+								<a href="img/picturemap.png" data-fancybox="news-article-big">
+									<img src="img/picturemap.png" alt=""></a>
+							</div>
+							<div class="news-article__big-pic">
+								<a href="img/picturemap-2.png" data-fancybox="news-article-big">
+									<img src="img/picturemap-2.png" alt=""></a>
+							</div>
+						</div>
+						<!-- /.news-article__big-image -->
+						<div class="news-article__text-content">
+							<p>Главное, что не используется при дизайне кухни в стиле Кантри – это высокотехнологичные
+								материалы:</p>
+							<ul>
+								<li>- хромированный металл</li>
+								<li>- пластик</li>
+								<li>- искусственное стекло</li>
+							</ul>
+							<p>Можно использовать различные имитации экологических декораций и материалов. Но при этом
+								должны сохраниться основополагающие факторы этого стиля — теплота и уют, изысканность
+							</p>
+							<h2 class="additional-margin">Цветовая гамма</h2>
+							<p>Для стиля Прованс характерны пастельные нюансы с яркими цветными акцентами. Если Вы не
+								являетесь почитателями белых стен, то можете выбрать пастельные оттенки зеленого, синего
+								или терракотового.</p>
+							<p>В любом случае, цвета должны выглядеть так, как будто их разбавили белой краской. Так как
+								этот стиль предусматривает, чтобы яркая мебель была на фоне бледных стен.</p>
+						</div>
+						<div class="news-gallery">
+							<div class="news-gallery__button">
+								<div class="news-gallery__close"></div>
+								<!-- /.news-gallery__close -->
+								<span>
+									Нажмите на иконку для просмотра информации об используемом товаре.
+								</span>
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-button-next"></div>
+								<!-- <progress value="0" max="100" class="news-gallery__loader"></progress> -->
+								<!-- /.news-gallery__loader -->
+								<div class="progress animation"></div>
+							</div>
+							<!-- /.news-gallery__button -->
+							<div class="news-gallery__list products result four new-four lists">
+								<div class="news-gallery__pic">
+									<img src="img/news-gallery.png" alt="">
+								</div>
+								<!-- /.news-gallery__pic -->
+								<div class="swiper-container news-gallery__container products__block">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide absolute" style="left: 35%;top: 38%">
+											<div class="news-gallery__item ">
+												<div class="news-gallery__point"></div>
+												<!-- /.news-gallery__point -->
+												<div class="news-gallery__card  tooltip-left">
+													<div class="products__block-product product col-3 result-block">
+														<a href="">
+															<div class="swiper-container gallery-topp two-container">
+																<div class="swiper-wrapper">
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																</div>
+																<!-- Add Pagination -->
+																<div class="swiper-pagination hover"></div>
+															</div>
+														</a>
+														<div class="product__wrapper">
+															<div class="product-title">Угловой диван-кровать</div>
+															<div class="product-name">Манхэттен</div>
+															<div class="product-price">176 990 <span>руб.</span>
+																<div class="scid">-70%</div>
+																<div class="atrebut">
+																	<div class="shouwroom">SHOW Room</div>
+																	<div class="hit">ХИТ!</div>
+																</div>
+															</div>
+															<div class="options fdc">
+																<div class="options-l">
+																	<div class="placeh">Высота спального места</div>
+																	<div class="options-val">92 sm</div>
+																</div>
+																<div class="options-l">
+																	<div class="placeh">Вес на 1 спальное место</div>
+																	<div class="options-val">163 кг</div>
+																</div>
+																<div class="options-l">
+																	<div class="placeh">Бельевой ящик</div>
+																	<div class="options-val">да</div>
+																</div>
+															</div>
+															<div class="catalog-brand">
+																<div class="catalog-brand__title">
+																	Бренд
+																</div>
+																<!-- /.catalog-brand__title -->
+																<div class="catalog-brand__logo">
+																	<a href="brand.html">
+																		<img src="img/logo-as.png" alt="Аскона"
+																			class="catalog-brand__img">
+																	</a>
+																	<!-- /.catalog-brand__img -->
+																</div>
+																<!-- /.catalog-brand__logo -->
+															</div>
+															<!-- /.catalog-brand -->
+															<div class="contacts">
+																<div class="contacts-title">
+																	Продавец:
+																	Интернет-магазин мебели
+																</div>
+																<a class="contacts-name"
+																	href="/salons/pervyy-gipermarket-mebeli/#map">Первый
+																	гипермаркет
+																	мебели</a>
+															</div>
+															<div class="category-more">
+																<div class="stars">
+																	<div class="stars-star">
+																		<img src="img/svg/star.svg" alt=""> <img
+																			src="img/svg/star.svg" alt="">
+																		<img src="img/svg/star.svg" alt=""> <img
+																			src="img/svg/star.svg" alt="">
+																		<img src="img/svg/star.svg" alt="">
+																	</div>
+																	<div class="stars-review"><a href="#">1257
+																			отзывов</a></div>
+																</div>
+															</div>
+															<div class="flex link-blocks">
+																<div class="salon-but-a">
+																	<div class="img"><img
+																			src="img/svg/icons/vitrina.svg" alt="">
+																	</div>
+																	<div class="text">На витрине в <a href="#">12
+																			салонах</a></div>
+																</div>
+																<a href="#" class="in-market new-market red btn">В
+																	магазин</a>
+															</div>
+															<div class="new-four__bottom">
+																<a href="#" class="product-details">Подробнее о
+																	товаре</a>
+																<div class="more_">
+																	<a href="#" class="compar"><img
+																			src="img/svg/icons/compar.svg" alt=""></a>
+																	<a href="#" class="likesa"><img
+																			src="img/svg/icons/favorite.svg" alt=""></a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!-- /.news-gallery__card -->
+											</div>
+											<!-- /.news-gallery__item -->
+										</div>
+										<!-- /.swiper-slide -->
+										<div class="swiper-slide absolute" style="left: 78%;top: 57%">
+											<div class="news-gallery__item ">
+												<div class="news-gallery__point"></div>
+												<!-- /.news-gallery__point -->
+												<div class="news-gallery__card  tooltip-right">
+													<div class="products__block-product product col-3 result-block">
+														<a href="">
+															<div class="swiper-container gallery-topp two-container">
+																<div class="swiper-wrapper">
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																</div>
+																<!-- Add Pagination -->
+																<div class="swiper-pagination hover"></div>
+															</div>
+														</a>
+														<div class="product__wrapper">
+															<div class="product-title">Угловой диван-кровать</div>
+															<div class="product-name">Манхэттен</div>
+															<div class="product-price">176 990 <span>руб.</span>
+																<div class="scid">-70%</div>
+																<div class="atrebut">
+																	<div class="shouwroom">SHOW Room</div>
+																	<div class="hit">ХИТ!</div>
+																</div>
+															</div>
+															<div class="options fdc">
+																<div class="options-l">
+																	<div class="placeh">Высота спального места</div>
+																	<div class="options-val">92 sm</div>
+																</div>
+																<div class="options-l">
+																	<div class="placeh">Вес на 1 спальное место</div>
+																	<div class="options-val">163 кг</div>
+																</div>
+																<div class="options-l">
+																	<div class="placeh">Бельевой ящик</div>
+																	<div class="options-val">да</div>
+																</div>
+															</div>
+															<div class="catalog-brand">
+																<div class="catalog-brand__title">
+																	Бренд
+																</div>
+																<!-- /.catalog-brand__title -->
+																<div class="catalog-brand__logo">
+																	<a href="brand.html">
+																		<img src="img/logo-as.png" alt="Аскона"
+																			class="catalog-brand__img">
+																	</a>
+																	<!-- /.catalog-brand__img -->
+																</div>
+																<!-- /.catalog-brand__logo -->
+															</div>
+															<!-- /.catalog-brand -->
+															<div class="contacts">
+																<div class="contacts-title">
+																	Продавец:
+																	Интернет-магазин мебели
+																</div>
+																<a class="contacts-name"
+																	href="/salons/pervyy-gipermarket-mebeli/#map">Первый
+																	гипермаркет
+																	мебели</a>
+															</div>
+															<div class="category-more">
+																<div class="stars">
+																	<div class="stars-star">
+																		<img src="img/svg/star.svg" alt=""> <img
+																			src="img/svg/star.svg" alt="">
+																		<img src="img/svg/star.svg" alt=""> <img
+																			src="img/svg/star.svg" alt="">
+																		<img src="img/svg/star.svg" alt="">
+																	</div>
+																	<div class="stars-review"><a href="#">1257
+																			отзывов</a></div>
+																</div>
+															</div>
+															<div class="flex link-blocks">
+																<div class="salon-but-a">
+																	<div class="img"><img
+																			src="img/svg/icons/vitrina.svg" alt="">
+																	</div>
+																	<div class="text">На витрине в <a href="#">12
+																			салонах</a></div>
+																</div>
+																<a href="#" class="in-market new-market red btn">В
+																	магазин</a>
+															</div>
+															<div class="new-four__bottom">
+																<a href="#" class="product-details">Подробнее о
+																	товаре</a>
+																<div class="more_">
+																	<a href="#" class="compar"><img
+																			src="img/svg/icons/compar.svg" alt=""></a>
+																	<a href="#" class="likesa"><img
+																			src="img/svg/icons/favorite.svg" alt=""></a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!-- /.news-gallery__card -->
+											</div>
+											<!-- /.news-gallery__item -->
+										</div>
+										<!-- /.swiper-slide -->
+										<div class="swiper-slide absolute" style="left: 23%;top: 67%">
+											<div class="news-gallery__item ">
+												<div class="news-gallery__point"></div>
+												<!-- /.news-gallery__point -->
+												<div class="news-gallery__card  tooltip-left">
+													<div class="products__block-product product col-3 result-block">
+														<a href="">
+															<div class="swiper-container gallery-topp two-container">
+																<div class="swiper-wrapper">
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																</div>
+																<!-- Add Pagination -->
+																<div class="swiper-pagination hover"></div>
+															</div>
+														</a>
+														<div class="product__wrapper">
+															<div class="product-title">Угловой диван-кровать</div>
+															<div class="product-name">Манхэттен</div>
+															<div class="product-price">176 990 <span>руб.</span>
+																<div class="scid">-70%</div>
+																<div class="atrebut">
+																	<div class="shouwroom">SHOW Room</div>
+																	<div class="hit">ХИТ!</div>
+																</div>
+															</div>
+															<div class="options fdc">
+																<div class="options-l">
+																	<div class="placeh">Высота спального места</div>
+																	<div class="options-val">92 sm</div>
+																</div>
+																<div class="options-l">
+																	<div class="placeh">Вес на 1 спальное место</div>
+																	<div class="options-val">163 кг</div>
+																</div>
+																<div class="options-l">
+																	<div class="placeh">Бельевой ящик</div>
+																	<div class="options-val">да</div>
+																</div>
+															</div>
+															<div class="catalog-brand">
+																<div class="catalog-brand__title">
+																	Бренд
+																</div>
+																<!-- /.catalog-brand__title -->
+																<div class="catalog-brand__logo">
+																	<a href="brand.html">
+																		<img src="img/logo-as.png" alt="Аскона"
+																			class="catalog-brand__img">
+																	</a>
+																	<!-- /.catalog-brand__img -->
+																</div>
+																<!-- /.catalog-brand__logo -->
+															</div>
+															<!-- /.catalog-brand -->
+															<div class="contacts">
+																<div class="contacts-title">
+																	Продавец:
+																	Интернет-магазин мебели
+																</div>
+																<a class="contacts-name"
+																	href="/salons/pervyy-gipermarket-mebeli/#map">Первый
+																	гипермаркет
+																	мебели</a>
+															</div>
+															<div class="category-more">
+																<div class="stars">
+																	<div class="stars-star">
+																		<img src="img/svg/star.svg" alt=""> <img
+																			src="img/svg/star.svg" alt="">
+																		<img src="img/svg/star.svg" alt=""> <img
+																			src="img/svg/star.svg" alt="">
+																		<img src="img/svg/star.svg" alt="">
+																	</div>
+																	<div class="stars-review"><a href="#">1257
+																			отзывов</a></div>
+																</div>
+															</div>
+															<div class="flex link-blocks">
+																<div class="salon-but-a">
+																	<div class="img"><img
+																			src="img/svg/icons/vitrina.svg" alt="">
+																	</div>
+																	<div class="text">На витрине в <a href="#">12
+																			салонах</a></div>
+																</div>
+																<a href="#" class="in-market new-market red btn">В
+																	магазин</a>
+															</div>
+															<div class="new-four__bottom">
+																<a href="#" class="product-details">Подробнее о
+																	товаре</a>
+																<div class="more_">
+																	<a href="#" class="compar"><img
+																			src="img/svg/icons/compar.svg" alt=""></a>
+																	<a href="#" class="likesa"><img
+																			src="img/svg/icons/favorite.svg" alt=""></a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!-- /.news-gallery__card -->
+											</div>
+											<!-- /.news-gallery__item -->
+										</div>
+										<!-- /.swiper-slide -->
+										<div class="swiper-slide absolute" style="left: 87%;top:67%">
+											<div class="news-gallery__item ">
+												<div class="news-gallery__point"></div>
+												<!-- /.news-gallery__point -->
+												<div class="news-gallery__card  tooltip-right">
+													<div class="products__block-product product col-3 result-block">
+														<a href="">
+															<div class="swiper-container gallery-topp two-container">
+																<div class="swiper-wrapper">
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																</div>
+																<!-- Add Pagination -->
+																<div class="swiper-pagination hover"></div>
+															</div>
+														</a>
+														<div class="product__wrapper">
+															<div class="product-title">Угловой диван-кровать</div>
+															<div class="product-name">Манхэттен</div>
+															<div class="product-price">176 990 <span>руб.</span>
+																<div class="scid">-70%</div>
+																<div class="atrebut">
+																	<div class="shouwroom">SHOW Room</div>
+																	<div class="hit">ХИТ!</div>
+																</div>
+															</div>
+															<div class="options fdc">
+																<div class="options-l">
+																	<div class="placeh">Высота спального места</div>
+																	<div class="options-val">92 sm</div>
+																</div>
+																<div class="options-l">
+																	<div class="placeh">Вес на 1 спальное место</div>
+																	<div class="options-val">163 кг</div>
+																</div>
+																<div class="options-l">
+																	<div class="placeh">Бельевой ящик</div>
+																	<div class="options-val">да</div>
+																</div>
+															</div>
+															<div class="catalog-brand">
+																<div class="catalog-brand__title">
+																	Бренд
+																</div>
+																<!-- /.catalog-brand__title -->
+																<div class="catalog-brand__logo">
+																	<a href="brand.html">
+																		<img src="img/logo-as.png" alt="Аскона"
+																			class="catalog-brand__img">
+																	</a>
+																	<!-- /.catalog-brand__img -->
+																</div>
+																<!-- /.catalog-brand__logo -->
+															</div>
+															<!-- /.catalog-brand -->
+															<div class="contacts">
+																<div class="contacts-title">
+																	Продавец:
+																	Интернет-магазин мебели
+																</div>
+																<a class="contacts-name"
+																	href="/salons/pervyy-gipermarket-mebeli/#map">Первый
+																	гипермаркет
+																	мебели</a>
+															</div>
+															<div class="category-more">
+																<div class="stars">
+																	<div class="stars-star">
+																		<img src="img/svg/star.svg" alt=""> <img
+																			src="img/svg/star.svg" alt="">
+																		<img src="img/svg/star.svg" alt=""> <img
+																			src="img/svg/star.svg" alt="">
+																		<img src="img/svg/star.svg" alt="">
+																	</div>
+																	<div class="stars-review"><a href="#">1257
+																			отзывов</a></div>
+																</div>
+															</div>
+															<div class="flex link-blocks">
+																<div class="salon-but-a">
+																	<div class="img"><img
+																			src="img/svg/icons/vitrina.svg" alt="">
+																	</div>
+																	<div class="text">На витрине в <a href="#">12
+																			салонах</a></div>
+																</div>
+																<a href="#" class="in-market new-market red btn">В
+																	магазин</a>
+															</div>
+															<div class="new-four__bottom">
+																<a href="#" class="product-details">Подробнее о
+																	товаре</a>
+																<div class="more_">
+																	<a href="#" class="compar"><img
+																			src="img/svg/icons/compar.svg" alt=""></a>
+																	<a href="#" class="likesa"><img
+																			src="img/svg/icons/favorite.svg" alt=""></a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!-- /.news-gallery__card -->
+											</div>
+											<!-- /.news-gallery__item -->
+										</div>
+										<!-- /.swiper-slide -->
+									</div>
+									<!-- /.swiper-wrapper -->
+									<div class="swiper-pagination"></div>
+								</div>
+								<!-- /.swiper-container -->
+							</div>
+							<!-- /.news-gallery__list -->
+						</div>
+						<!-- /.news-gallery -->
+						<div class="news-article__text-content">
+							<p>Стиль Прованс – это натуральные природные цвета и подходящие им сочные акценты.
+								Белый,
+								терракотовый, бежевый, песочный, светло-коричневый или серый – это отличительные
+								цвета
+								французской области Прованс.</p>
+							<p>Красный цвет в дизайне, напоминает маки, желтый – горячее солнце, синий – теплое
+								море,
+								зеленый – бескрайние ливады, лиловый – лавандовые поля и южный закат.</p>
+							<p>В стиле Кантри используется множество цветов и оттенков. В основном это теплые,
+								пастельные тона с добавлением густых и сочных красок.</p>
+						</div>
+						<div class="news-article__small-image">
+							<a href="img/picturemap-3.jpg" data-fancybox="news-article"><img src="img/picturemap-3.png"
+									alt=""></a>
+							<div class="news-article__small-text">
+								<p>
+									Для стиля Прованс характерны пастельные нюансы с яркими цветными акцентами. Если Вы
+									не являетесь почитателями белых стен, то можете выбрать пастельные оттенки зеленого,
+									синего или терракотового.
+								</p>
+								<p> В любом случае, цвета должны выглядеть так, как будто их разбавили белой краской.
+									Так
+									как этот стиль предусматривает, чтобы яркая мебель была на фоне бледных стен.</p>
+								<p> Стиль Прованс – это натуральные природные цвета и подходящие им сочные акценты.
+									Белый,
+									терракотовый, бежевый, песочный, светло-коричневый или серый – это отличительные
+									цвета
+									французской области Прованс.</p>
+							</div>
+						</div>
+						<div class="news-article__text-content">
+							<p> Красный цвет в дизайне, напоминает маки, желтый – горячее солнце, синий – теплое море,
+								зеленый – бескрайние ливады, лиловый – лавандовые поля и южный закат.</p>
+							<p> В стиле Кантри используется множество цветов и оттенков. В основном это теплые,
+								пастельные тона с добавлением густых и сочных красок. Для стиля Прованс характерны
+								пастельные нюансы с яркими цветными акцентами. Если Вы не являетесь почитателями белых
+								стен, то можете выбрать пастельные оттенки зеленого, синего или терракотового.</p>
+						</div>
+						<div class="news-article__quote">
+							<div class="news-article__top">
+								<div class="news-article__design">
+									<div class="news-article__design-img">
+										<img src="img/design.png" alt="">
+									</div>
+									<div class="news-article__caption">
+										Константин Торшин
+										<p>Дизайнер Mr.Doors</p>
+									</div>
+									<!-- /.news-article__caption -->
+									<div class="news-article__tagline">В настоящее время спектр мебели Mr.Doors
+										невероятно широк.</div>
+								</div>
+								<!-- /.news-article__design -->
+								<div class="news-article__text">
+									<p>Широкий ассортимент материалов и комплектующих позволяет создавать мебель во все
+										жилые зоны – кухни, прихожие, детские, гостиные, гардеробные, спальни, кабинеты.
+										Варианты мебельных композиций и интерьерных решений можно увидеть в разделе
+										«Каталог».
+									</p>
+									<p>
+										Mr.Doors предлагает своим покупателям полный комплекс услуг – консультации по
+										выбору
+										материалов, замер помещения, проектирование и изготовление, доставку и установку
+										мебели.
+									</p>
+								</div>
+								<!-- /.news-article__text -->
+							</div>
+							<!-- /.news-article__top -->
+							<div class="news-article__items-slider-wrapper news-catalog__slider">
+								<h2>На что бы я посоветовал обратить внимание своей аудитории</h2>
+								<div class="products result four new-four lists">
+									<div
+										class="swiper-container products__block news-article__carousel container container- ">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<div itemscope="" itemtype="http://schema.org/Product"
+													class="products__block-product product col-3 result-block js_pogon_metr	"
+													data-item_id="9834" data-item_price="7200" data-item_metrs="">
+													<div class="swiper-container gallery-topp two-container">
+														<div class="swiper-wrapper">
+															<div class="swiper-slide">
+																<a href="#"> <img src="img/mob/0108339_PE258085_S5.JPG"
+																		alt=""></a>
+															</div>
+															<div class="swiper-slide"><img
+																	src="img/mob/0108339_PE258085_S5.JPG" alt=""></div>
+															<div class="swiper-slide"><img
+																	src="img/mob/0108339_PE258085_S5.JPG" alt=""></div>
+															<div class="swiper-slide"><img
+																	src="img/mob/0108339_PE258085_S5.JPG" alt=""></div>
+															<div class="swiper-slide"><img
+																	src="img/mob/0108339_PE258085_S5.JPG" alt=""></div>
+														</div>
+														<!-- Add Pagination -->
+														<div class="swiper-pagination hover"></div>
+													</div>
+													<div class="product__wrapper">
+														<a
+															href="/catalog/kitchens/kukhni/107-shkaf-pod-bytovuyu-tekhniku-layn-5/">
+															<div class="product-title">Угловой диван-кровать</div>
+															<div class="product-name" itemprop="name">Шкаф под бытовую
+																технику Лайн 5</div>
+															<span style="display:none" itemprop="description">Шкаф под
+																бытовую технику Лайн
+																5</span>
+														</a>
+														<div class="product-price">
+															17&nbsp;280&nbsp;
+															<span>руб.</span>
+															<div class="scid">-70%</div>
+															<div class="atrebut">
+																<div class="shouwroom">SHOW Room</div>
+																<div class="hit">ХИТ!</div>
+															</div>
+														</div>
+														<div class="options column">
+															<div class="options-l">
+																<div class="placeh">Жесткость</div>
+																<div class="options-val">ниже средней</div>
+															</div>
+															<div class="options-l">
+																<div class="placeh">Макс. вес</div>
+																<div class="options-val">до 163 кг</div>
+															</div>
+															<div class="options-l">
+																<div class="placeh">Высота</div>
+																<div class="options-val">92 см</div>
+															</div>
+														</div>
+														<div class="catalog-brand">
+															<div class="catalog-brand__title">
+																Бренд
+															</div>
+															<!-- /.catalog-brand__title -->
+															<div class="catalog-brand__logo">
+																<a href="brand.html" class="catalog-brand__link">
+																	Аскона
+																</a>
+																<!-- /.catalog-brand__link -->
+															</div>
+															<!-- /.catalog-brand__logo -->
+														</div>
+														<!-- /.catalog-brand -->
+														<div class="contacts">
+															<div class="contacts-title">
+																Продавец:
+																Интернет-магазин мебели
+															</div>
+															<a class="contacts-name"
+																href="/salons/pervyy-gipermarket-mebeli/#map">Первый
+																гипермаркет
+																мебели</a>
+														</div>
+														<div class="category-more">
+															<div class="stars">
+																<div class="stars-star">
+																	<img src="img/svg/star.svg" alt=""> <img
+																		src="img/svg/star.svg" alt="">
+																	<img src="img/svg/star.svg" alt=""> <img
+																		src="img/svg/star.svg" alt="">
+																	<img src="img/svg/star.svg" alt="">
+																</div>
+																<div class="stars-review"><a href="#">1257 отзывов</a>
+																</div>
+															</div>
+														</div>
+														<div class="flex link-blocks">
+															<div class="salon-but-a">
+																<div class="img"><img src="img/svg/icons/vitrina.svg"
+																		alt=""></div>
+																<div class="text">На витрине в <a href="#">12
+																		салонах</a>
+																</div>
+															</div>
+															<a href="#" class="in-market new-market red btn">В
+																магазин</a>
+															<!--<a href="#">Перейти в магазин</a>-->
+														</div>
+														<div class="new-four__bottom">
+															<a href="#" class="product-details">Подробнее о товаре</a>
+															<div class="more_">
+																<a href="#" class="compar"><img
+																		src="img/svg/icons/compar.svg" alt=""></a>
+																<a href="#" class="likesa" data-action="add"><img
+																		src="img/svg/icons/favorite1.svg" alt=""></a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div itemscope="" itemtype="http://schema.org/Product" class="products__block-product product col-3 result-block
+											js_pogon_metr					" data-item_id="37523" data-item_price="1023" data-item_metrs="">
+													<a
+														href="/catalog/kitchens/recycle-bin/113-kukhnya-deli-vitrina-300-yasen-shimo-svetlyy-v-nalichii/">
+														<div class="swiper-container gallery-topp two-container">
+															<div class="swiper-wrapper">
+																<div class="swiper-slide"><a href="#"> <img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt=""></a>
+																</div>
+																<div class="swiper-slide"><a href="#"> <img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt=""></a>
+																</div>
+																<div class="swiper-slide"><a href="#"> <img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt=""></a>
+																</div>
+																<div class="swiper-slide"><a href="#"> <img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt=""></a>
+																</div>
+																<div class="swiper-slide"><a href="#"> <img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt=""></a>
+																</div>
+															</div>
+															<!-- Add Pagination -->
+															<div class="swiper-pagination hover"></div>
+														</div>
+													</a>
+													<div class="product__wrapper">
+														<a
+															href="/catalog/kitchens/recycle-bin/113-kukhnya-deli-vitrina-300-yasen-shimo-svetlyy-v-nalichii/">
+															<div class="product-title">Угловой диван-кровать</div>
+															<div class="product-name" itemprop="name">Кухня Дели Витрина
+																300, ясень шимо
+																светлый, в наличии</div>
+															<span style="display:none" itemprop="description">Кухня Дели
+																Витрина 300, ясень
+																шимо светлый, в
+																наличии</span>
+														</a>
+														<div class="product-price">176 990 <span>руб.</span>
+															<div class="scid">-70%</div>
+															<div class="atrebut">
+																<div class="shouwroom">SHOW Room</div>
+																<div class="hit">ХИТ!</div>
+															</div>
+														</div>
+														<div class="options">
+															<div class="options-l">
+																<div class="placeh">Длина</div>
+																<div class="options-val">247 см</div>
+																<div class="delet"><img src="img/svg/x.svg" alt="">
+																</div>
+															</div>
+															<div class="options-l">
+																<div class="placeh">Ширина</div>
+																<div class="options-val">163 см</div>
+																<div class="delet"><img src="img/svg/x.svg" alt="">
+																</div>
+															</div>
+															<div class="options-l">
+																<div class="placeh">Высота</div>
+																<div class="options-val">92 см</div>
+																<div class="delet"><img src="img/svg/x.svg" alt="">
+																</div>
+															</div>
+														</div>
+														<div class="catalog-brand">
+															<div class="catalog-brand__title">
+																Бренд
+															</div>
+															<!-- /.catalog-brand__title -->
+															<div class="catalog-brand__logo">
+																<a href="brand.html">
+																	<img src="img/logo-as.png" alt="Аскона"
+																		class="catalog-brand__img">
+																</a>
+																<!-- /.catalog-brand__img -->
+															</div>
+															<!-- /.catalog-brand__logo -->
+														</div>
+														<!-- /.catalog-brand -->
+														<div class="contacts">
+															<div class="contacts-title">
+																Продавец:
+																Интернет-магазин мебели
+															</div>
+															<a class="contacts-name"
+																href="/salons/pervyy-gipermarket-mebeli/#map">Первый
+																гипермаркет
+																мебели</a>
+														</div>
+														<div class="category-more">
+															<div class="stars">
+																<div class="stars-star">
+																	<img src="img/svg/star.svg" alt=""> <img
+																		src="img/svg/star.svg" alt="">
+																	<img src="img/svg/star.svg" alt=""> <img
+																		src="img/svg/star.svg" alt="">
+																	<img src="img/svg/star.svg" alt="">
+																</div>
+																<div class="stars-review"><a href="#">1257 отзывов</a>
+																</div>
+															</div>
+														</div>
+														<div class="flex link-blocks">
+															<div class="salon-but-a">
+																<div class="img"><img src="img/svg/icons/vitrina.svg"
+																		alt=""></div>
+																<div class="text">На витрине в <a href="#">12
+																		салонах</a>
+																</div>
+															</div>
+															<a href="#" class="in-market new-market red btn">В
+																магазин</a>
+														</div>
+														<div class="new-four__bottom">
+															<a href="#" class="product-details">Подробнее о товаре</a>
+															<div class="more_">
+																<a href="#" class="compar"><img
+																		src="img/svg/icons/compar.svg" alt=""></a>
+																<a href="#" class="likesa"><img
+																		src="img/svg/icons/favorite.svg" alt=""></a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="products__block-product product col-3 result-block">
+													<a href="">
+														<div class="swiper-container gallery-topp two-container">
+															<div class="swiper-wrapper">
+																<div class="swiper-slide"><a href="#"> <img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt=""></a>
+																</div>
+																<div class="swiper-slide"><a href="#"> <img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt=""></a>
+																</div>
+																<div class="swiper-slide"><a href="#"> <img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt=""></a>
+																</div>
+																<div class="swiper-slide"><a href="#"> <img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt=""></a>
+																</div>
+																<div class="swiper-slide"><a href="#"> <img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt=""></a>
+																</div>
+															</div>
+															<!-- Add Pagination -->
+															<div class="swiper-pagination hover"></div>
+														</div>
+													</a>
+													<div class="product__wrapper">
+														<div class="product-title">Угловой диван-кровать</div>
+														<div class="product-name">Манхэттен</div>
+														<div class="product-price">176 990 <span>руб.</span>
+															<div class="scid">-70%</div>
+															<div class="atrebut">
+																<div class="shouwroom">SHOW Room</div>
+																<div class="hit">ХИТ!</div>
+															</div>
+														</div>
+														<div class="options column">
+															<div class="options-l">
+																<div class="placeh">Жесткость</div>
+																<div class="options-val">ниже средней</div>
+															</div>
+															<div class="options-l">
+																<div class="placeh">Макс. вес</div>
+																<div class="options-val">до 163 кг</div>
+															</div>
+															<div class="options-l">
+																<div class="placeh">Высота</div>
+																<div class="options-val">92 см</div>
+															</div>
+														</div>
+														<div class="catalog-brand">
+															<div class="catalog-brand__title">
+																Бренд
+															</div>
+															<!-- /.catalog-brand__title -->
+															<div class="catalog-brand__logo">
+																<a href="brand.html">
+																	<img src="img/logo-as.png" alt="Аскона"
+																		class="catalog-brand__img">
+																</a>
+																<!-- /.catalog-brand__img -->
+															</div>
+															<!-- /.catalog-brand__logo -->
+														</div>
+														<!-- /.catalog-brand -->
+														<div class="contacts">
+															<div class="contacts-title">
+																Продавец:
+																Интернет-магазин мебели
+															</div>
+															<a class="contacts-name"
+																href="/salons/pervyy-gipermarket-mebeli/#map">Первый
+																гипермаркет
+																мебели</a>
+														</div>
+														<div class="category-more">
+															<div class="stars">
+																<div class="stars-star">
+																	<img src="img/svg/star.svg" alt=""> <img
+																		src="img/svg/star.svg" alt="">
+																	<img src="img/svg/star.svg" alt=""> <img
+																		src="img/svg/star.svg" alt="">
+																	<img src="img/svg/star.svg" alt="">
+																</div>
+																<div class="stars-review"><a href="#">1257 отзывов</a>
+																</div>
+															</div>
+														</div>
+														<div class="flex link-blocks">
+															<div class="salon-but-a">
+																<div class="img"><img src="img/svg/icons/vitrina.svg"
+																		alt=""></div>
+																<div class="text">На витрине в <a href="#">12
+																		салонах</a>
+																</div>
+															</div>
+															<a href="#" class="in-market new-market red btn">В
+																магазин</a>
+														</div>
+														<div class="new-four__bottom">
+															<a href="#" class="product-details">Подробнее о товаре</a>
+															<div class="more_">
+																<a href="#" class="compar"><img
+																		src="img/svg/icons/compar.svg" alt=""></a>
+																<a href="#" class="likesa"><img
+																		src="img/svg/icons/favorite.svg" alt=""></a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div itemscope="" itemtype="http://schema.org/Product"
+													class="products__block-product product col-3 result-block js_pogon_metr	"
+													data-item_id="9834" data-item_price="7200" data-item_metrs="">
+													<div class="swiper-container gallery-topp two-container">
+														<div class="swiper-wrapper">
+															<div class="swiper-slide">
+																<a href="#"> <img src="img/mob/0108339_PE258085_S5.JPG"
+																		alt=""></a>
+															</div>
+															<div class="swiper-slide"><img
+																	src="img/mob/0108339_PE258085_S5.JPG" alt=""></div>
+															<div class="swiper-slide"><img
+																	src="img/mob/0108339_PE258085_S5.JPG" alt=""></div>
+															<div class="swiper-slide"><img
+																	src="img/mob/0108339_PE258085_S5.JPG" alt=""></div>
+															<div class="swiper-slide"><img
+																	src="img/mob/0108339_PE258085_S5.JPG" alt=""></div>
+														</div>
+														<!-- Add Pagination -->
+														<div class="swiper-pagination hover"></div>
+													</div>
+													<div class="product__wrapper">
+														<a
+															href="/catalog/kitchens/kukhni/107-shkaf-pod-bytovuyu-tekhniku-layn-5/">
+															<div class="product-title">Угловой диван-кровать</div>
+															<div class="product-name" itemprop="name">Шкаф под бытовую
+																технику Лайн 5</div>
+															<span style="display:none" itemprop="description">Шкаф под
+																бытовую технику Лайн
+																5</span>
+														</a>
+														<div class="product-price">
+															17&nbsp;280&nbsp;
+															<span>руб.</span>
+															<div class="scid">-70%</div>
+															<div class="atrebut">
+																<div class="shouwroom">SHOW Room</div>
+																<div class="hit">ХИТ!</div>
+															</div>
+														</div>
+														<div class="options column">
+															<div class="options-l">
+																<div class="placeh">Жесткость</div>
+																<div class="options-val">ниже средней</div>
+															</div>
+															<div class="options-l">
+																<div class="placeh">Макс. вес</div>
+																<div class="options-val">до 163 кг</div>
+															</div>
+															<div class="options-l">
+																<div class="placeh">Высота</div>
+																<div class="options-val">92 см</div>
+															</div>
+														</div>
+														<div class="catalog-brand">
+															<div class="catalog-brand__title">
+																Бренд
+															</div>
+															<!-- /.catalog-brand__title -->
+															<div class="catalog-brand__logo">
+																<a href="brand.html" class="catalog-brand__link">
+																	Аскона
+																</a>
+																<!-- /.catalog-brand__link -->
+															</div>
+															<!-- /.catalog-brand__logo -->
+														</div>
+														<!-- /.catalog-brand -->
+														<div class="contacts">
+															<div class="contacts-title">
+																Продавец:
+																Интернет-магазин мебели
+															</div>
+															<a class="contacts-name"
+																href="/salons/pervyy-gipermarket-mebeli/#map">Первый
+																гипермаркет
+																мебели</a>
+														</div>
+														<div class="category-more">
+															<div class="stars">
+																<div class="stars-star">
+																	<img src="img/svg/star.svg" alt=""> <img
+																		src="img/svg/star.svg" alt="">
+																	<img src="img/svg/star.svg" alt=""> <img
+																		src="img/svg/star.svg" alt="">
+																	<img src="img/svg/star.svg" alt="">
+																</div>
+																<div class="stars-review"><a href="#">1257 отзывов</a>
+																</div>
+															</div>
+														</div>
+														<div class="flex link-blocks">
+															<div class="salon-but-a">
+																<div class="img"><img src="img/svg/icons/vitrina.svg"
+																		alt=""></div>
+																<div class="text">На витрине в <a href="#">12
+																		салонах</a>
+																</div>
+															</div>
+															<a href="#" class="in-market new-market red btn">В
+																магазин</a>
+															<!--<a href="#">Перейти в магазин</a>-->
+														</div>
+														<div class="new-four__bottom">
+															<a href="#" class="product-details">Подробнее о товаре</a>
+															<div class="more_">
+																<a href="#" class="compar"><img
+																		src="img/svg/icons/compar.svg" alt=""></a>
+																<a href="#" class="likesa" data-action="add"><img
+																		src="img/svg/icons/favorite1.svg" alt=""></a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div itemscope="" itemtype="http://schema.org/Product" class="products__block-product product col-3 result-block
+											js_pogon_metr					" data-item_id="37523" data-item_price="1023" data-item_metrs="">
+													<a
+														href="/catalog/kitchens/recycle-bin/113-kukhnya-deli-vitrina-300-yasen-shimo-svetlyy-v-nalichii/">
+														<div class="swiper-container gallery-topp two-container">
+															<div class="swiper-wrapper">
+																<div class="swiper-slide"><a href="#"> <img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt=""></a>
+																</div>
+																<div class="swiper-slide"><a href="#"> <img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt=""></a>
+																</div>
+																<div class="swiper-slide"><a href="#"> <img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt=""></a>
+																</div>
+																<div class="swiper-slide"><a href="#"> <img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt=""></a>
+																</div>
+																<div class="swiper-slide"><a href="#"> <img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt=""></a>
+																</div>
+															</div>
+															<!-- Add Pagination -->
+															<div class="swiper-pagination hover"></div>
+														</div>
+													</a>
+													<div class="product__wrapper">
+														<a
+															href="/catalog/kitchens/recycle-bin/113-kukhnya-deli-vitrina-300-yasen-shimo-svetlyy-v-nalichii/">
+															<div class="product-title">Угловой диван-кровать</div>
+															<div class="product-name" itemprop="name">Кухня Дели Витрина
+																300, ясень шимо
+																светлый, в наличии</div>
+															<span style="display:none" itemprop="description">Кухня Дели
+																Витрина 300, ясень
+																шимо светлый, в
+																наличии</span>
+														</a>
+														<div class="product-price">176 990 <span>руб.</span>
+															<div class="scid">-70%</div>
+															<div class="atrebut">
+																<div class="shouwroom">SHOW Room</div>
+																<div class="hit">ХИТ!</div>
+															</div>
+														</div>
+														<div class="options">
+															<div class="options-l">
+																<div class="placeh">Длина</div>
+																<div class="options-val">247 см</div>
+																<div class="delet"><img src="img/svg/x.svg" alt="">
+																</div>
+															</div>
+															<div class="options-l">
+																<div class="placeh">Ширина</div>
+																<div class="options-val">163 см</div>
+																<div class="delet"><img src="img/svg/x.svg" alt="">
+																</div>
+															</div>
+															<div class="options-l">
+																<div class="placeh">Высота</div>
+																<div class="options-val">92 см</div>
+																<div class="delet"><img src="img/svg/x.svg" alt="">
+																</div>
+															</div>
+														</div>
+														<div class="catalog-brand">
+															<div class="catalog-brand__title">
+																Бренд
+															</div>
+															<!-- /.catalog-brand__title -->
+															<div class="catalog-brand__logo">
+																<a href="brand.html">
+																	<img src="img/logo-as.png" alt="Аскона"
+																		class="catalog-brand__img">
+																</a>
+																<!-- /.catalog-brand__img -->
+															</div>
+															<!-- /.catalog-brand__logo -->
+														</div>
+														<!-- /.catalog-brand -->
+														<div class="contacts">
+															<div class="contacts-title">
+																Продавец:
+																Интернет-магазин мебели
+															</div>
+															<a class="contacts-name"
+																href="/salons/pervyy-gipermarket-mebeli/#map">Первый
+																гипермаркет
+																мебели</a>
+														</div>
+														<div class="category-more">
+															<div class="stars">
+																<div class="stars-star">
+																	<img src="img/svg/star.svg" alt=""> <img
+																		src="img/svg/star.svg" alt="">
+																	<img src="img/svg/star.svg" alt=""> <img
+																		src="img/svg/star.svg" alt="">
+																	<img src="img/svg/star.svg" alt="">
+																</div>
+																<div class="stars-review"><a href="#">1257 отзывов</a>
+																</div>
+															</div>
+														</div>
+														<div class="flex link-blocks">
+															<div class="salon-but-a">
+																<div class="img"><img src="img/svg/icons/vitrina.svg"
+																		alt=""></div>
+																<div class="text">На витрине в <a href="#">12
+																		салонах</a>
+																</div>
+															</div>
+															<a href="#" class="in-market new-market red btn">В
+																магазин</a>
+														</div>
+														<div class="new-four__bottom">
+															<a href="#" class="product-details">Подробнее о товаре</a>
+															<div class="more_">
+																<a href="#" class="compar"><img
+																		src="img/svg/icons/compar.svg" alt=""></a>
+																<a href="#" class="likesa"><img
+																		src="img/svg/icons/favorite.svg" alt=""></a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="products__block-product product col-3 result-block">
+													<a href="">
+														<div class="swiper-container gallery-topp two-container">
+															<div class="swiper-wrapper">
+																<div class="swiper-slide"><a href="#"> <img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt=""></a>
+																</div>
+																<div class="swiper-slide"><a href="#"> <img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt=""></a>
+																</div>
+																<div class="swiper-slide"><a href="#"> <img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt=""></a>
+																</div>
+																<div class="swiper-slide"><a href="#"> <img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt=""></a>
+																</div>
+																<div class="swiper-slide"><a href="#"> <img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt=""></a>
+																</div>
+															</div>
+															<!-- Add Pagination -->
+															<div class="swiper-pagination hover"></div>
+														</div>
+													</a>
+													<div class="product__wrapper">
+														<div class="product-title">Угловой диван-кровать</div>
+														<div class="product-name">Манхэттен</div>
+														<div class="product-price">176 990 <span>руб.</span>
+															<div class="scid">-70%</div>
+															<div class="atrebut">
+																<div class="shouwroom">SHOW Room</div>
+																<div class="hit">ХИТ!</div>
+															</div>
+														</div>
+														<div class="options column">
+															<div class="options-l">
+																<div class="placeh">Жесткость</div>
+																<div class="options-val">ниже средней</div>
+															</div>
+															<div class="options-l">
+																<div class="placeh">Макс. вес</div>
+																<div class="options-val">до 163 кг</div>
+															</div>
+															<div class="options-l">
+																<div class="placeh">Высота</div>
+																<div class="options-val">92 см</div>
+															</div>
+														</div>
+														<div class="catalog-brand">
+															<div class="catalog-brand__title">
+																Бренд
+															</div>
+															<!-- /.catalog-brand__title -->
+															<div class="catalog-brand__logo">
+																<a href="brand.html">
+																	<img src="img/logo-as.png" alt="Аскона"
+																		class="catalog-brand__img">
+																</a>
+																<!-- /.catalog-brand__img -->
+															</div>
+															<!-- /.catalog-brand__logo -->
+														</div>
+														<!-- /.catalog-brand -->
+														<div class="contacts">
+															<div class="contacts-title">
+																Продавец:
+																Интернет-магазин мебели
+															</div>
+															<a class="contacts-name"
+																href="/salons/pervyy-gipermarket-mebeli/#map">Первый
+																гипермаркет
+																мебели</a>
+														</div>
+														<div class="category-more">
+															<div class="stars">
+																<div class="stars-star">
+																	<img src="img/svg/star.svg" alt=""> <img
+																		src="img/svg/star.svg" alt="">
+																	<img src="img/svg/star.svg" alt=""> <img
+																		src="img/svg/star.svg" alt="">
+																	<img src="img/svg/star.svg" alt="">
+																</div>
+																<div class="stars-review"><a href="#">1257 отзывов</a>
+																</div>
+															</div>
+														</div>
+														<div class="flex link-blocks">
+															<div class="salon-but-a">
+																<div class="img"><img src="img/svg/icons/vitrina.svg"
+																		alt=""></div>
+																<div class="text">На витрине в <a href="#">12
+																		салонах</a>
+																</div>
+															</div>
+															<a href="#" class="in-market new-market red btn">В
+																магазин</a>
+														</div>
+														<div class="new-four__bottom">
+															<a href="#" class="product-details">Подробнее о товаре</a>
+															<div class="more_">
+																<a href="#" class="compar"><img
+																		src="img/svg/icons/compar.svg" alt=""></a>
+																<a href="#" class="likesa"><img
+																		src="img/svg/icons/favorite.svg" alt=""></a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- If we need navigation buttons -->
+										<div class="swiper-button-prev"></div>
+										<div class="swiper-button-next"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /.news-article__quote -->
+						<div class="news-article__text-content news-article__materials">
+							<h2>Кухни в стиле Прованс</h2>
+							<p> В любом случае, цвета должны выглядеть так, как будто их разбавили белой краской. Так
+								как этот стиль предусматривает, чтобы яркая мебель была на фоне бледных стен.</p>
+							<p> Стиль Прованс – это натуральные природные цвета и подходящие им сочные акценты. Белый,
+								терракотовый, бежевый, песочный, светло-коричневый или серый – это отличительные цвета
+								французской области Прованс.</p>
+							<p>Красный цвет в дизайне, напоминает маки, желтый – горячее солнце, синий – теплое море,
+								зеленый – бескрайние ливады, лиловый – лавандовые поля и южный закат.</p>
+							<p> В стиле Кантри используется множество цветов и оттенков. В основном это теплые,
+								пастельные тона с добавлением густых и сочных красок.</p>
+						</div>
+						<div class="news-gallery news-gallery__small">
+							<div class="news-gallery__button">
+								<div class="news-gallery__close"></div>
+								<!-- /.news-gallery__close -->
+								<span>
+									Нажмите на иконку для просмотра информации об используемом товаре.
+								</span>
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-button-next"></div>
+								<!-- <progress value="0" max="100" class="news-gallery__loader"></progress> -->
+								<!-- /.news-gallery__loader -->
+								<div class="progress animation"></div>
+							</div>
+							<!-- /.news-gallery__button -->
+							<div class="news-gallery__list products result four new-four lists">
+								<div class="news-gallery__pic">
+									<img src="img/news-gallery-2.png" alt="">
+								</div>
+								<!-- /.news-gallery__pic -->
+								<div class="swiper-container news-gallery__container products__block">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide absolute" style="left: 35%;top: 38%">
+											<div class="news-gallery__item ">
+												<div class="news-gallery__point"></div>
+												<!-- /.news-gallery__point -->
+												<div class="news-gallery__card  tooltip-left">
+													<div class="products__block-product product col-3 result-block">
+														<a href="">
+															<div class="swiper-container gallery-topp two-container">
+																<div class="swiper-wrapper">
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																</div>
+																<!-- Add Pagination -->
+																<div class="swiper-pagination hover"></div>
+															</div>
+														</a>
+														<div class="product__wrapper">
+															<div class="product-title">Угловой диван-кровать</div>
+															<div class="product-name">Манхэттен</div>
+															<div class="product-price">176 990 <span>руб.</span>
+																<div class="scid">-70%</div>
+																<div class="atrebut">
+																	<div class="shouwroom">SHOW Room</div>
+																	<div class="hit">ХИТ!</div>
+																</div>
+															</div>
+															<div class="options fdc">
+																<div class="options-l">
+																	<div class="placeh">Высота спального места</div>
+																	<div class="options-val">92 sm</div>
+																</div>
+																<div class="options-l">
+																	<div class="placeh">Вес на 1 спальное место</div>
+																	<div class="options-val">163 кг</div>
+																</div>
+																<div class="options-l">
+																	<div class="placeh">Бельевой ящик</div>
+																	<div class="options-val">да</div>
+																</div>
+															</div>
+															<div class="catalog-brand">
+																<div class="catalog-brand__title">
+																	Бренд
+																</div>
+																<!-- /.catalog-brand__title -->
+																<div class="catalog-brand__logo">
+																	<a href="brand.html">
+																		<img src="img/logo-as.png" alt="Аскона"
+																			class="catalog-brand__img">
+																	</a>
+																	<!-- /.catalog-brand__img -->
+																</div>
+																<!-- /.catalog-brand__logo -->
+															</div>
+															<!-- /.catalog-brand -->
+															<div class="contacts">
+																<div class="contacts-title">
+																	Продавец:
+																	Интернет-магазин мебели
+																</div>
+																<a class="contacts-name"
+																	href="/salons/pervyy-gipermarket-mebeli/#map">Первый
+																	гипермаркет
+																	мебели</a>
+															</div>
+															<div class="category-more">
+																<div class="stars">
+																	<div class="stars-star">
+																		<img src="img/svg/star.svg" alt=""> <img
+																			src="img/svg/star.svg" alt="">
+																		<img src="img/svg/star.svg" alt=""> <img
+																			src="img/svg/star.svg" alt="">
+																		<img src="img/svg/star.svg" alt="">
+																	</div>
+																	<div class="stars-review"><a href="#">1257
+																			отзывов</a></div>
+																</div>
+															</div>
+															<div class="flex link-blocks">
+																<div class="salon-but-a">
+																	<div class="img"><img
+																			src="img/svg/icons/vitrina.svg" alt="">
+																	</div>
+																	<div class="text">На витрине в <a href="#">12
+																			салонах</a></div>
+																</div>
+																<a href="#" class="in-market new-market red btn">В
+																	магазин</a>
+															</div>
+															<div class="new-four__bottom">
+																<a href="#" class="product-details">Подробнее о
+																	товаре</a>
+																<div class="more_">
+																	<a href="#" class="compar"><img
+																			src="img/svg/icons/compar.svg" alt=""></a>
+																	<a href="#" class="likesa"><img
+																			src="img/svg/icons/favorite.svg" alt=""></a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!-- /.news-gallery__card -->
+											</div>
+											<!-- /.news-gallery__item -->
+										</div>
+										<!-- /.swiper-slide -->
+										<div class="swiper-slide absolute" style="left: 78%;top: 57%">
+											<div class="news-gallery__item ">
+												<div class="news-gallery__point"></div>
+												<!-- /.news-gallery__point -->
+												<div class="news-gallery__card  tooltip-right">
+													<div class="products__block-product product col-3 result-block">
+														<a href="">
+															<div class="swiper-container gallery-topp two-container">
+																<div class="swiper-wrapper">
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																</div>
+																<!-- Add Pagination -->
+																<div class="swiper-pagination hover"></div>
+															</div>
+														</a>
+														<div class="product__wrapper">
+															<div class="product-title">Угловой диван-кровать</div>
+															<div class="product-name">Манхэттен</div>
+															<div class="product-price">176 990 <span>руб.</span>
+																<div class="scid">-70%</div>
+																<div class="atrebut">
+																	<div class="shouwroom">SHOW Room</div>
+																	<div class="hit">ХИТ!</div>
+																</div>
+															</div>
+															<div class="options fdc">
+																<div class="options-l">
+																	<div class="placeh">Высота спального места</div>
+																	<div class="options-val">92 sm</div>
+																</div>
+																<div class="options-l">
+																	<div class="placeh">Вес на 1 спальное место</div>
+																	<div class="options-val">163 кг</div>
+																</div>
+																<div class="options-l">
+																	<div class="placeh">Бельевой ящик</div>
+																	<div class="options-val">да</div>
+																</div>
+															</div>
+															<div class="catalog-brand">
+																<div class="catalog-brand__title">
+																	Бренд
+																</div>
+																<!-- /.catalog-brand__title -->
+																<div class="catalog-brand__logo">
+																	<a href="brand.html">
+																		<img src="img/logo-as.png" alt="Аскона"
+																			class="catalog-brand__img">
+																	</a>
+																	<!-- /.catalog-brand__img -->
+																</div>
+																<!-- /.catalog-brand__logo -->
+															</div>
+															<!-- /.catalog-brand -->
+															<div class="contacts">
+																<div class="contacts-title">
+																	Продавец:
+																	Интернет-магазин мебели
+																</div>
+																<a class="contacts-name"
+																	href="/salons/pervyy-gipermarket-mebeli/#map">Первый
+																	гипермаркет
+																	мебели</a>
+															</div>
+															<div class="category-more">
+																<div class="stars">
+																	<div class="stars-star">
+																		<img src="img/svg/star.svg" alt=""> <img
+																			src="img/svg/star.svg" alt="">
+																		<img src="img/svg/star.svg" alt=""> <img
+																			src="img/svg/star.svg" alt="">
+																		<img src="img/svg/star.svg" alt="">
+																	</div>
+																	<div class="stars-review"><a href="#">1257
+																			отзывов</a></div>
+																</div>
+															</div>
+															<div class="flex link-blocks">
+																<div class="salon-but-a">
+																	<div class="img"><img
+																			src="img/svg/icons/vitrina.svg" alt="">
+																	</div>
+																	<div class="text">На витрине в <a href="#">12
+																			салонах</a></div>
+																</div>
+																<a href="#" class="in-market new-market red btn">В
+																	магазин</a>
+															</div>
+															<div class="new-four__bottom">
+																<a href="#" class="product-details">Подробнее о
+																	товаре</a>
+																<div class="more_">
+																	<a href="#" class="compar"><img
+																			src="img/svg/icons/compar.svg" alt=""></a>
+																	<a href="#" class="likesa"><img
+																			src="img/svg/icons/favorite.svg" alt=""></a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!-- /.news-gallery__card -->
+											</div>
+											<!-- /.news-gallery__item -->
+										</div>
+										<!-- /.swiper-slide -->
+										<div class="swiper-slide absolute" style="left: 23%;top: 67%">
+											<div class="news-gallery__item ">
+												<div class="news-gallery__point"></div>
+												<!-- /.news-gallery__point -->
+												<div class="news-gallery__card  tooltip-left">
+													<div class="products__block-product product col-3 result-block">
+														<a href="">
+															<div class="swiper-container gallery-topp two-container">
+																<div class="swiper-wrapper">
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																</div>
+																<!-- Add Pagination -->
+																<div class="swiper-pagination hover"></div>
+															</div>
+														</a>
+														<div class="product__wrapper">
+															<div class="product-title">Угловой диван-кровать</div>
+															<div class="product-name">Манхэттен</div>
+															<div class="product-price">176 990 <span>руб.</span>
+																<div class="scid">-70%</div>
+																<div class="atrebut">
+																	<div class="shouwroom">SHOW Room</div>
+																	<div class="hit">ХИТ!</div>
+																</div>
+															</div>
+															<div class="options fdc">
+																<div class="options-l">
+																	<div class="placeh">Высота спального места</div>
+																	<div class="options-val">92 sm</div>
+																</div>
+																<div class="options-l">
+																	<div class="placeh">Вес на 1 спальное место</div>
+																	<div class="options-val">163 кг</div>
+																</div>
+																<div class="options-l">
+																	<div class="placeh">Бельевой ящик</div>
+																	<div class="options-val">да</div>
+																</div>
+															</div>
+															<div class="catalog-brand">
+																<div class="catalog-brand__title">
+																	Бренд
+																</div>
+																<!-- /.catalog-brand__title -->
+																<div class="catalog-brand__logo">
+																	<a href="brand.html">
+																		<img src="img/logo-as.png" alt="Аскона"
+																			class="catalog-brand__img">
+																	</a>
+																	<!-- /.catalog-brand__img -->
+																</div>
+																<!-- /.catalog-brand__logo -->
+															</div>
+															<!-- /.catalog-brand -->
+															<div class="contacts">
+																<div class="contacts-title">
+																	Продавец:
+																	Интернет-магазин мебели
+																</div>
+																<a class="contacts-name"
+																	href="/salons/pervyy-gipermarket-mebeli/#map">Первый
+																	гипермаркет
+																	мебели</a>
+															</div>
+															<div class="category-more">
+																<div class="stars">
+																	<div class="stars-star">
+																		<img src="img/svg/star.svg" alt=""> <img
+																			src="img/svg/star.svg" alt="">
+																		<img src="img/svg/star.svg" alt=""> <img
+																			src="img/svg/star.svg" alt="">
+																		<img src="img/svg/star.svg" alt="">
+																	</div>
+																	<div class="stars-review"><a href="#">1257
+																			отзывов</a></div>
+																</div>
+															</div>
+															<div class="flex link-blocks">
+																<div class="salon-but-a">
+																	<div class="img"><img
+																			src="img/svg/icons/vitrina.svg" alt="">
+																	</div>
+																	<div class="text">На витрине в <a href="#">12
+																			салонах</a></div>
+																</div>
+																<a href="#" class="in-market new-market red btn">В
+																	магазин</a>
+															</div>
+															<div class="new-four__bottom">
+																<a href="#" class="product-details">Подробнее о
+																	товаре</a>
+																<div class="more_">
+																	<a href="#" class="compar"><img
+																			src="img/svg/icons/compar.svg" alt=""></a>
+																	<a href="#" class="likesa"><img
+																			src="img/svg/icons/favorite.svg" alt=""></a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!-- /.news-gallery__card -->
+											</div>
+											<!-- /.news-gallery__item -->
+										</div>
+										<!-- /.swiper-slide -->
+										<div class="swiper-slide absolute" style="left: 87%;top:67%">
+											<div class="news-gallery__item ">
+												<div class="news-gallery__point"></div>
+												<!-- /.news-gallery__point -->
+												<div class="news-gallery__card  tooltip-right">
+													<div class="products__block-product product col-3 result-block">
+														<a href="">
+															<div class="swiper-container gallery-topp two-container">
+																<div class="swiper-wrapper">
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																</div>
+																<!-- Add Pagination -->
+																<div class="swiper-pagination hover"></div>
+															</div>
+														</a>
+														<div class="product__wrapper">
+															<div class="product-title">Угловой диван-кровать</div>
+															<div class="product-name">Манхэттен</div>
+															<div class="product-price">176 990 <span>руб.</span>
+																<div class="scid">-70%</div>
+																<div class="atrebut">
+																	<div class="shouwroom">SHOW Room</div>
+																	<div class="hit">ХИТ!</div>
+																</div>
+															</div>
+															<div class="options fdc">
+																<div class="options-l">
+																	<div class="placeh">Высота спального места</div>
+																	<div class="options-val">92 sm</div>
+																</div>
+																<div class="options-l">
+																	<div class="placeh">Вес на 1 спальное место</div>
+																	<div class="options-val">163 кг</div>
+																</div>
+																<div class="options-l">
+																	<div class="placeh">Бельевой ящик</div>
+																	<div class="options-val">да</div>
+																</div>
+															</div>
+															<div class="catalog-brand">
+																<div class="catalog-brand__title">
+																	Бренд
+																</div>
+																<!-- /.catalog-brand__title -->
+																<div class="catalog-brand__logo">
+																	<a href="brand.html">
+																		<img src="img/logo-as.png" alt="Аскона"
+																			class="catalog-brand__img">
+																	</a>
+																	<!-- /.catalog-brand__img -->
+																</div>
+																<!-- /.catalog-brand__logo -->
+															</div>
+															<!-- /.catalog-brand -->
+															<div class="contacts">
+																<div class="contacts-title">
+																	Продавец:
+																	Интернет-магазин мебели
+																</div>
+																<a class="contacts-name"
+																	href="/salons/pervyy-gipermarket-mebeli/#map">Первый
+																	гипермаркет
+																	мебели</a>
+															</div>
+															<div class="category-more">
+																<div class="stars">
+																	<div class="stars-star">
+																		<img src="img/svg/star.svg" alt=""> <img
+																			src="img/svg/star.svg" alt="">
+																		<img src="img/svg/star.svg" alt=""> <img
+																			src="img/svg/star.svg" alt="">
+																		<img src="img/svg/star.svg" alt="">
+																	</div>
+																	<div class="stars-review"><a href="#">1257
+																			отзывов</a></div>
+																</div>
+															</div>
+															<div class="flex link-blocks">
+																<div class="salon-but-a">
+																	<div class="img"><img
+																			src="img/svg/icons/vitrina.svg" alt="">
+																	</div>
+																	<div class="text">На витрине в <a href="#">12
+																			салонах</a></div>
+																</div>
+																<a href="#" class="in-market new-market red btn">В
+																	магазин</a>
+															</div>
+															<div class="new-four__bottom">
+																<a href="#" class="product-details">Подробнее о
+																	товаре</a>
+																<div class="more_">
+																	<a href="#" class="compar"><img
+																			src="img/svg/icons/compar.svg" alt=""></a>
+																	<a href="#" class="likesa"><img
+																			src="img/svg/icons/favorite.svg" alt=""></a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!-- /.news-gallery__card -->
+											</div>
+											<!-- /.news-gallery__item -->
+										</div>
+										<!-- /.swiper-slide -->
+										<div class="swiper-slide absolute" style="left: 55%;top: 58%">
+											<div class="news-gallery__item ">
+												<div class="news-gallery__point"></div>
+												<!-- /.news-gallery__point -->
+												<div class="news-gallery__card  tooltip-left">
+													<div class="products__block-product product col-3 result-block">
+														<a href="">
+															<div class="swiper-container gallery-topp two-container">
+																<div class="swiper-wrapper">
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																</div>
+																<!-- Add Pagination -->
+																<div class="swiper-pagination hover"></div>
+															</div>
+														</a>
+														<div class="product__wrapper">
+															<div class="product-title">Угловой диван-кровать</div>
+															<div class="product-name">Манхэттен</div>
+															<div class="product-price">176 990 <span>руб.</span>
+																<div class="scid">-70%</div>
+																<div class="atrebut">
+																	<div class="shouwroom">SHOW Room</div>
+																	<div class="hit">ХИТ!</div>
+																</div>
+															</div>
+															<div class="options fdc">
+																<div class="options-l">
+																	<div class="placeh">Высота спального места</div>
+																	<div class="options-val">92 sm</div>
+																</div>
+																<div class="options-l">
+																	<div class="placeh">Вес на 1 спальное место</div>
+																	<div class="options-val">163 кг</div>
+																</div>
+																<div class="options-l">
+																	<div class="placeh">Бельевой ящик</div>
+																	<div class="options-val">да</div>
+																</div>
+															</div>
+															<div class="catalog-brand">
+																<div class="catalog-brand__title">
+																	Бренд
+																</div>
+																<!-- /.catalog-brand__title -->
+																<div class="catalog-brand__logo">
+																	<a href="brand.html">
+																		<img src="img/logo-as.png" alt="Аскона"
+																			class="catalog-brand__img">
+																	</a>
+																	<!-- /.catalog-brand__img -->
+																</div>
+																<!-- /.catalog-brand__logo -->
+															</div>
+															<!-- /.catalog-brand -->
+															<div class="contacts">
+																<div class="contacts-title">
+																	Продавец:
+																	Интернет-магазин мебели
+																</div>
+																<a class="contacts-name"
+																	href="/salons/pervyy-gipermarket-mebeli/#map">Первый
+																	гипермаркет
+																	мебели</a>
+															</div>
+															<div class="category-more">
+																<div class="stars">
+																	<div class="stars-star">
+																		<img src="img/svg/star.svg" alt=""> <img
+																			src="img/svg/star.svg" alt="">
+																		<img src="img/svg/star.svg" alt=""> <img
+																			src="img/svg/star.svg" alt="">
+																		<img src="img/svg/star.svg" alt="">
+																	</div>
+																	<div class="stars-review"><a href="#">1257
+																			отзывов</a></div>
+																</div>
+															</div>
+															<div class="flex link-blocks">
+																<div class="salon-but-a">
+																	<div class="img"><img
+																			src="img/svg/icons/vitrina.svg" alt="">
+																	</div>
+																	<div class="text">На витрине в <a href="#">12
+																			салонах</a></div>
+																</div>
+																<a href="#" class="in-market new-market red btn">В
+																	магазин</a>
+															</div>
+															<div class="new-four__bottom">
+																<a href="#" class="product-details">Подробнее о
+																	товаре</a>
+																<div class="more_">
+																	<a href="#" class="compar"><img
+																			src="img/svg/icons/compar.svg" alt=""></a>
+																	<a href="#" class="likesa"><img
+																			src="img/svg/icons/favorite.svg" alt=""></a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!-- /.news-gallery__card -->
+											</div>
+											<!-- /.news-gallery__item -->
+										</div>
+										<!-- /.swiper-slide -->
+										<div class="swiper-slide absolute" style="left: 18%;top: 17%">
+											<div class="news-gallery__item ">
+												<div class="news-gallery__point"></div>
+												<!-- /.news-gallery__point -->
+												<div class="news-gallery__card  tooltip-right">
+													<div class="products__block-product product col-3 result-block">
+														<a href="">
+															<div class="swiper-container gallery-topp two-container">
+																<div class="swiper-wrapper">
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																</div>
+																<!-- Add Pagination -->
+																<div class="swiper-pagination hover"></div>
+															</div>
+														</a>
+														<div class="product__wrapper">
+															<div class="product-title">Угловой диван-кровать</div>
+															<div class="product-name">Манхэттен</div>
+															<div class="product-price">176 990 <span>руб.</span>
+																<div class="scid">-70%</div>
+																<div class="atrebut">
+																	<div class="shouwroom">SHOW Room</div>
+																	<div class="hit">ХИТ!</div>
+																</div>
+															</div>
+															<div class="options fdc">
+																<div class="options-l">
+																	<div class="placeh">Высота спального места</div>
+																	<div class="options-val">92 sm</div>
+																</div>
+																<div class="options-l">
+																	<div class="placeh">Вес на 1 спальное место</div>
+																	<div class="options-val">163 кг</div>
+																</div>
+																<div class="options-l">
+																	<div class="placeh">Бельевой ящик</div>
+																	<div class="options-val">да</div>
+																</div>
+															</div>
+															<div class="catalog-brand">
+																<div class="catalog-brand__title">
+																	Бренд
+																</div>
+																<!-- /.catalog-brand__title -->
+																<div class="catalog-brand__logo">
+																	<a href="brand.html">
+																		<img src="img/logo-as.png" alt="Аскона"
+																			class="catalog-brand__img">
+																	</a>
+																	<!-- /.catalog-brand__img -->
+																</div>
+																<!-- /.catalog-brand__logo -->
+															</div>
+															<!-- /.catalog-brand -->
+															<div class="contacts">
+																<div class="contacts-title">
+																	Продавец:
+																	Интернет-магазин мебели
+																</div>
+																<a class="contacts-name"
+																	href="/salons/pervyy-gipermarket-mebeli/#map">Первый
+																	гипермаркет
+																	мебели</a>
+															</div>
+															<div class="category-more">
+																<div class="stars">
+																	<div class="stars-star">
+																		<img src="img/svg/star.svg" alt=""> <img
+																			src="img/svg/star.svg" alt="">
+																		<img src="img/svg/star.svg" alt=""> <img
+																			src="img/svg/star.svg" alt="">
+																		<img src="img/svg/star.svg" alt="">
+																	</div>
+																	<div class="stars-review"><a href="#">1257
+																			отзывов</a></div>
+																</div>
+															</div>
+															<div class="flex link-blocks">
+																<div class="salon-but-a">
+																	<div class="img"><img
+																			src="img/svg/icons/vitrina.svg" alt="">
+																	</div>
+																	<div class="text">На витрине в <a href="#">12
+																			салонах</a></div>
+																</div>
+																<a href="#" class="in-market new-market red btn">В
+																	магазин</a>
+															</div>
+															<div class="new-four__bottom">
+																<a href="#" class="product-details">Подробнее о
+																	товаре</a>
+																<div class="more_">
+																	<a href="#" class="compar"><img
+																			src="img/svg/icons/compar.svg" alt=""></a>
+																	<a href="#" class="likesa"><img
+																			src="img/svg/icons/favorite.svg" alt=""></a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!-- /.news-gallery__card -->
+											</div>
+											<!-- /.news-gallery__item -->
+										</div>
+										<!-- /.swiper-slide -->
+										<div class="swiper-slide absolute" style="left: 13%;top: 80%">
+											<div class="news-gallery__item ">
+												<div class="news-gallery__point"></div>
+												<!-- /.news-gallery__point -->
+												<div class="news-gallery__card  tooltip-left">
+													<div class="products__block-product product col-3 result-block">
+														<a href="">
+															<div class="swiper-container gallery-topp two-container">
+																<div class="swiper-wrapper">
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																</div>
+																<!-- Add Pagination -->
+																<div class="swiper-pagination hover"></div>
+															</div>
+														</a>
+														<div class="product__wrapper">
+															<div class="product-title">Угловой диван-кровать</div>
+															<div class="product-name">Манхэттен</div>
+															<div class="product-price">176 990 <span>руб.</span>
+																<div class="scid">-70%</div>
+																<div class="atrebut">
+																	<div class="shouwroom">SHOW Room</div>
+																	<div class="hit">ХИТ!</div>
+																</div>
+															</div>
+															<div class="options fdc">
+																<div class="options-l">
+																	<div class="placeh">Высота спального места</div>
+																	<div class="options-val">92 sm</div>
+																</div>
+																<div class="options-l">
+																	<div class="placeh">Вес на 1 спальное место</div>
+																	<div class="options-val">163 кг</div>
+																</div>
+																<div class="options-l">
+																	<div class="placeh">Бельевой ящик</div>
+																	<div class="options-val">да</div>
+																</div>
+															</div>
+															<div class="catalog-brand">
+																<div class="catalog-brand__title">
+																	Бренд
+																</div>
+																<!-- /.catalog-brand__title -->
+																<div class="catalog-brand__logo">
+																	<a href="brand.html">
+																		<img src="img/logo-as.png" alt="Аскона"
+																			class="catalog-brand__img">
+																	</a>
+																	<!-- /.catalog-brand__img -->
+																</div>
+																<!-- /.catalog-brand__logo -->
+															</div>
+															<!-- /.catalog-brand -->
+															<div class="contacts">
+																<div class="contacts-title">
+																	Продавец:
+																	Интернет-магазин мебели
+																</div>
+																<a class="contacts-name"
+																	href="/salons/pervyy-gipermarket-mebeli/#map">Первый
+																	гипермаркет
+																	мебели</a>
+															</div>
+															<div class="category-more">
+																<div class="stars">
+																	<div class="stars-star">
+																		<img src="img/svg/star.svg" alt=""> <img
+																			src="img/svg/star.svg" alt="">
+																		<img src="img/svg/star.svg" alt=""> <img
+																			src="img/svg/star.svg" alt="">
+																		<img src="img/svg/star.svg" alt="">
+																	</div>
+																	<div class="stars-review"><a href="#">1257
+																			отзывов</a></div>
+																</div>
+															</div>
+															<div class="flex link-blocks">
+																<div class="salon-but-a">
+																	<div class="img"><img
+																			src="img/svg/icons/vitrina.svg" alt="">
+																	</div>
+																	<div class="text">На витрине в <a href="#">12
+																			салонах</a></div>
+																</div>
+																<a href="#" class="in-market new-market red btn">В
+																	магазин</a>
+															</div>
+															<div class="new-four__bottom">
+																<a href="#" class="product-details">Подробнее о
+																	товаре</a>
+																<div class="more_">
+																	<a href="#" class="compar"><img
+																			src="img/svg/icons/compar.svg" alt=""></a>
+																	<a href="#" class="likesa"><img
+																			src="img/svg/icons/favorite.svg" alt=""></a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!-- /.news-gallery__card -->
+											</div>
+											<!-- /.news-gallery__item -->
+										</div>
+										<!-- /.swiper-slide -->
+										<div class="swiper-slide absolute" style="left: 67%;top:57%">
+											<div class="news-gallery__item ">
+												<div class="news-gallery__point"></div>
+												<!-- /.news-gallery__point -->
+												<div class="news-gallery__card  tooltip-right">
+													<div class="products__block-product product col-3 result-block">
+														<a href="">
+															<div class="swiper-container gallery-topp two-container">
+																<div class="swiper-wrapper">
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																	<div class="swiper-slide"><a href="img/1gp.jpg"
+																			data-fancybox="gallery1"
+																			data-thumb="img/1gp.jpg" class="lop hover">
+																			<img src="img/svg/fullscreen.svg" alt=""
+																				class="lop-img">
+																			Увеличить</a><img
+																			src="img/mob/0108339_PE258085_S5.JPG"
+																			alt="">
+																	</div>
+																</div>
+																<!-- Add Pagination -->
+																<div class="swiper-pagination hover"></div>
+															</div>
+														</a>
+														<div class="product__wrapper">
+															<div class="product-title">Угловой диван-кровать</div>
+															<div class="product-name">Манхэттен</div>
+															<div class="product-price">176 990 <span>руб.</span>
+																<div class="scid">-70%</div>
+																<div class="atrebut">
+																	<div class="shouwroom">SHOW Room</div>
+																	<div class="hit">ХИТ!</div>
+																</div>
+															</div>
+															<div class="options fdc">
+																<div class="options-l">
+																	<div class="placeh">Высота спального места</div>
+																	<div class="options-val">92 sm</div>
+																</div>
+																<div class="options-l">
+																	<div class="placeh">Вес на 1 спальное место</div>
+																	<div class="options-val">163 кг</div>
+																</div>
+																<div class="options-l">
+																	<div class="placeh">Бельевой ящик</div>
+																	<div class="options-val">да</div>
+																</div>
+															</div>
+															<div class="catalog-brand">
+																<div class="catalog-brand__title">
+																	Бренд
+																</div>
+																<!-- /.catalog-brand__title -->
+																<div class="catalog-brand__logo">
+																	<a href="brand.html">
+																		<img src="img/logo-as.png" alt="Аскона"
+																			class="catalog-brand__img">
+																	</a>
+																	<!-- /.catalog-brand__img -->
+																</div>
+																<!-- /.catalog-brand__logo -->
+															</div>
+															<!-- /.catalog-brand -->
+															<div class="contacts">
+																<div class="contacts-title">
+																	Продавец:
+																	Интернет-магазин мебели
+																</div>
+																<a class="contacts-name"
+																	href="/salons/pervyy-gipermarket-mebeli/#map">Первый
+																	гипермаркет
+																	мебели</a>
+															</div>
+															<div class="category-more">
+																<div class="stars">
+																	<div class="stars-star">
+																		<img src="img/svg/star.svg" alt=""> <img
+																			src="img/svg/star.svg" alt="">
+																		<img src="img/svg/star.svg" alt=""> <img
+																			src="img/svg/star.svg" alt="">
+																		<img src="img/svg/star.svg" alt="">
+																	</div>
+																	<div class="stars-review"><a href="#">1257
+																			отзывов</a></div>
+																</div>
+															</div>
+															<div class="flex link-blocks">
+																<div class="salon-but-a">
+																	<div class="img"><img
+																			src="img/svg/icons/vitrina.svg" alt="">
+																	</div>
+																	<div class="text">На витрине в <a href="#">12
+																			салонах</a></div>
+																</div>
+																<a href="#" class="in-market new-market red btn">В
+																	магазин</a>
+															</div>
+															<div class="new-four__bottom">
+																<a href="#" class="product-details">Подробнее о
+																	товаре</a>
+																<div class="more_">
+																	<a href="#" class="compar"><img
+																			src="img/svg/icons/compar.svg" alt=""></a>
+																	<a href="#" class="likesa"><img
+																			src="img/svg/icons/favorite.svg" alt=""></a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!-- /.news-gallery__card -->
+											</div>
+											<!-- /.news-gallery__item -->
+										</div>
+										<!-- /.swiper-slide -->
+									</div>
+									<!-- /.swiper-wrapper -->
+									<div class="swiper-pagination"></div>
+								</div>
+								<!-- /.swiper-container -->
+							</div>
+							<!-- /.news-gallery__list -->
+						</div>
+						<!-- /.news-gallery -->
+						<div class="news-article__text-content news-article__materials">
+							<h2>Материалы для кухонь в стиле Прованс и Кантри</h2>
+							<p> Кухня в стиле Прованс и Кантри создает исключительно уютную и теплую атмосферу. Один из
+								этих стилей подойдет людям, которые не любят современный дизайн, который иногда слишком
+								сдержан и холоден. Каждый, кто хоть раз побывал в подобной кухне, останется с
+								впечатлением, что он был среди природы.</p>
+							<p> Как французский Прованс, так и стиль Кантри нуждаются в естественных материалах, таких
+								как:</p>
+							<ul>
+								<li>- дерево</li>
+								<li>- камень</li>
+								<li>- кирпич и терракотовая плитка</li>
+							</ul>
+						</div>
+						<div class="news-article__bottom">
+							<div class="news-article__share">
+								<div class="sharing">
+									Понравилась статья?
+									<div class="sharing__button">
+										Поделитесь с близкими
+									</div>
+									<!-- /.sharing__button -->
+									<div class="sharing__container">
+										<div class="sharing__title">Поделиться</div>
+										<!-- /.sharing__title -->
+										<div class="sharing__row">
+											<script async="async"
+												src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js">
+												</script>
+											<script async="async" src="https://yastatic.net/share2/share.js"></script>
+											<div class="ya-share2" data-bare
+												data-services="vkontakte,odnoklassniki,facebook,whatsapp,telegram,moimir">
+											</div>
+											<a href="#share" class="share"></a>
+										</div>
+										<!-- /.sharing__row -->
+									</div>
+									<!-- /.sharing__container -->
+								</div>
+								<!-- /.sharing -->
+							</div>
+							<!-- /.news-article__share -->
+							<div class="news-article__change">
+								<div class="news-article__next">
+									<a href="#" class="news-article__button">
+									</a>
+									<!-- /.news-article__button -->
+									<div class="news-article__excerpt">
+										Предыдущая
+										<a href="">
+											Малогабаритка недели: 28 квадратов у метро «Аэропорт»
+										</a>
+									</div>
+									<!-- /.news-article__excerpt -->
+								</div>
+								<!-- /.news-article__next -->
+								<div class="news-article__prev">
+									<a href="#" class="news-article__button">
+									</a>
+									<!-- /.news-article__button -->
+									<div class="news-article__excerpt">
+										Следующая
+										<a href="">
+											Мебель для кухни, которая вас удивит: 5 классных новинок
+										</a>
+									</div>
+									<!-- /.news-article__excerpt -->
+								</div>
+								<!-- /.news-article__prev -->
+							</div>
+							<!-- /.news-article__change -->
+						</div>
+						<!-- /.news-article__bottom -->
+						<div class="news-article__desc">
+							<h2>Вам может быть интересно</h2>
+							<div class="news-article__desc-left">
+								<a href="#" class="news-article__desc-name">
+									<h3>15 остроумных способов выжать из маленькой кухни максимум</h3>
+								</a>
+								<div class="news-article__desc-text">
+									Выдвижной стол, полки для оконных проемов, специальные приспособления для
+									холодильника и микроволновки и другие секреты компактной организации пространства, о
+									которых вы не знали
+								</div>
+							</div>
+							<!-- /.news-article__desc-left -->
+							<div class="news-article__desc-right">
+								<div class="news-article__desc-item">
+									<a href="#" class="news-article__desc-name">
+										<h3> Личный опыт: нетипичный дом, в котором все сделано своими руками</h3>
+									</a>
+									<div class="news-article__desc-text">
+										Наши герои сделали дом своей мечты, для которого не потребовались огромные
+										вложени
+										Наши герои сделали дом своей мечты, для которого не потребовались огромные
+										вложения…
+									</div>
+									<a href="" class="news-article__desc-link">
+										Читать подробнее
+									</a>
+									<!-- /.news-article__desc-link -->
+								</div>
+								<!-- /.news-article__desc-item -->
+								<div class="news-article__desc-item">
+									<a href="#" class="news-article__desc-name">
+										<h3> Личный опыт: нетипичный дом, в котором все сделано своими руками</h3>
+									</a>
+									<div class="news-article__desc-text">
+										Наши герои сделали дом своей мечты, для которого не потребовались огромные
+										вложени
+										Наши герои сделали дом своей мечты, для которого не потребовались огромные
+										вложения…
+									</div>
+									<a href="" class="news-article__desc-link">
+										Читать подробнее
+									</a>
+									<!-- /.news-article__desc-link -->
+								</div>
+								<!-- /.news-article__desc-item -->
+								<a class="btn white" href="/articles/">Все статьи</a>
+							</div>
+							<!-- /.news-article__desc-right -->
+						</div>
+						<!-- /.news-article__desc -->
+						<div class="news-article__comment-block">
+							<div class="comment-block__wrapper">
+								<form class="comment_form">
+									<input type="hidden" value="17626" name="mat_id">
+									<input type="hidden" value="" name="parent">
+									<div class="comment__field">
+										<div class="comment__field__textarea">
+											<textarea name="text" required="" cols="30" rows="10"
+												placeholder="Оставить комментарий"></textarea>
+										</div>
+										<div class="comment__field__send-msg">
+											<p>Комментарии публикуются после проверки модераторами. Если вы оскорбили
+												собеседника,
+												использовали ненормативную лексику, то комментарий не будет опубликован.
+											</p>
+											<input type="submit" value="Отправить" class="btn btn-yellow">
+										</div>
+									</div>
+								</form>
+								<!-- <div class="comment__field">
+									<div class="comment__field__textarea">
+										<textarea name="" id="" cols="30" rows="10"
+											placeholder="Оставить комментарий"></textarea>
+									</div>
+									<div class="comment__field__send-msg">
+										<p>Комментарии публикуются после проверки модераторами. Если вы оскорбили
+											собеседника, использовали ненормативную лексику, то комментарий не будет
+											опубликован.</p>
+										<input type="submit" value="Отправить" class="btn btn-yellow" />
+									</div>
+								</div> -->
+								<div class="comments">
+									<div class="comments__item">
+										<div class="comments__item__top">
+											<div class="comment__item_user">
+												<div class="comment__user-img rounded">
+													<img src="img/user-40.jpeg" alt="">
+												</div>
+												<div class="comment__user-info">
+													<span>Константин Торшин</span>
+													<span>Покупатель</span>
+												</div>
+											</div>
+											<div class="comment-time">
+												<span>Сегодня в 17:39</span>
+											</div>
+										</div>
+										<div class="comments__item__content">
+											<p>Приобретали недавно кухню в салоне КонстантиновоМебельКурск. Отличная
+												кухня! Всё под рукой, не маркие материалы. С удовольствием провожу время
+												как за готовкой так и за чтением книг. В цену, указанную на этом сайте,
+												не включена доставка, поэтому высчитывать конечный ценник придется
+												самому. Иногда товары, попавшие в фильтр, в конечном итоге оказывается
+												либо не доставляют в наш город, либо они уже закончились, а информация
+												об их наличии еще осталась.</p>
+										</div>
+										<div class="comments__item__bottom">
+											<span class="show-other-comments" value="2">Показать 2 комментария</span>
+											<span class="answer-to-comment">Ответить</span>
+											<div class="comments__item__bottom_right">
+												<span class="useful">Полезно?</span>
+												<div class="likes">
+													<div class="likes-like"><img src="img/svg/like.svg" alt=""> 98
+													</div>
+													<div class="likes-dizlike"><img src="img/svg/like.svg" alt=""> 3
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="additional-comments">
+											<div class="additional-comments__item">
+												<div class="comments__item__top">
+													<div class="comment__item_user">
+														<div class="comment__user-img rounded">
+															<img src="img/user-40.jpeg" alt="">
+														</div>
+														<div class="comment__user-info">
+															<span>Владимир Костомаров</span>
+															<span>Покупатель</span>
+														</div>
+													</div>
+												</div>
+												<div class="comments__item__content">
+													<p>Во сколько обошлась доставка в итоге?</p>
+												</div>
+												<span class="answer-to-comment">Ответить</span>
+											</div>
+											<div class="additional-comments__item">
+												<div class="comments__item__top">
+													<div class="comment__item_user">
+														<div class="comment__user-img rounded">
+															<img src="img/user-40.jpeg" alt="">
+														</div>
+														<div class="comment__user-info">
+															<span>Владимир Костомаров</span>
+															<span>Покупатель</span>
+														</div>
+													</div>
+												</div>
+												<div class="comments__item__content">
+													<p>Во сколько обошлась доставка в итоге?</p>
+												</div>
+												<span class="answer-to-comment">Ответить</span>
+											</div>
+										</div>
+									</div>
+									<div class="comments__item">
+										<div class="comments__item__top">
+											<div class="comment__item_user">
+												<div class="comment__user-img rounded">
+													<img src="img/user-40.jpeg" alt="">
+												</div>
+												<div class="comment__user-info">
+													<span>Владимир Костомаров</span>
+													<span>Покупатель</span>
+												</div>
+											</div>
+											<div class="comment-time">
+												<span>Сегодня в 17:39</span>
+											</div>
+										</div>
+										<div class="comments__item__content">
+											<p>Отличная кухня! Всё под рукой, не маркие материалы. С удовольствием
+												провожу время как за готовкой так и за чтением книг.</p>
+										</div>
+										<div class="comments__item__bottom">
+											<span class="show-other-comments" value="2">Показать 2 комментария</span>
+											<span class="answer-to-comment">Ответить</span>
+											<div class="comments__item__bottom_right">
+												<span class="useful">Полезно?</span>
+												<div class="likes">
+													<div class="likes-like"><img src="img/svg/like.svg" alt=""> 98
+													</div>
+													<div class="likes-dizlike"><img src="img/svg/like.svg" alt=""> 3
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="additional-comments">
+											<div class="additional-comments__item">
+												<div class="comments__item__top">
+													<div class="comment__item_user">
+														<div class="comment__user-img rounded">
+															<img src="img/user-40.jpeg" alt="">
+														</div>
+														<div class="comment__user-info">
+															<span>Владимир Костомаров</span>
+															<span>Покупатель</span>
+														</div>
+													</div>
+												</div>
+												<div class="comments__item__content">
+													<p>Во сколько обошлась доставка в итоге?</p>
+												</div>
+												<span class="answer-to-comment">Ответить</span>
+											</div>
+											<div class="additional-comments__item">
+												<div class="comments__item__top">
+													<div class="comment__item_user">
+														<div class="comment__user-img rounded">
+															<img src="img/user-40.jpeg" alt="">
+														</div>
+														<div class="comment__user-info">
+															<span>Владимир Костомаров</span>
+															<span>Покупатель</span>
+														</div>
+													</div>
+												</div>
+												<div class="comments__item__content">
+													<p>Во сколько обошлась доставка в итоге?</p>
+												</div>
+												<span class="answer-to-comment">Ответить</span>
+											</div>
+										</div>
+									</div>
+									<div class="comments__item">
+										<div class="comments__item__top">
+											<div class="comment__item_user">
+												<div class="comment__user-img rounded">
+													<img src="img/user-40.jpeg" alt="">
+												</div>
+												<div class="comment__user-info">
+													<span>Анонимный пользователь</span>
+													<span>Покупатель</span>
+												</div>
+											</div>
+											<div class="comment-time">
+												<span>Сегодня в 17:39</span>
+											</div>
+										</div>
+										<div class="comments__item__content">
+											<p>Отличная кухня! Всё под рукой, не маркие материалы. С удовольствием
+												провожу время как за готовкой так и за чтением книг.</p>
+										</div>
+										<div class="comments__item__bottom">
+											<span class="show-other-comments" value="2">Показать 2 комментария</span>
+											<span class="answer-to-comment">Ответить</span>
+											<div class="comments__item__bottom_right">
+												<span class="useful">Полезно?</span>
+												<div class="likes">
+													<div class="likes-like"><img src="img/svg/like.svg" alt=""> 98
+													</div>
+													<div class="likes-dizlike"><img src="img/svg/like.svg" alt=""> 3
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="additional-comments">
+											<div class="additional-comments__item">
+												<div class="comments__item__top">
+													<div class="comment__item_user">
+														<div class="comment__user-img rounded">
+															<img src="img/user-40.jpeg" alt="">
+														</div>
+														<div class="comment__user-info">
+															<span>Владимир Костомаров</span>
+															<span>Покупатель</span>
+														</div>
+													</div>
+												</div>
+												<div class="comments__item__content">
+													<p>Во сколько обошлась доставка в итоге?</p>
+												</div>
+												<span class="answer-to-comment">Ответить</span>
+											</div>
+											<div class="additional-comments__item">
+												<div class="comments__item__top">
+													<div class="comment__item_user">
+														<div class="comment__user-img rounded">
+															<img src="img/user-40.jpeg" alt="">
+														</div>
+														<div class="comment__user-info">
+															<span>Владимир Костомаров</span>
+															<span>Покупатель</span>
+														</div>
+													</div>
+												</div>
+												<div class="comments__item__content">
+													<p>Во сколько обошлась доставка в итоге?</p>
+												</div>
+												<span class="answer-to-comment">Ответить</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="mob-600 pagin">
+									<div class="indic"><span>Вы посмотрели</span>1000 из 1500 моделей</div>
+									<a class="pagin-a btn btn-grey" href="#wrapper">Наверх <img
+											src="img/svg/arrow-copy.svg" alt="" class="arrow"></a>
+								</div>
+								<div class="ajax-load">
+									<div class="btn btn-grey">Загрузить еще</div>
+								</div>
+							</div>
+						</div>
+						<div class="more-articles-from-auth">
+							<h2>Еще статьи в этого автора</h2>
+							<div class="more-articles__items articles swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="more-articles__items__item">
+											<div class="articles-block">
+												<div class="top-sl">
+													<div class="articles-block-img">
+														<img src="img/bitmap1.jpg" alt="">
+													</div>
+													<h3>Пусть ваш дом сияет и выделяется на фоне других</h3>
+													<div class="articles-block-text">Создайте дома торжественную
+														обстановку. Вот несколько советов, как сверкать и в новогоднюю
+														ночь, и в любой другой день, чтобы он не был скучным!</div>
+												</div>
+												<div class="articles-block-user">
+													<div class="articles-block-user__top">
+														<div class="user__top-img">
+															<img src="img/bitmap2.jpg" alt="">
+														</div>
+														<div class="midle">
+															<div class="user__top-name">
+																<span class="name">Алена Сашина</span>
+																<span class="star"><img src="img/svg/star.svg" alt="">
+																	3,7</span>
+																<a href="#">шкафдиван.ру</a>
+															</div>
+														</div>
+														<div class="bottom">
+															<div class="review">
+																<a href="#">10 комментариев</a>
+															</div>
+															<div class="likes">
+																<div class="likes-like"><img src="img/svg/like.svg"
+																		alt=""> 98 </div>
+																<div class="likes-dizlike"><img src="img/svg/like.svg"
+																		alt=""> 3</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="more-articles__items__item">
+											<div class="articles-block">
+												<div class="top-sl">
+													<div class="articles-block-img">
+														<img src="img/bitmap1.jpg" alt="">
+													</div>
+													<h3>Пусть ваш дом сияет и выделяется на фоне других</h3>
+													<div class="articles-block-text">Создайте дома торжественную
+														обстановку. Вот несколько советов, как сверкать и в новогоднюю
+														ночь, и в любой другой день, чтобы он не был скучным!</div>
+												</div>
+												<div class="articles-block-user">
+													<div class="articles-block-user__top">
+														<div class="user__top-img">
+															<img src="img/bitmap2.jpg" alt="">
+														</div>
+														<div class="midle">
+															<div class="user__top-name">
+																<span class="name">Алена Сашина</span>
+																<span class="star"><img src="img/svg/star.svg" alt="">
+																	3,7</span>
+																<a href="#">шкафдиван.ру</a>
+															</div>
+														</div>
+														<div class="bottom">
+															<div class="review">
+																<a href="#">10 комментариев</a>
+															</div>
+															<div class="likes">
+																<div class="likes-like"><img src="img/svg/like.svg"
+																		alt=""> 98 </div>
+																<div class="likes-dizlike"><img src="img/svg/like.svg"
+																		alt=""> 3</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="more-articles__items__item">
+											<div class="articles-block">
+												<div class="top-sl">
+													<div class="articles-block-img">
+														<img src="img/bitmap1.jpg" alt="">
+													</div>
+													<h3>Пусть ваш дом сияет и выделяется на фоне других</h3>
+													<div class="articles-block-text">Создайте дома торжественную
+														обстановку. Вот несколько советов, как сверкать и в новогоднюю
+														ночь, и в любой другой день, чтобы он не был скучным!</div>
+												</div>
+												<div class="articles-block-user">
+													<div class="articles-block-user__top">
+														<div class="user__top-img">
+															<img src="img/bitmap2.jpg" alt="">
+														</div>
+														<div class="midle">
+															<div class="user__top-name">
+																<span class="name">Алена Сашина</span>
+																<span class="star"><img src="img/svg/star.svg" alt="">
+																	3,7</span>
+																<a href="#">шкафдиван.ру</a>
+															</div>
+														</div>
+														<div class="bottom">
+															<div class="review">
+																<a href="#">10 комментариев</a>
+															</div>
+															<div class="likes">
+																<div class="likes-like"><img src="img/svg/like.svg"
+																		alt=""> 98 </div>
+																<div class="likes-dizlike"><img src="img/svg/like.svg"
+																		alt=""> 3</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="more-articles__items__item">
+											<div class="articles-block">
+												<div class="top-sl">
+													<div class="articles-block-img">
+														<img src="img/bitmap1.jpg" alt="">
+													</div>
+													<h3>Пусть ваш дом сияет и выделяется на фоне других</h3>
+													<div class="articles-block-text">Создайте дома торжественную
+														обстановку. Вот несколько советов, как сверкать и в новогоднюю
+														ночь, и в любой другой день, чтобы он не был скучным!</div>
+												</div>
+												<div class="articles-block-user">
+													<div class="articles-block-user__top">
+														<div class="user__top-img">
+															<img src="img/bitmap2.jpg" alt="">
+														</div>
+														<div class="midle">
+															<div class="user__top-name">
+																<span class="name">Алена Сашина</span>
+																<span class="star"><img src="img/svg/star.svg" alt="">
+																	3,7</span>
+																<a href="#">шкафдиван.ру</a>
+															</div>
+														</div>
+														<div class="bottom">
+															<div class="review">
+																<a href="#">10 комментариев</a>
+															</div>
+															<div class="likes">
+																<div class="likes-like"><img src="img/svg/like.svg"
+																		alt=""> 98 </div>
+																<div class="likes-dizlike"><img src="img/svg/like.svg"
+																		alt=""> 3</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="more-articles__items__item">
+											<div class="articles-block">
+												<div class="top-sl">
+													<div class="articles-block-img">
+														<img src="img/bitmap1.jpg" alt="">
+													</div>
+													<h3>Пусть ваш дом сияет и выделяется на фоне других</h3>
+													<div class="articles-block-text">Создайте дома торжественную
+														обстановку. Вот несколько советов, как сверкать и в новогоднюю
+														ночь, и в любой другой день, чтобы он не был скучным!</div>
+												</div>
+												<div class="articles-block-user">
+													<div class="articles-block-user__top">
+														<div class="user__top-img">
+															<img src="img/bitmap2.jpg" alt="">
+														</div>
+														<div class="midle">
+															<div class="user__top-name">
+																<span class="name">Алена Сашина</span>
+																<span class="star"><img src="img/svg/star.svg" alt="">
+																	3,7</span>
+																<a href="#">шкафдиван.ру</a>
+															</div>
+														</div>
+														<div class="bottom">
+															<div class="review">
+																<a href="#">10 комментариев</a>
+															</div>
+															<div class="likes">
+																<div class="likes-like"><img src="img/svg/like.svg"
+																		alt=""> 98 </div>
+																<div class="likes-dizlike"><img src="img/svg/like.svg"
+																		alt=""> 3</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="more-articles__items__item">
+											<div class="articles-block">
+												<div class="top-sl">
+													<div class="articles-block-img">
+														<img src="img/bitmap1.jpg" alt="">
+													</div>
+													<h3>Пусть ваш дом сияет и выделяется на фоне других</h3>
+													<div class="articles-block-text">Создайте дома торжественную
+														обстановку. Вот несколько советов, как сверкать и в новогоднюю
+														ночь, и в любой другой день, чтобы он не был скучным!</div>
+												</div>
+												<div class="articles-block-user">
+													<div class="articles-block-user__top">
+														<div class="user__top-img">
+															<img src="img/bitmap2.jpg" alt="">
+														</div>
+														<div class="midle">
+															<div class="user__top-name">
+																<span class="name">Алена Сашина</span>
+																<span class="star"><img src="img/svg/star.svg" alt="">
+																	3,7</span>
+																<a href="#">шкафдиван.ру</a>
+															</div>
+														</div>
+														<div class="bottom">
+															<div class="review">
+																<a href="#">10 комментариев</a>
+															</div>
+															<div class="likes">
+																<div class="likes-like"><img src="img/svg/like.svg"
+																		alt=""> 98 </div>
+																<div class="likes-dizlike"><img src="img/svg/like.svg"
+																		alt=""> 3</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- If we need navigation buttons -->
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-button-next"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- PAGE -->
+		<!-- FOOTER :: START-->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__wrapper row">
+					<div class="footer__container">
+						<div class="footer__container-logo-mob mobile">
+							<a href="#">
+								<img src="img/svg/logo.svg" alt="">
+							</a>
+						</div>
+						<div class="footer__container-contacts">
+							<div class="footer__container-contacts-logo">
+								<a href="#">
+									<img src="img/svg/logo.svg" alt="">
+								</a>
+							</div>
+							<div class="footer__container-contacts-copyr">2019 © All right reserved MebelMap</div>
+							<div class="footer__container-contacts-social">
+								<div class="social-title gr">Присоединяйтесь к нам</div>
+								<div class="social__link">
+									<a href="#" class="vk"><img src="img/svg/vk.svg" alt=""></a>
+									<a href="#" class="vk"><img src="img/svg/fb.svg" alt=""></a>
+									<a href="#" class="vk"><img src="img/svg/ok.svg" alt=""></a>
+									<a href="#" class="vk"><img src="img/svg/inst.svg" alt=""></a>
+									<a href="#" class="vk"><img src="img/svg/yt.svg" alt=""></a>
+								</div>
+								<div class="social-title">Нам важно ваше мнение</div>
+								<a href="#" class="social-button btn btn-grey" data-fancybox
+									data-src="#write-to-us">Напишите нам</a>
+							</div>
+						</div>
+						<div class="footer__container-list">
+							<div class="footer__container-list-title h4">Сервис</div>
+							<ul>
+								<li><a href="#">Хочу дешевле</a></li>
+								<li><a href="#">Оформить кредит</a></li>
+								<li><a href="#">Онлайн помощник</a></li>
+								<li><a href="#">Вопросы дизайнерам</a></li>
+							</ul>
+						</div>
+						<div class="footer__container-list">
+							<div class="footer__container-list-title h4">Интересное</div>
+							<ul>
+								<li><a href="#">Магазины на карте</a></li>
+								<li><a href="#">Распродажи с витрины</a></li>
+								<li><a href="#">Акции и скидки</a></li>
+								<li><a href="#">Отзывы о продавцах</a></li>
+							</ul>
+						</div>
+						<div class="footer__container-list">
+							<div class="footer__container-list-title h4">Сотрудничество</div>
+							<ul>
+								<li><a href="#">Личный кабинет</a></li>
+								<li><a href="#">Реклама на сайте</a></li>
+								<li><a href="#">Вакансии</a></li>
+								<li><a href="#">Пользовательское соглашение</a></li>
+								<li><a href="#">О компании</a></li>
+							</ul>
+						</div>
+						<div class="footer__container-get">
+							<div class="footer__container-get-title h4">Получать лучшие предложения</div>
+							<div class="footer__container-get-ptitle">Мы помним что вас интересовало</div>
+							<form action="" id="best-offer-futer" class="general-form">
+								<div class="footer__container-get-input input-block">
+									<label class="input input-offer-footer" for="best-offer-footer-name">
+										<input type="text" class="input__item require-field" name="testing1s" required
+											id="best-offer-footer-name">
+										<span>Имя</span>
+									</label>
+									<label class="input input-offer" for="best-offer-footer-tel">
+										<input type="tel" class="input__item mask-validate phone-valid"
+											name="testing1232" required id="best-offer-footer-tel">
+										<span>Телефон</span>
+									</label>
+								</div>
+								<div class="check footers-offer-privacy">
+									<input type="checkbox" id="footer-offer" class="check__checkbox checkbox-general">
+									<label for="footer-offer" class="check__text">
+										Согласен на <a href="" class="check__text-link">обработку персональных
+											данных</a>
+									</label>
+								</div>
+								<button type="submit" id="best-offer-submit-footer"
+									class="footer__container-get-button btn red btn-red" disabled>
+									Подписаться
+								</button>
+							</form>
+						</div>
+						<div class="mobile-m copyr">Content 2019 © All right reserved MebelMap</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- FOOTER -->
+		<!-- MODALS-->
+		<div class="popup-dialog mfp-hide none" id="mobile-navi">
+		</div>
+		<div class="popup-dialog mfp-hide none" id="callback">
+		</div>
+		<div class="popup__content write-us modal" id="write-to-us">
+			<form class="popup__form general-form" id="write-to-us-form">
+				<label class="input popup__form-input">
+					<span for="user_write">
+						Ваше имя
+					</span>
+					<input type="text" class="input__item require-field" placeholder="Ваше имя" id="user_write" required
+						name="name_user" />
+				</label>
+				<div class="popup__form-group">
+					<label for="tel_write" class="input popup__form-input_s">
+						<span>
+							+7(код) ___ - __ - __
+						</span>
+						<input type="tel" class="input__item mask-validate phone-valid"
+							placeholder="+7(код) ___ - __ - __" id="reviews_tel" required name="tel_write" />
+					</label>
+				</div>
+				<label for="comment" class="input popup__form-input textarea">
+					<span>
+						Сообщение
+					</span>
+					<textarea cols="30" class="input__item require-field" rows="10" placeholder="Комментарий"
+						name="comments"></textarea>
+				</label>
+				<div class="check">
+					<input type="checkbox" id="write_popup" class="check__checkbox checkbox-general">
+					<label for="write_popup" class="check__text">
+						Согласен на <a href="" class="check__text-link">обработку персональных данных</a>
+					</label>
+				</div>
+				<button class="button-danger btn popup__form-submit" disabled type="submit">
+					Оставить отзыв
+				</button>
+			</form>
+		</div>
+		<div class="popup__result popup__result_hidden" id="feedback-write">
+			<h2 class="heading-1">Ваше сообщение принято</h2>
+			<div class="popup__result-group">
+				<div class="popup__result-text">Мы перезвоним вам в течении 15 минут.</div>
+				<div class="popup__result-img">
+					<img src="img/svg/check-feedback.svg" alt="img" />
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- MODALS -->
+	<!-- SCRIPT -->
+	<script src="js/vendor.js"></script>
+	<script src="js/validation.js"></script>
+	<script src="js/vanillaTextMask.js"></script>
+	<script src="js/svg-fill.js"></script>
+	<script src="js/bodyScrollLock.min.js"></script>
+	<script src="js/jquery.matchHeight-min.js"></script>
+	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/app.js"></script>
+	<!-- SCRIPT -->
+	</div>
+	<!-- WRAPPER -->
+</body>
+</html>

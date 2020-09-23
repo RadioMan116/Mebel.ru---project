@@ -1,0 +1,332 @@
+// main: app.scss
+
+.service-rules {
+	font-size: 14px;
+	line-height: 1.71;
+	color: var(--black);
+
+	a {
+		text-decoration: underline;
+	}
+
+	&__section {
+		margin-bottom: 32px;
+
+		&_bg {
+			padding: 24px;
+			border-radius: 6px;
+			background-color: var(--pale-grey);
+		}
+	}
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 -40px 32px;
+		flex-wrap: wrap;
+	}
+
+	&__section_bg &__row {
+		margin-bottom: 0;
+	}
+
+	&__col {
+		padding: 0 40px 8px;
+		width: 50%;
+		flex-shrink: 0;
+
+		&_full {
+			width: 100%;
+		}
+	}
+
+	&__title {
+		font-size: 24px;
+		font-weight: 300;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.33;
+		letter-spacing: normal;
+		color: var(--black);
+		margin-bottom: 16px;
+
+		&_small {
+			font-size: 16px;
+			font-weight: bold;
+			line-height: 1.25;
+			color: var(--black);
+			margin-bottom: 8px;
+		}
+	}
+
+	ul {
+		list-style: none;
+		margin: 0 0 24px 8px;
+		padding: 0;
+
+		> li {
+			position: relative;
+			padding: 0 0 0 16px;
+			margin-bottom: 16px;
+
+			&:before {
+				width: 6px;
+				height: 6px;
+				background-color: var(--off-yellow);
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 8px;
+				border-radius: 50%;
+			}
+		}
+
+		ol, ul {
+			padding-top: 16px;
+		}
+	}
+
+	@for $i from 1 through 100 {
+		.ol[start="#{$i}"] {
+			counter-reset: lis $i;
+		}
+	}
+
+	ol {
+		list-style: none;
+		margin: 0 0 24px 0;
+		padding: 0;
+		counter-reset: item;
+
+		@for $i from 1 through 100 {
+			&[start="#{$i}"] {
+				counter-reset: item $i;
+			}
+		}
+
+		> li {
+			position: relative;
+			padding: 0 0 0 16px;
+			margin-bottom: 16px;
+			counter-increment: item;
+
+			&:before {
+				font-size: 14px;
+				font-weight: bold;
+				line-height: 1.71;
+				color: var(--cadet-blue);
+				position: absolute;
+				left: 0;
+				content: counters(item, ".") ". ";
+			}
+
+			ol > li:before {
+				content: counters(item, ".") " ";
+			}
+		}
+	}
+
+	&__itemTitle {
+		&:before {
+			font-size: 24px !important;
+			font-weight: 300 !important;
+			line-height: 1.33 !important;
+			color: var(--black) !important;
+		}
+
+		ol {
+			margin-left: -15px;
+
+			li {
+				padding-left: 40px;
+
+				ol {
+					padding-top: 16px;
+				}
+			}
+		}
+	}
+
+	table {
+		margin-bottom: 40px;
+		border-collapse: collapse;
+		width: 100%;
+
+		tr {
+			th {
+				font-size: 14px;
+				line-height: 1.29;
+				font-weight: 300;
+				color: var(--brown-grey);
+				padding: 16px;
+				text-align: left;
+				border-bottom: 1px solid #ebebeb;
+			}
+
+			td {
+				padding: 16px;
+				border-bottom: 1px solid #ebebeb;
+
+				@media (min-width: 768px) {
+					&:nth-child(1) {
+						min-width: 200px;
+					}
+				}
+
+				&:nth-child(2),
+				&:nth-child(3) {
+					font-weight: bold;
+				}
+			}
+		}
+	}
+
+	&__info {
+		display: none;
+	}
+
+	@media (max-width: 767px) {
+		font-size: 12px;
+		line-height: 1.67;
+
+		&__centermobile {
+			text-align: center;
+		}
+
+		&__info {
+			display: block;
+
+			p {
+				margin-bottom: 8px;
+			}
+		}
+
+		p {
+			font-size: 12px;
+			line-height: 1.67;
+		}
+
+		&__section {
+			&_bg {
+				padding: 16px;
+			}
+		}
+
+		&__section_bg &__row {
+			display: none;
+
+			&:nth-child(2) {
+				display: block;
+			}
+		}
+
+		&__row {
+			flex-direction: column;
+			margin: 0 0 32px;
+		}
+
+		&__section_bg &__row {
+			margin-bottom: 0;
+		}
+
+		&__section_bg &__title {
+			text-align: left;
+			position: relative;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		&__button {
+			font-size: 12px;
+			font-weight: bold;
+			letter-spacing: 0.07px;
+			text-align: right;
+			color: var(--brown-grey);
+
+			&:after {
+				content: 'Развернуть';
+			}
+		}
+
+		&__title.active &__button:after {
+			content: 'Свернуть';
+		}
+
+		&__title.active ~ &__row {
+			display: block;
+		}
+
+		&__col {
+			padding: 0;
+			width: 100%;
+
+			&:last-child {
+				padding-bottom: 0;
+			}
+		}
+
+		&__title {
+			text-align: center;
+			font-size: 18px;
+			margin-bottom: 8px;
+
+			&_small {
+				text-align: left;
+				font-size: 12px;
+				font-weight: bold;
+				line-height: 1.67;
+				margin-bottom: 0;
+			}
+		}
+
+		&__itemTitle {
+			text-align: center;
+
+			&:before {
+				font-size: 18px !important;
+				font-weight: 300 !important;
+				position: static !important;
+			}
+
+			ol {
+				text-align: left;
+				margin-left: -15px;
+
+				li {
+					padding-left: 40px;
+
+					ol {
+						padding-top: 16px;
+					}
+				}
+			}
+		}
+
+		&__itemTitle &__title {
+			display: inline-block;
+		}
+
+		ol {
+			> li {
+				&:before {
+					font-size: 12px;
+					line-height: 1.60;
+				}
+			}
+		}
+
+		table {
+			tr {
+				td, th {
+					font-size: 14px;
+					line-height: 1.71;
+
+					> span {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}

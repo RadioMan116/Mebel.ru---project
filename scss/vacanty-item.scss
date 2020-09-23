@@ -1,0 +1,184 @@
+// main: app.scss
+
+.vacanty-item {
+	border-radius: 5px;
+	border: solid 1px var(--very-light-pink);
+	background-color: var(--pale-grey);
+	padding: 0 32px;
+	margin-bottom: 16px;
+
+	&__row {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 110px;
+	}
+
+	&__col {
+		&:nth-child(2) {
+			margin-left: auto;
+		}
+
+		&:nth-child(2),
+		&:nth-child(3) {
+			width: 160px;
+			flex-shrink: 0;
+		}
+	}
+
+	&__name {
+		font-size: 22px;
+		font-weight: bold;
+		letter-spacing: 0.13px;
+		color: var(--black);
+	}
+
+	&__lnk,
+	&__lnkmobile {
+		font-size: 16px;
+		color: var(--cadet-blue);
+		text-decoration: underline;
+		cursor: pointer;
+	}
+
+	&__price {
+		font-size: 22px;
+		font-weight: bold;
+		letter-spacing: 0.13px;
+		color: var(--black);
+
+		b {
+			font-weight: normal;
+		}
+
+		span {
+			display: block;
+			font-size: 16px;
+			opacity: 0.4;
+			font-weight: 300;
+			color: var(--black);
+		}
+	}
+
+	&__button {
+		width: 160px;
+		height: 40px;
+		border-radius: 6px;
+		background-color: var(--off-yellow);
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+		font-size: 16px;
+		font-weight: bold;
+		letter-spacing: 0.1px;
+		text-align: center;
+		color: var(--black);
+	}
+
+	&__rowInner {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__cell {
+		width: 50%;
+		flex-shrink: 0;
+	}
+
+	&__section {
+		border-top: 1px solid #ebebeb;
+		padding-top: 32px;
+		padding-bottom: 16px;
+		display: none;
+	}
+
+	&__row.active ~ &__section {
+		display: block;
+	}
+
+	&__lnkmobile {
+		display: none;
+	}
+
+	@media (max-width: 767px) {
+		padding: 24px 24px 78px;
+		position: relative;
+
+		&__row {
+			flex-direction: column;
+			height: auto;
+		}
+
+		&__col {
+			text-align: center;
+
+			&:nth-child(2) {
+				margin: 0;
+			}
+
+			&:nth-child(2),
+			&:nth-child(3) {
+				width: 100%;
+			}
+		}
+
+		&__name {
+			font-size: 16px;
+			font-weight: bold;
+			line-height: 1.25;
+			text-align: center;
+			margin-bottom: 8px;
+		}
+
+		&__lnk {
+			display: none;
+		}
+
+		&__lnkmobile {
+			display: block;
+			text-align: center;
+		}
+
+		&__price {
+			b {
+				font-weight: normal;
+			}
+
+			span {
+				font-size: 14px;
+			}
+		}
+
+		&__button {
+			position: absolute;
+			left: 24px;
+			bottom: 24px;
+			right: 24px;
+			width: auto;
+		}
+
+		&__rowInner {
+			flex-direction: column;
+		}
+
+		&__cell {
+			width: 100%;
+		}
+
+		&__section {
+			border-top: none;
+			padding-top: 24px;
+			padding-bottom: 0;
+			display: none;
+		}
+
+		&__row.active ~ &__section {
+			display: block;
+		}
+
+		&__lnkmobile.active ~ &__section {
+			display: block;
+		}
+	}
+}

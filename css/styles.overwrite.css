@@ -53,6 +53,38 @@
     background: url('../img/svg/sorting_increase_active.svg') no-repeat left top;
 }
 
+/*		*/
+.sorting-price.pc-756 .up,
+.sorting-price.pc-756 .down {
+    cursor:pointer;
+}
+
+
+.sorting-price.pc-756 .up.active,
+.sorting-price.pc-756 .down.active {
+    font-weight: 700;
+		cursor:default;
+}
+
+
+.sorting .sorting-price .up {
+    background: url('../img/svg/sorting increase inactive.svg') no-repeat left top;
+}
+
+.sorting .sorting-price .up.active {
+    background: url('../img/svg/sorting_increase_active.svg') no-repeat left top;
+}
+
+.sorting .sorting-price .down {
+    background: url('../img/svg/sorting decrease inactive.svg') no-repeat left top;
+}
+
+.sorting .sorting-price .down.active {
+    background: url('../img/svg/sorting_decrease_active.svg') no-repeat left top;
+}
+
+
+
 .salons-count {
     color: #f0f0f0;
     font-size: 40px;
@@ -182,6 +214,64 @@ p.error {
 
 .cities-list a {
     width: 100%;
+}
+
+.tab-filter.active .price-h input {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.tab-filter.active .price-h .slider_base {
+    max-width: 350px;
+    width: 350px;
+    border: none;
+    background: 0 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    position: relative;
+    top: 18px;
+    border-top: 3px solid #ebebeb
+}
+
+.tab-filter.active .price-h .slider_base .noUi-base {
+    max-width: 100%;
+    margin: auto;
+    position: relative;
+    top: -3px;
+}
+
+.tab-filter.active .price-h .slider_base .noUi-handle {
+    right: -30px!important;
+    border: none;
+    background: 0 0;
+		box-shadow: none;
+}
+
+.tab-filter.active .price-h .slider_base .noUi-handle::before,
+.tab-filter.active .price-h .slider_base .noUi-handle::after {
+    display: none;
+}
+
+.tab-filter.active .price-h .slider_base .noUi-horizontal .noUi-handle, .tab-filter.active .price-h .slider_base .noUi-touch-area {
+    height: 15px;
+    width: 15px;
+    border: none;
+    border-radius: 50%;
+}
+
+.tab-filter.active .price-h .slider_base .noUi-touch-area {
+    background-color: var(--black);
+    border: 3px solid var(--off-yellow);
+    cursor: pointer;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    border-radius: 50%;
+}
+
+.tab-filter.active .price-h .slider_base .noUi-connect {
+    background-color: var(--off-yellow);
+    height: 3px;
 }
 
 @media (max-width: 756px) {

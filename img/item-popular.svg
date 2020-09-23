@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <defs>
+    <path d="M32 64C49.6731 64 64 49.6731 64 32C64 14.3269 49.6731 0 32 0C14.3269 0 0 14.3269 0 32C0 49.6731 14.3269 64 32 64Z" id="path_1" />
+    <rect width="64" height="64" id="artboard_1" />
+    <clipPath id="clip_1">
+      <use xlink:href="#artboard_1" clip-rule="evenodd" />
+    </clipPath>
+    <clipPath id="clip_2">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="Label/popular" clip-path="url(#clip_1)">
+    <use xlink:href="#artboard_1" stroke="none" fill="#FFFFFF" />
+    <g id="Oval">
+      <use stroke="none" fill="#FFFFFF" xlink:href="#path_1" />
+      <g clip-path="url(#clip_2)">
+        <use xlink:href="#path_1" fill="none" stroke="#4C7399" stroke-width="4" />
+      </g>
+    </g>
+    <path d="M6.38821 25.9123L13.748 20.5505L21.0875 25.9123C21.5972 26.2793 21.9234 26.2997 22.2088 26.0958C22.4942 25.8919 22.5962 25.5454 22.3923 24.9541L19.5788 16.3099L26.9387 10.9888C27.4483 10.6422 27.5503 10.2956 27.4483 9.94903C27.3464 9.62283 27.0406 9.41896 26.429 9.41896L17.3362 9.43935L14.5431 0.77472C14.3597 0.203874 14.0946 0 13.748 0C13.3811 0 13.116 0.203874 12.9325 0.77472L10.1599 9.43935L1.04672 9.41896C0.435097 9.41896 0.108899 9.62283 0.02735 9.94903C-0.0541994 10.2956 0.02735 10.6422 0.537034 10.9888L7.91726 16.3099L5.08342 24.9541C4.87954 25.5454 4.98148 25.8716 5.2669 26.0958C5.55232 26.3201 5.89891 26.2793 6.38821 25.9123Z" transform="translate(18.25196 17.89195)" id="Path" fill="#FF2626" stroke="none" />
+  </g>
+</svg>

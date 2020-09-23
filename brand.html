@@ -1,0 +1,1406 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<!-- MADE WITH LOVE BY <> KHMELEVSKOY & ASSOCIATES </> www.khmelevskoy.co-->
+	<meta charset="utf-8">
+	<title>Бренд</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="theme-color" content="#fff">
+	<meta name="format-detection" content="telephone=no">
+	<!-- appstore links-->
+	<!-- seo meta-->
+	<meta name="description" content="Meta description">
+	<meta name="keywords" content="Key, words">
+	<meta name="author" content="Site name">
+	<!-- og meta-->
+	<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#ffc40d">
+	<meta name="theme-color" content="#ffffff">
+	<meta property="og:title" content="Site name">
+	<meta property="og:url" content="https://projectname.surge.sh">
+	<meta property="og:image" content="https://projectname.surge.sh/img/og/1_1080х607.jpg">
+	<meta property="og:description" content="Site name">
+	<meta name="twitter:title" content="Site name">
+	<meta name="twitter:description" content="Site name">
+	<meta name="twitter:image:src" content="https://projectname.surge.sh/img/og/1_1200х628.jpg">
+	<meta name="twitter:url" content="https://projectname.surge.sh">
+	<!-- STYLE -->
+	<!-- remove for production-->
+	<meta name="robots" content="noindex">
+	<!-- preloader styles-->
+	<style>
+		#barba-wrapper {
+			opacity: 0;
+			-webkit-transition: opacity .35s ease-in-out;
+			-o-transition: opacity .35s ease-in-out;
+			transition: opacity .35s ease-in-out
+		}
+
+		#barba-wrapper.is-preloaded {
+			opacity: 1
+		}
+	</style>
+	<link rel="stylesheet" media="all" href="css/normalize.css">
+	<link rel="stylesheet" media="all" href="css/vendor.css">
+	<link rel="stylesheet" media="all" href="css/app.css">
+	<link rel="stylesheet" media="all" href="css/styles.overwrite.css">
+	<link rel="stylesheet" media="all" href="css/styles.overwrite.mockup.css">
+	<link rel="stylesheet" media="all" href="css/new-style.css">
+	<!-- STYLE -->
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<!-- GRID TEST (remove on production)-->
+	<div class="demo-grid">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div></div>
+				</div>
+				<div class="col">
+					<div></div>
+				</div>
+				<div class="col">
+					<div></div>
+				</div>
+				<div class="col">
+					<div></div>
+				</div>
+				<div class="col">
+					<div></div>
+				</div>
+				<div class="col">
+					<div></div>
+				</div>
+				<div class="col">
+					<div></div>
+				</div>
+				<div class="col">
+					<div></div>
+				</div>
+				<div class="col">
+					<div></div>
+				</div>
+				<div class="col">
+					<div></div>
+				</div>
+				<div class="col">
+					<div></div>
+				</div>
+				<div class="col">
+					<div></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- GRID TEST (remove on production)-->
+	<div js-show-grid> <span>grid</span></div>
+	<!-- WRAPPER -->
+	<div id="wrapper">
+		<!-- HEADER -->
+		<header class="header">
+			<!-- top-->
+			<div class="header__top">
+				<div class="container">
+					<div class="row">
+						<a href="#" data-city-code="KAZAN" class="location-mag" popup="cities-popup">
+							<img src="/img/svg/location.svg">
+							<span class="location-mag__text">Казань</span>
+						</a>
+
+						<ul class="header__top-menu" js-menu-hider="">
+							<li><span ajax-modal="WANT_CHEAPER">Как купить дешевле</span></li>
+
+							<li><span ajax-modal="CREDIT">Оформить кредит</span></li>
+
+							<li><a href="/salons/map/" class="selected">Магазины на карте</a></li>
+
+						</ul>
+						<div class="header__top-sale">
+							<a href="/sales/kitchens/" class="selle">
+								<img src="/img/svg/badge.svg" class="product">
+								<span class="icon-text">Распродажа с витрины</span>
+							</a>
+							<a href="/actions/" class="acti">
+								<span>%</span>&nbsp;Акции
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- center-->
+			<div class="header__center ">
+				<div class="container">
+					<div class="row">
+						<div class="header__center-logo">
+							<a href="/">
+								<img src="/img/svg/logo.svg" alt="Онлайн гипермаркет мебели">
+							</a>
+							<a href="/" class="mobile">
+								<img src="/img/svg/logo-mob.svg" alt="">
+							</a>
+						</div>
+						<div class="header__center-burger">
+							<div><img src="/img/svg/menu.svg" alt=""></div>
+						</div>
+						<div class="header__center-catalot">
+
+							<ul class="header__center-catalot__list">
+
+								<li class="list active">
+									<a href="/catalog/">Каталог мебели</a>
+									<ul class="none header__center-catalot__list-tlv">
+										<li>
+											<a href="/catalog/kitchens/">
+												<span class="menu_img"><img
+														src="/upload/iblock/af6/af678d1ac38e6fdb9e8466de592c1a6c.png"></span>
+												<span>Кухни</span>
+											</a>
+										</li>
+										<li>
+											<a href="/catalog/sofas/">
+												<span class="menu_img"><img
+														src="/upload/iblock/504/504532606b0fe3543b458ee5e225fab4.png"></span>
+												<span>Диваны</span>
+											</a>
+										</li>
+										<li>
+											<a href="/catalog/cabinets/">
+												<span class="menu_img"><img
+														src="/upload/iblock/f54/f54fd259ad0661d4498d38b444227ea5.png"></span>
+												<span>Шкафы</span>
+											</a>
+										</li>
+										<li>
+											<a href="/catalog/matrases/">
+												<span class="menu_img"><img
+														src="/upload/iblock/21f/21f3ae0e03a8dbb5e734bebad37125a1.png"></span>
+												<span>Матрасы</span>
+											</a>
+										</li>
+										<li>
+											<a href="/catalog/beds/">
+												<span class="menu_img"><img
+														src="/upload/iblock/994/9945f881f82a47da25306b3993f0f388.png"></span>
+												<span>Кровати</span>
+											</a>
+										</li>
+										<li>
+											<a href="/catalog/armchairs/">
+												<span class="menu_img"><img
+														src="/upload/iblock/a85/a8543371166540c9856fd6579d76af2f.png"></span>
+												<span>Кресла</span>
+											</a>
+										</li>
+										<li>
+											<a href="/catalog/tables/">
+												<span class="menu_img"><img
+														src="/upload/iblock/8e8/8e836a5a09af73264354a8654dfff0d0.png"></span>
+												<span>Столы</span>
+											</a>
+										</li>
+										<li>
+											<a href="/catalog/chairs/">
+												<span class="menu_img"><img
+														src="/upload/iblock/ff8/ff877a0f365a8d5198ab69a528f0c721.png"></span>
+												<span>Стулья</span>
+											</a>
+										</li>
+										<li>
+											<a href="/catalog/komody-tumby/">
+												<span class="menu_img"><img
+														src="/upload/iblock/fa0/fa0b31911912a575e5d59ce3e65477fe.png"></span>
+												<span>Комоды и тумбы</span>
+											</a>
+										</li>
+										<li>
+											<a href="/catalog/sadovaya-mebel/">
+												<span class="menu_img"><img
+														src="/upload/resize_cache/iblock/af4/120_80_2/af4cd2ec6533d0fda66ae3b94d35288f.png"></span>
+												<span>Садовая мебель</span>
+											</a>
+										</li>
+									</ul>
+									<span>И сопутствующих товаров</span>
+								</li>
+
+								<li><a href="/salons/map/">Где купить</a><span>Найти на карте</span></li>
+
+								<li><a href="/salons/">Магазины</a><span>Вся информация</span></li>
+
+								<li><a href="/services/">Сервисы</a><span>Доступные услуги</span></li>
+
+							</ul>
+							<div class="mob_menu none">
+								<div class="header__top-login">
+									<a href="/auth/" class="auth">
+										<img src="/img/svg/icons/login.svg" class="login">
+										<span class="icon-text">Войти</span>
+									</a>
+									<span class="separator"></span>
+									<a href="/auth/registration.php" class="reg">
+										Регистрация
+									</a>
+
+								</div>
+								<ol>
+									<li><a href="javascript:void(0);" ajax-modal="MANUFACTURERS">Производители</a></li>
+									<li><a href="javascript:void(0);" ajax-modal="CREDIT">Оформить кредит</a></li>
+									<li><a href="javascript:void(0);" ajax-modal="QUESTIONS_DESIGNERS">Вопросы
+											дизайнерам</a>
+									</li>
+								</ol>
+								<a href="javascript:void(0);" popup="cities-popup" class="maps_link"><img
+										src="/img/svg/location.svg" alt="">Казань</a>
+							</div>
+						</div>
+
+						<form class="header__center-search " action="/search/index.php" method="POST"
+							js-header-search="">
+							<div class="header__center-search__input">
+								<label>
+									<input type="text" placeholder="Поиск" name="q">
+								</label>
+							</div>
+							<div class="header__center-search__cta">
+								<button class="btn" type="submit"><img src="/img/svg/search.svg" alt=""></button>
+							</div>
+						</form>
+						<div class="header__center-deferred">
+							<a href="/catalog/compare/" class="header__center-deferred-link">
+								<img src="/img/svg/icons/compare.svg" alt="">
+								<span class="js_compare"></span>
+								<span>Сравнение</span>
+							</a>
+						</div>
+						<div class="header__center-deferred">
+							<a href="/favorites/">
+								<img src="/img/svg/icons/favorite.svg" alt="">
+								<span class="js_favorite it">1</span>
+								<span>Отложенное</span>
+							</a>
+						</div>
+
+						<div class="mobile" id="search"><a href="/search/"><img src="/img/svg/icons/search.svg"
+									alt=""></a></div>
+						<div class="mobile  " id="compare">
+							<a href="/catalog/compare/">
+								<span></span>
+							</a>
+						</div>
+						<div class="mobile active" id="like">
+							<a href="/favorites/">
+								<span>1</span>
+							</a>
+						</div>
+						<div class="mobile" id="burger"><span class="span"></span></div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- HEADER -->
+		<!-- CRUMBS -->
+		<div class="crumbs">
+			<div class="container">
+				<link href="/bitrix/css/main/font-awesome.css?157909583528777" type="text/css" rel="stylesheet">
+				<ul class="crumbs__ul" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+					<li class="crumbs__ul-list">
+						<a itemprop="item" href="/" title="Главная">
+							<span itemprop="name">Главная</span></a>
+						<meta itemprop="position" content="1">
+					</li>
+					<li class="crumbs__ul-list"><span itemprop="name">Askona</span>
+						<meta itemprop="position" content="5">
+					</li>
+				</ul>
+				<h1>Askona </h1>
+				<div class="calon__card-header brand__card-header">
+					<div class="left">
+						<a href="#" class="logo"><img src="img/logo-as.png" alt=""></a>
+						<div class="stars">
+							<div class="stars-star">
+								<img src="img/svg/star.svg" alt=""> <img src="img/svg/star.svg" alt=""> <img
+									src="img/svg/star.svg" alt=""> <img src="img/svg/star.svg" alt=""> <img
+									src="img/svg/star.svg" alt="">
+							</div>
+							<div class="stars-review"><a href="#">1257 отзывов</a></div>
+						</div>
+						<div class="error"><img src="img/svg/icons/claim.svg" alt=""></div>
+						<div class="sharing">
+							<div class="sharing__button">
+								<img src="img/svg/icons/sharing.svg" alt="">
+							</div>
+							<!-- /.sharing__button -->
+
+							<div class="sharing__container">
+								<div class="sharing__title">Поделиться</div>
+								<!-- /.sharing__title -->
+								<div class="sharing__row">
+									<script async="async" src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js">
+									</script>
+									<script async="async" src="https://yastatic.net/share2/share.js"></script>
+									<div class="ya-share2" data-bare
+										data-services="vkontakte,odnoklassniki,facebook,whatsapp,telegram,moimir">
+									</div>
+									<a href="#share" class="share"></a>
+								</div>
+								<!-- /.sharing__row -->
+							</div>
+							<!-- /.sharing__container -->
+						</div>
+						<!-- /.sharing -->
+						<a href="#edit" class="edit"><img src="img/svg/icons/edit.svg" alt=""></a>
+					</div>
+					<div class="right">
+
+						<a href="#" class="btn yellow btn-yellow">Написать отзыв</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- CRUMBS -->
+		<!-- PAGE -->
+		<div class="page">
+			<div class="page__content">
+				<!-- CONTENT -->
+				<div class="content__block">
+					<div class="container">
+						<div class="content__wrapper">
+							<div class="photo__block swiper-container">
+								<div class="left">
+									<div class="img"><img src="img/foto-1.jpg" alt=""></div>
+								</div>
+								<div class="right swiper-wrapper">
+									<div class="img swiper-slide">
+										<img src="img/foto-1.jpg" alt="">
+									</div>
+									<div class="img swiper-slide">
+										<img src="img/foto-2.jpg" alt="">
+									</div>
+									<div class="img swiper-slide">
+										<img src="img/foto-3.jpg" alt="">
+									</div>
+									<div class="img swiper-slide">
+										<img src="img/foto-4.jpg" alt="">
+									</div>
+									<div class="img swiper-slide">
+										<img src="img/foto-5.jpg" alt="">
+									</div>
+									<div class="img swiper-slide">
+										<img src="img/foto-6.jpg" alt="">
+									</div>
+									<div class="img swiper-slide">
+										<img src="img/foto-7.jpg" alt="">
+									</div>
+									<div class="img swiper-slide">
+										<img src="img/foto-8.jpg" alt="">
+									</div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+
+							<div class="text">
+								<p>
+									Мы создали компанию Askona для того, чтобы принести знание об исключительной
+									важности
+									сна для здоровой и
+									полноценной жизни каждого человека.
+								</p>
+								<p>
+									Все товары и услуги, которые предлагает наша компания, призваны значительно улучшить
+									качество сна наших
+									покупателей.
+								</p>
+								<p>
+									Askona входит в состав шведского концерна Hilding Anders Group - лидирующего
+									производителя кроватей и матрасов в
+									Европе и Азии. Концерн Hilding Anders присутствует на 27 Европейских и 13 азиатских
+									рынках.
+								</p>
+								<p>
+									«Аскона» - это гарантия полноценного отдыха: каждый третий россиянин спит на матрасе
+									Askona. Одна из причин этого
+									– строгий контроль качества продукции в собственной лаборатории сна - единственной в
+									России испытательной
+									лаборатории для мягкой мебели, сертифицированной ISO тестирующей по европейским
+									стандартам.
+								</p>
+								<p>
+									Более чем за 25-летний опыт работы, мы заслужили высокую репутацию на мировом рынке:
+									такие всемирно известные
+									сети отелей, как Hilton, Radisson SAS, Marriott и другие, доверяют сон своих
+									постояльцев
+									нашей компании.
+								</p>
+								<p>
+									Мы создали компанию Askona для того, чтобы принести знание об исключительной
+									важности
+									сна для здоровой и
+									полноценной жизни каждого человека.
+								</p>
+								<p>
+									Все товары и услуги, которые предлагает наша компания, призваны значительно улучшить
+									качество сна наших
+									покупателей.
+								</p>
+								<p>
+									Askona входит в состав шведского концерна Hilding Anders Group - лидирующего
+									производителя кроватей и матрасов в
+									Европе и Азии. Концерн Hilding Anders присутствует на 27 Европейских и 13 азиатских
+									рынках.
+								</p>
+								<p>
+									«Аскона» - это гарантия полноценного отдыха: каждый третий россиянин спит на матрасе
+									Askona. Одна из причин этого
+									– строгий контроль качества продукции в собственной лаборатории сна - единственной в
+									России испытательной
+									лаборатории для мягкой мебели, сертифицированной ISO тестирующей по европейским
+									стандартам.
+								</p>
+								<p>
+									Более чем за 25-летний опыт работы, мы заслужили высокую репутацию на мировом рынке:
+									такие всемирно известные
+									сети отелей, как Hilton, Radisson SAS, Marriott и другие, доверяют сон своих
+									постояльцев
+									нашей компании.
+								</p>
+								<div class="read-full">Читать полностью</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<!-- CONTENT -->
+				<!-- MAP -->
+				<div class="map v-2">
+					<div class="container">
+						<div class="map__wrapper">
+							<H3>На карте</H3>
+							<H2>Продавцы продукции «Askona» на карте</H2>
+							<div class="center row">
+								<div class="col-8">
+									<div id="map"></div>
+								</div>
+								<div class="col-4">
+									<div class="col-s full">
+										<div class="checkbox">
+											<div class="checkbox-sl">
+												<label>
+													<input type="checkbox">
+													<span class="checkmark"></span>
+													<span>
+														<img src="/img/svg/icons/3d.svg" alt="">
+														Только с 3D-туром
+													</span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-4">
+									<div class="col-s full">
+										<div class="left">
+											<div class="col-title"><a href=#>ТЦ «Мега Хоум»</a></div>
+											<div class="col-p">Москва, Наб. реки Фонтанки, 121 А</div>
+										</div>
+										<div class="right">
+											<div class="text-1"><span>Открыто</span> - до закрытия 4 ч. пн-вс с 10:00 до
+												20:00</div>
+											<div class="text-2"><span class="plac">Тел. отдела продаж:</span><span
+													class="mob mob1">8 800 555 ** **</span><span class="mob mob2">+7 495
+													577 ** **</span><a href="#">Показать телефон</a></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-4">
+									<div class="col-s full">
+										<div class="left">
+											<div class="col-title"><a href=#>ТЦ «Мега Хоум»</a></div>
+											<div class="col-p">Москва, Наб. реки Фонтанки, 121 А</div>
+										</div>
+										<div class="right">
+											<div class="text-1"><span class="close-r">Закрыто</span> - до закрытия 4 ч.
+												пн-вс с 10:00 до 20:00</div>
+											<div class="text-2"><span class="plac">Тел. отдела продаж:</span><span
+													class="mob mob1">8 800 555 ** **</span><span class="mob mob2">+7 495
+													577 ** **</span><a href="#">Показать телефон</a></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-4">
+									<div class="col-s full">
+										<div class="left">
+											<div class="col-title"><a href=#>ТЦ «Мега Хоум»</a></div>
+											<div class="col-p">Москва, Наб. реки Фонтанки, 121 А</div>
+										</div>
+										<div class="right">
+											<div class="text-1"><span>Открыто</span> - до закрытия 4 ч. пн-вс с 10:00 до
+												20:00</div>
+											<div class="text-2"><span class="plac">Тел. отдела продаж:</span><span
+													class="mob mob1">8 800 555 ** **</span><span class="mob mob2">+7 495
+													577 ** **</span><a href="#">Показать телефон</a></div>
+										</div>
+									</div>
+								</div>
+								<div class="ajax-load">
+									<div class="btn btn-grey">Загрузить еще</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- MAP -->
+				<!-- ARTICLES -->
+				<div class="articles">
+					<div class="container container-">
+						<div class="articles__wrapper">
+							<div class="top mb">
+								<H2>Акции и распродажи</H2>
+								<a class="btn white" href="#">Все акции</a>
+							</div>
+							<div class="swiper-container swiper-articles">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide articles-block">
+										<div class="top-sl">
+											<div class="articles-block-img"><img src="img/bitmap1.jpg" alt=""></div>
+											<H3>Заголовок новости или статьи 1</H3>
+											<div class="articles-block-text">Внимательно выслушаем все Ваши пожелания и
+												подберём 5 проектов за 2 часа абсолютно бесплатно.</div>
+										</div>
+
+									</div>
+									<div class="swiper-slide articles-block">
+										<div class="top-sl">
+											<div class="articles-block-img"><img src="img/bitmap1.jpg" alt=""></div>
+											<H3>Заголовок новости или статьи в несколько строк 2</H3>
+											<div class="articles-block-text">Внимательно выслушаем все Ваши пожелания и
+												подберём 5 проектов за 2 часа абсолютно бесплатно.</div>
+										</div>
+
+									</div>
+									<div class="swiper-slide articles-block">
+										<div class="top-sl">
+											<div class="articles-block-img"><img src="img/bitmap1.jpg" alt=""></div>
+											<H3>Заголовок новости или статьи в несколько строк 3</H3>
+											<div class="articles-block-text">Внимательно выслушаем все Ваши пожелания и
+												подберём 5 проектов за 2 часа абсолютно бесплатно.</div>
+										</div>
+
+									</div>
+									<div class="swiper-slide articles-block">
+										<div class="top-sl">
+											<div class="articles-block-img"><img src="img/bitmap1.jpg" alt=""></div>
+											<H3>Заголовок новости или статьи 4</H3>
+											<div class="articles-block-text">Внимательно выслушаем все Ваши пожелания и
+												подберём 5 проектов </div>
+										</div>
+
+									</div>
+									<div class="swiper-slide articles-block">
+										<div class="top-sl">
+											<div class="articles-block-img"><img src="img/bitmap1.jpg" alt=""></div>
+											<H3>Заголовок новости или статьи 5</H3>
+											<div class="articles-block-text">Внимательно выслушаем все Ваши пожелания и
+												подберём 5 проектов </div>
+										</div>
+
+									</div>
+									<div class="swiper-slide articles-block">
+										<div class="top-sl">
+											<div class="articles-block-img"><img src="img/bitmap1.jpg" alt=""></div>
+											<H3>Заголовок новости или статьи 5</H3>
+											<div class="articles-block-text">Внимательно выслушаем все Ваши пожелания и
+												подберём 5 проектов за 2 часа абсолютно бесплатно.</div>
+										</div>
+
+									</div>
+									<div class="swiper-slide articles-block">
+										<div class="top-sl">
+											<div class="articles-block-img"><img src="img/bitmap1.jpg" alt=""></div>
+											<H3>Заголовок новости или статьи 5</H3>
+											<div class="articles-block-text">Внимательно выслушаем все Ваши пожелания и
+												подберём 5 проектов за 2 часа абсолютно бесплатно.</div>
+										</div>
+
+									</div>
+								</div>
+								<!-- Add Arrows -->
+								<div class="swiper-button-next"></div>
+								<div class="swiper-button-prev"></div>
+							</div>
+							<a class="btn white mobile-m" href="#">Все статьи</a>
+						</div>
+					</div>
+				</div>
+				<!-- ARTICLES -->
+
+				<div class="faq-main">
+					<div class="container">
+						<h2>Полезные отзывы о бренде «Askona» <span>342</span></h2>
+						<div class="container pad-16 sorting  commetnt_sort">
+							<div class="sorting-price pc-756">
+								<div class="up" data-sort-order="desc">По дате</div>
+								<div class="up" data-sort-order="desc">По полезности</div>
+							</div>
+							<div class="selecta mob-756">
+								<select name="">
+									<option value="">По дате</option>
+									<option value="">По полезности</option>
+								</select>
+							</div>
+							<div class="nac">
+								С оценкой
+								<div class="nac__link">
+									<a href="#">Любой</a>
+									<ul>
+										<li> <a href="#">Любой2</a></li>
+										<li> <a href="#">если длнная Любой3</a></li>
+										<li><a href="#">Любой4</a></li>
+									</ul>
+
+								</div>
+
+							</div>
+							<div class="checkbox-sl">
+								<label>
+									<input type="checkbox">
+									<span class="checkmark"></span>
+									<span class="checkbox-text">Отзывы о товарах</span>
+								</label>
+							</div>
+							<div class="checkbox-sl">
+								<label>
+									<input type="checkbox">
+									<span class="checkmark"></span>
+									<span class="checkbox-text">Отзывы о Бренде</span>
+								</label>
+							</div>
+						</div>
+						<div class="news-article__comment-block">
+							<div class="comment-block__wrapper">
+								<div class="comments">
+									<div class="comments__item">
+										<div class="comments__item__top">
+											<div class="comment__item_user">
+												<div class="comment__user-img rounded">
+													<img src="img/user-50.jpg" alt="">
+												</div>
+												<div class="comment__user-info">
+													<span>Константин Торшин</span>
+													<span>Покупатель</span>
+												</div>
+											</div>
+											<div class="comment-link">
+												<span>
+													Товар
+												</span>
+												<a href="" class="comment-name">
+													Угловой диван-кровать
+												</a>
+												<!-- /.comment-name -->
+											</div>
+											<!-- /.comment-link -->
+											<div class="comment-time">
+												<span>Сегодня в 17:39</span>
+												<div class="stars">
+													<div class="stars-star">
+														<img src="img/svg/star.svg" alt="">
+														<img src="img/svg/star.svg" alt="">
+														<img src="img/svg/star.svg" alt="">
+														<img src="img/svg/star.svg" alt="">
+														<img src="img/svg/star.svg" alt="">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="comments__item__content">
+											<p>
+												Приобретали недавно кухню в салоне КонстантиновоМебельКурск. Отличная
+												кухня! Всё под рукой, не маркие
+												материалы. С удовольствием провожу время как за готовкой так и за
+												чтением книг. В цену, указанную на этом
+												сайте, не включена доставка, поэтому высчитывать конечный ценник
+												придется самому. Иногда товары, попавшие
+												в фильтр, в конечном итоге оказывается либо не доставляют в наш город,
+												либо они уже закончились, а
+												информация об их наличии еще осталась.
+											</p>
+										</div>
+										<div class="comments__item__bottom">
+											<span class="show-other-comments" value="2">Показать 2 комментария</span>
+											<span class="answer-to-comment">Ответить</span>
+											<div class="comments__item__bottom_right">
+												<span class="useful">Полезно?</span>
+												<div class="likes">
+													<div class="likes-like"><img src="img/svg/like.svg" alt=""> 98
+													</div>
+													<div class="likes-dizlike"><img src="img/svg/like.svg" alt=""> 3
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="additional-comments">
+											<div class="additional-comments__item">
+												<div class="comments__item__top">
+													<div class="comment__item_user">
+														<div class="comment__user-img rounded">
+															<img src="img/user-55.jpg" alt="">
+														</div>
+														<div class="comment__user-info">
+															<span>Владимир Костомаров</span>
+															<span>Покупатель</span>
+														</div>
+													</div>
+												</div>
+												<div class="comments__item__content">
+													<p>Во сколько обошлась доставка в итоге?</p>
+												</div>
+												<span class="answer-to-comment">Ответить</span>
+											</div>
+											<div class="additional-comments__item">
+												<div class="comments__item__top">
+													<div class="comment__item_user">
+														<div class="comment__user-img rounded">
+															<img src="img/user-50.jpg" alt="">
+														</div>
+														<div class="comment__user-info">
+															<span>Владимир Костомаров</span>
+															<span>Покупатель</span>
+														</div>
+													</div>
+												</div>
+												<div class="comments__item__content">
+													<p>Константин, все зависит от вашей удаленности от Москвы. В
+														пределах мкад доставка до 3 тысяч. за
+														пределами от 50 рублей за километр</p>
+												</div>
+												<span class="answer-to-comment">Ответить</span>
+											</div>
+										</div>
+									</div>
+									<div class="comments__item">
+										<div class="comments__item__top">
+											<div class="comment__item_user">
+												<div class="comment__user-img rounded">
+													<img src="img/user-50.jpg" alt="">
+												</div>
+												<div class="comment__user-info">
+													<span>Константин Торшин</span>
+													<span>Покупатель</span>
+												</div>
+											</div>
+											<div class="comment-link">
+												<span>
+													Товар
+												</span>
+												<a href="" class="comment-name">
+													Угловой диван-кровать
+												</a>
+												<!-- /.comment-name -->
+											</div>
+											<!-- /.comment-link -->
+											<div class="comment-time">
+												<span>Сегодня в 17:39</span>
+												<div class="stars">
+													<div class="stars-star">
+														<img src="img/svg/star.svg" alt="">
+														<img src="img/svg/star.svg" alt="">
+														<img src="img/svg/star.svg" alt="">
+														<img src="img/svg/star.svg" alt="">
+														<img src="img/svg/star.svg" alt="">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="comments__item__content">
+											<p>
+												Приобретали недавно кухню в салоне КонстантиновоМебельКурск. Отличная
+												кухня! Всё под рукой, не маркие
+												материалы. С удовольствием провожу время как за готовкой так и за
+												чтением книг. В цену, указанную на этом
+												сайте, не включена доставка, поэтому высчитывать конечный ценник
+												придется самому. Иногда товары, попавшие
+												в фильтр, в конечном итоге оказывается либо не доставляют в наш город,
+												либо они уже закончились, а
+												информация об их наличии еще осталась.
+											</p>
+										</div>
+										<div class="comments__item__bottom">
+											<span class="show-other-comments" value="2">Скрыть комментарии</span>
+											<span class="answer-to-comment">Ответить</span>
+											<div class="comments__item__bottom_right">
+												<span class="useful">Полезно?</span>
+												<div class="likes">
+													<div class="likes-like"><img src="img/svg/like.svg" alt=""> 98
+													</div>
+													<div class="likes-dizlike"><img src="img/svg/like.svg" alt=""> 3
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="additional-comments" style="display: block;">
+											<div class="additional-comments__item">
+												<div class="comments__item__top">
+													<div class="comment__item_user">
+														<div class="comment__user-img rounded">
+															<img src="img/user-55.jpg" alt="">
+														</div>
+														<div class="comment__user-info">
+															<span>Владимир Костомаров</span>
+															<span>Покупатель</span>
+														</div>
+													</div>
+												</div>
+												<div class="comments__item__content">
+													<p>Во сколько обошлась доставка в итоге?</p>
+												</div>
+												<span class="answer-to-comment">Ответить</span>
+											</div>
+											<div class="additional-comments__item">
+												<div class="comments__item__top">
+													<div class="comment__item_user">
+														<div class="comment__user-img rounded">
+															<img src="img/user-50.jpg" alt="">
+														</div>
+														<div class="comment__user-info">
+															<span>Владимир Костомаров</span>
+															<span>Покупатель</span>
+														</div>
+													</div>
+												</div>
+												<div class="comments__item__content">
+													<p>Константин, все зависит от вашей удаленности от Москвы. В
+														пределах мкад доставка до 3 тысяч. за
+														пределами от 50 рублей за километр</p>
+												</div>
+												<span class="answer-to-comment">Ответить</span>
+											</div>
+										</div>
+									</div>
+									<div class="comments__item">
+										<div class="comments__item__top">
+											<div class="comment__item_user">
+												<div class="comment__user-img rounded">
+													<img src="img/user-50.jpg" alt="">
+												</div>
+												<div class="comment__user-info">
+													<span>Константин Торшин</span>
+													<span>Покупатель</span>
+												</div>
+											</div>
+
+											<div class="comment-time">
+												<span>Сегодня в 17:39</span>
+												<div class="stars">
+													<div class="stars-star">
+														<img src="img/svg/star.svg" alt="">
+														<img src="img/svg/star.svg" alt="">
+														<img src="img/svg/star--grey.svg" alt="">
+														<img src="img/svg/star--grey.svg" alt="">
+														<img src="img/svg/star--grey.svg" alt="">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="comments__item__content">
+											<p>
+												Приобретали недавно кухню в салоне КонстантиновоМебельКурск. Отличная
+												кухня! Всё под рукой, не маркие
+												материалы. С удовольствием провожу время как за готовкой так и за
+												чтением книг. В цену, указанную на этом
+												сайте, не включена доставка, поэтому высчитывать конечный ценник
+												придется самому. Иногда товары, попавшие
+												в фильтр, в конечном итоге оказывается либо не доставляют в наш город,
+												либо они уже закончились, а
+												информация об их наличии еще осталась.
+											</p>
+										</div>
+										<div class="comments__item__bottom">
+											<span class="show-other-comments" value="2">Показать 2 комментария</span>
+											<span class="answer-to-comment">Ответить</span>
+											<div class="comments__item__bottom_right">
+												<span class="useful">Полезно?</span>
+												<div class="likes">
+													<div class="likes-like"><img src="img/svg/like.svg" alt=""> 98
+													</div>
+													<div class="likes-dizlike"><img src="img/svg/like.svg" alt=""> 3
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="additional-comments">
+											<div class="additional-comments__item">
+												<div class="comments__item__top">
+													<div class="comment__item_user">
+														<div class="comment__user-img rounded">
+															<img src="img/user-55.jpg" alt="">
+														</div>
+														<div class="comment__user-info">
+															<span>Владимир Костомаров</span>
+															<span>Покупатель</span>
+														</div>
+													</div>
+												</div>
+												<div class="comments__item__content">
+													<p>Во сколько обошлась доставка в итоге?</p>
+												</div>
+												<span class="answer-to-comment">Ответить</span>
+											</div>
+											<div class="additional-comments__item">
+												<div class="comments__item__top">
+													<div class="comment__item_user">
+														<div class="comment__user-img rounded">
+															<img src="img/user-50.jpg" alt="">
+														</div>
+														<div class="comment__user-info">
+															<span>Владимир Костомаров</span>
+															<span>Покупатель</span>
+														</div>
+													</div>
+												</div>
+												<div class="comments__item__content">
+													<p>Константин, все зависит от вашей удаленности от Москвы. В
+														пределах мкад доставка до 3 тысяч. за
+														пределами от 50 рублей за километр</p>
+												</div>
+												<span class="answer-to-comment">Ответить</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="more-comments mob-756">
+									<div class="shown-comments">
+										<div>
+											<span>Вы посмотрели</span>
+											<span>24 из 129 комментариев</span>
+										</div>
+									</div>
+									<div class="totop btn btn-grey">
+										<span>Наверх</span>
+									</div>
+								</div>
+								<div class="pagination ajax">
+									<ul class="pagination__ul">
+										<li>
+											<a class="control-button" href="#">
+												<img src="img/svg/drop arr red.svg" alt="">
+												Назад
+											</a>
+										</li>
+										<li>
+											<a href="#">1</a></li>
+										<li class="active"><a href="#">2</a></li>
+										<li>
+											<a href="#">3</a></li>
+										<li>
+											<a class="control-button" href="#">Вперед
+												<img src="img/svg/drop arr red.svg" alt="">
+											</a>
+										</li>
+									</ul>
+									<button class="btn btn-grey" data-page="2">Загрузить еще</button>
+									<div class="selecta">
+										<div class="selecta-title">Показывать на странице</div>
+										<select name="">
+											<option value="">1</option>
+											<option value="">2</option>
+											<option value="">3</option>
+											<option value="">4</option>
+											<option value="">5</option>
+											<option value="">6</option>
+											<option value="">7</option>
+											<option value="">8</option>
+										</select>
+									</div>
+								</div>
+								<div class="container-m">
+									<div class="mob-600 pagin">
+										<div class="indic"><span>Вы посмотрели</span>1000 из 1500 моделей</div>
+										<a class="pagin-a btn btn-grey" href="#wrapper">Наверх <img
+												src="img/svg/arrow-copy.svg" alt="" class="arrow"></a>
+									</div>
+									<div class="ajax-load mob-600">
+										<div class="btn btn-grey">Загрузить еще</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<!-- PRODUCTS -->
+				<div class="products dr">
+					<div class="container">
+						<div class="products__wrapper row">
+							<div class="top fl-21">
+								<H2>Товары бренда «Askona» у продавцов<span>427</span></H2>
+								<a class="btn white" href="#">Все товары</a>
+							</div>
+							<div class="search">
+								<div class="filter-tabs">
+									<div class="container">
+										<div class="category-toggle-top resl">
+											<div class="tab-1 tab active">Все товары</div>
+											<div class="tab-2 tab">Распродажа с витрины</div>
+											<div class="tab-3 tab">Ликвидация остатков</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="products__block salon__block">
+								<div class="products__block-product product col-3">
+									<div class="product-img"><img src="img/div.png" alt=""></div>
+									<div class="product__wrapper">
+										<div class="product-title">Угловой диван-кровать</div>
+										<div class="product-name">Манхэттен</div>
+										<div class="product-price">176 990 <span>руб.</span></div>
+										<div class="product-link"><a href="#">название сайта.ру</a></div>
+										<div class="category-more">
+											<div class="stars">
+												<div class="stars-star">
+													<img src="img/svg/star.svg" alt=""> <img src="img/svg/star.svg"
+														alt=""> <img src="img/svg/star.svg" alt=""> <img
+														src="img/svg/star.svg" alt=""> <img src="img/svg/star.svg"
+														alt="">
+												</div>
+												<div class="stars-review"><a href="#">1257 отзывов</a></div>
+											</div>
+											<a href="#" class="likesa"><img src="img/svg/icons/favorite.svg" alt=""></a>
+											<a href="#" class="compar"><img src="img/svg/icons/compar.svg" alt=""></a>
+										</div>
+
+									</div>
+								</div>
+								<div class="products__block-product product col-3">
+									<div class="product-img"><img src="img/div.png" alt=""></div>
+									<div class="product__wrapper">
+										<div class="product-title">Угловой диван-кровать</div>
+										<div class="product-name">Манхэттен</div>
+										<div class="product-price">176 990 <span>руб.</span></div>
+										<div class="product-link"><a href="#">название сайта.ру</a></div>
+										<div class="category-more">
+											<div class="stars">
+												<div class="stars-star">
+													<img src="img/svg/star.svg" alt=""> <img src="img/svg/star.svg"
+														alt=""> <img src="img/svg/star.svg" alt=""> <img
+														src="img/svg/star.svg" alt=""> <img src="img/svg/star.svg"
+														alt="">
+												</div>
+												<div class="stars-review"><a href="#">1257 отзывов</a></div>
+											</div>
+											<a href="#" class="likesa"><img src="img/svg/icons/favorite.svg" alt=""></a>
+											<a href="#" class="compar"><img src="img/svg/icons/compar.svg" alt=""></a>
+										</div>
+
+									</div>
+								</div>
+								<div class="products__block-product product col-3">
+									<div class="product-img"><img src="img/div.png" alt=""></div>
+									<div class="product__wrapper">
+										<div class="product-title">Угловой диван-кровать</div>
+										<div class="product-name">Манхэттен</div>
+										<div class="product-price">176 990 <span>руб.</span></div>
+										<div class="product-link"><a href="#">название сайта.ру</a></div>
+										<div class="category-more">
+											<div class="stars">
+												<div class="stars-star">
+													<img src="img/svg/star.svg" alt=""> <img src="img/svg/star.svg"
+														alt=""> <img src="img/svg/star.svg" alt=""> <img
+														src="img/svg/star.svg" alt=""> <img src="img/svg/star.svg"
+														alt="">
+												</div>
+												<div class="stars-review"><a href="#">1257 отзывов</a></div>
+											</div>
+											<a href="#" class="likesa"><img src="img/svg/icons/favorite.svg" alt=""></a>
+											<a href="#" class="compar"><img src="img/svg/icons/compar.svg" alt=""></a>
+										</div>
+
+									</div>
+								</div>
+								<div class="products__block-product product col-3">
+									<div class="product-img"><img src="img/div.png" alt=""></div>
+									<div class="product__wrapper">
+										<div class="product-title">Угловой диван-кровать</div>
+										<div class="product-name">Манхэттен</div>
+										<div class="product-price">176 990 <span>руб.</span></div>
+										<div class="product-link"><a href="#">название сайта.ру</a></div>
+										<div class="category-more">
+											<div class="stars">
+												<div class="stars-star">
+													<img src="img/svg/star.svg" alt=""> <img src="img/svg/star.svg"
+														alt=""> <img src="img/svg/star.svg" alt=""> <img
+														src="img/svg/star.svg" alt=""> <img src="img/svg/star.svg"
+														alt="">
+												</div>
+												<div class="stars-review"><a href="#">1257 отзывов</a></div>
+											</div>
+											<a href="#" class="likesa"><img src="img/svg/icons/favorite.svg" alt=""></a>
+											<a href="#" class="compar"><img src="img/svg/icons/compar.svg" alt=""></a>
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+							<div class="ajax-load">
+								<div class="btn btn-grey">Загрузить еще</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- PRODUCTS -->
+			</div>
+		</div>
+		<!-- PAGE -->
+		<!-- FOOTER :: START-->
+		<footer class="footer footer_new">
+			<div class="footer__inner">
+				<div class="container">
+					<div class="footer__wrapper row">
+						<div class="footer__container">
+							<div class="footer__container-logo-mob mobile">
+								<a href="#">
+									<img src="img/svg/logo.svg" alt="">
+								</a>
+							</div>
+							<div class="footer__container-contacts">
+								<div class="footer__container-contacts-logo">
+									<a href="#">
+										<img src="img/svg/logo.svg" alt="">
+									</a>
+								</div>
+
+								<div class="footer__container-contacts-social">
+									<div class="social-title gr">Присоединяйтесь к нам</div>
+									<div class="social__link">
+										<a href="#" class="vk"><img src="img/svg/vk.svg" alt=""></a>
+										<a href="#" class="vk"><img src="img/svg/fb.svg" alt=""></a>
+										<a href="#" class="vk"><img src="img/svg/ok.svg" alt=""></a>
+										<a href="#" class="vk"><img src="img/svg/inst.svg" alt=""></a>
+										<a href="#" class="vk"><img src="img/svg/yt.svg" alt=""></a>
+									</div>
+									<!-- <div class="social-title">Нам важно ваше мнение</div>
+									<a href="#" class="social-button btn btn-grey" data-fancybox
+										data-src="#write-to-us">Напишите нам</a> -->
+								</div>
+							</div>
+							<div class="footer__container-list">
+								<div class="footer__container-list-title h4">Сервис</div>
+								<ul>
+									<li><a href="#">Как купить дешевле</a></li>
+									<li><a href="#">Оформить кредит</a></li>
+								</ul>
+							</div>
+							<div class="footer__container-list">
+								<div class="footer__container-list-title h4">Интересное</div>
+								<ul>
+									<li><a href="#">Магазины на карте</a></li>
+									<li><a class="red" href="#">Распродажи с витрины</a></li>
+									<li><a class="red" href="#">Акции и скидки</a></li>
+								</ul>
+							</div>
+
+							<div class="footer__container-get">
+								<div class="footer__container-get-title h4">Подпишись и узнай раньше всех</div>
+								<div class="footer__container-get-ptitle">Скидки, акции, распродажи и полезные
+									статьи каждую неделю</div>
+								<form action="" id="best-offer-futer" class="general-form">
+									<div class="footer__container-get-input input-block">
+										<label class="input input-offer" for="best-offer-footer-email">
+											<input type="email" id="mail" required name="email"
+												class="input__item mail-input">
+											<span>Подписка на рассылку портала</span>
+										</label>
+									</div>
+
+									<div class="check footers-offer-privacy">
+										<input type="checkbox" id="footer-offer" class="check__checkbox ">
+										<label for="footer-offer" class="check__text">
+											Согласен на <a href="" class="check__text-link">обработку
+												персональных
+												данных</a>
+										</label>
+									</div>
+
+									<button type="submit" id="best-offer-submit-footer"
+										class="footer__container-get-button btn red btn-red">
+										Подписаться
+									</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="container">
+					<ul>
+						<li>
+							<span class="footer__update">
+								Обновлено 19.02.2020 г.
+							</span>
+							<!-- /.footer__update -->
+						</li>
+						<li>
+							<a href="#">
+								Пользовательское соглашение
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Реклама на сайте
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/stores-login-icon.svg" alt="" class="store-cabinet">
+								Кабинет магазина
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Вся дополнительная информация
+							</a>
+						</li>
+						<li>
+							<div class="footer__bottom-copyr">2020 ООО «Мебель.ру»</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+		<!-- FOOTER -->
+		<!-- MODALS-->
+		<div class="popup-dialog mfp-hide none" id="mobile-navi">
+		</div>
+
+		<div class="popup-dialog mfp-hide none" id="callback">
+		</div>
+
+		<div class="popup__content write-us modal" id="write-to-us">
+
+			<form class="popup__form general-form" id="write-to-us-form">
+				<label class="input popup__form-input">
+					<span for="user_write">
+						Ваше имя
+					</span>
+					<input type="text" class="input__item require-field" placeholder="Ваше имя" id="user_write" required
+						name="name_user" />
+				</label>
+				<div class="popup__form-group">
+					<label for="tel_write" class="input popup__form-input_s">
+						<span>
+							+7(код) ___ - __ - __
+						</span>
+						<input type="tel" class="input__item mask-validate phone-valid"
+							placeholder="+7(код) ___ - __ - __" id="reviews_tel" required name="tel_write" />
+					</label>
+
+				</div>
+
+				<label for="comment" class="input popup__form-input textarea">
+					<span>
+						Сообщение
+					</span>
+					<textarea cols="30" class="input__item require-field" rows="10" placeholder="Комментарий"
+						name="comments"></textarea>
+				</label>
+				<div class="check">
+					<input type="checkbox" id="write_popup" class="check__checkbox checkbox-general">
+					<label for="write_popup" class="check__text">
+						Согласен на <a href="" class="check__text-link">обработку персональных данных</a>
+					</label>
+				</div>
+				<button class="button-danger btn popup__form-submit" disabled type="submit">
+					Оставить отзыв
+				</button>
+			</form>
+		</div>
+
+		<div class="popup__result popup__result_hidden" id="feedback-write">
+			<h2 class="heading-1">Ваше сообщение принято</h2>
+			<div class="popup__result-group">
+				<div class="popup__result-text">Мы перезвоним вам в течении 15 минут.</div>
+				<div class="popup__result-img">
+					<img src="img/svg/check-feedback.svg" alt="img" />
+				</div>
+			</div>
+		</div>
+		<!-- MODALS -->
+		<!-- SCRIPT -->
+		<script src="js/vendor.js"></script>
+		<script src="js/validation.js"></script>
+		<script src="js/vanillaTextMask.js"></script>
+		<script src="js/svg-fill.js"></script>
+		<script src="js/bodyScrollLock.min.js"></script>
+		<script src="js/app.js"></script>
+		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+		<!-- MAP SCRIPT -->
+		<script>
+			ymaps.ready(function () {
+				var myMap = new ymaps.Map('map', {
+						center: [41.336164, 69.337262],
+						zoom: 11,
+						controls: ['smallMapDefaultSet']
+					}, {
+						suppressMapOpenBlock: true
+					}, {
+						searchControlProvider: 'yandex#search'
+					}),
+					// Создаём макет содержимого.
+					MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+						'<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+					),
+					myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+						hintContent: 'Собственный значок метки',
+					}, {
+						// Опции.
+						// Необходимо указать данный тип макета.
+						// iconLayout: 'default#image',
+						// Своё изображение иконки метки.
+						// iconImageHref: 'img/svg/map-pin-3-d.svg',
+						// Размеры метки.
+						iconImageSize: [56, 56],
+						// Смещение левого верхнего угла иконки относительно
+						// её "ножки" (точки привязки).
+						iconImageOffset: [-5, -38]
+					}),
+					myPlacemarkWithContent = new ymaps.Placemark([41.336164, 69.437262], {
+						hintContent: 'Собственный значок метки с контентом',
+						iconContent: '12'
+					}, {
+						// Опции.
+						// Необходимо указать данный тип макета.
+						iconLayout: 'default#imageWithContent',
+						// Своё изображение иконки метки.
+						iconImageHref: 'img/svg/map-pin.svg',
+						// Размеры метки.
+						iconImageSize: [48, 48],
+						// Смещение левого верхнего угла иконки относительно
+						// её "ножки" (точки привязки).
+						iconImageOffset: [-24, -24],
+						// Смещение слоя с содержимым относительно слоя с картинкой.
+						iconContentOffset: [15, 15],
+						// Макет содержимого.
+						iconContentLayout: MyIconContentLayout
+					});
+				myMap.geoObjects
+					.add(myPlacemark)
+			});
+		</script>
+		<!-- MAP SCRIPT -->
+		<!-- SCRIPT -->
+	</div>
+	<!-- WRAPPER -->
+</body>
+</html>

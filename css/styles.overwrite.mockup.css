@@ -113,7 +113,6 @@ form.intro-filter label.price {
 /* .products.leaders .products__block-product.product.col-3 .product-img {
 	max-height: 150px;
 } */
-
 textarea {
 	resize: none;
 }
@@ -400,12 +399,10 @@ a.fancy.fancybox-img {
 	display: none;
 }
 
-
 /* .four.products.result .products__block .result-block:last-child {
     margin-right: auto;
     margin-left: 16px;
 } */
-
 .products__block .product-img {
 	max-height: 207px;
 }
@@ -496,10 +493,6 @@ a.likesa:hover svg {
 .map .center.row .col-4 {
 	max-height: 480px;
 	overflow-y: auto;
-<<<<<<< HEAD
-=======
-
->>>>>>> 898ca103f263c1ad0bafd452f3d7b6c2870f5137
 }
 
 .content__block.show-p p {
@@ -632,6 +625,11 @@ a[data-show-phone] {
 
 .popup__content .heading-1 {
 	margin-bottom: 16px;
+}
+
+.popup__wrapper .heading-1 {
+	margin-bottom: 16px;
+	line-height: 1;
 }
 
 .popup__content_hidden {
@@ -802,21 +800,24 @@ a[data-show-phone] {
 	flex-wrap: wrap;
 }
 
-.popup__form-group label{
+.popup__form-group label:not(.error) {
 	display: block;
 	width: 48%;
 }
 
+.popup__form-group .input-block+.input-block {
+	margin-left: 16px;
+}
+
 .popup__form-input {
 	margin-bottom: 20px;
-	display: block;
+	display: flex;
 }
 
 .popup__form-input input,
 .popup__form-input textarea {
 	width: 100%;
 }
-
 
 .input-file {
 	margin-bottom: 16px;
@@ -925,6 +926,10 @@ a[data-show-phone] {
 
 .popup__result .heading-1 {
 	margin-bottom: 11px;
+}
+
+.popup__result .heading-1.center {
+	text-align: center;
 }
 
 .popup__result_hidden {
@@ -1111,7 +1116,6 @@ a[data-show-phone] {
 	-webkit-box-shadow: none;
 	box-shadow: none;
 } */
-
 .input span {
 	font-size: 14px;
 	line-height: 14px;
@@ -1124,8 +1128,6 @@ a[data-show-phone] {
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
-
-
 
 .input:hover span {
 	margin: 0;
@@ -1140,7 +1142,6 @@ a[data-show-phone] {
 	font-size: 12px;
 	line-height: 12px;
 } */
-
 .textarea textarea {
 	height: 72px;
 	width: 100%;
@@ -1571,8 +1572,6 @@ li.list ul.none.header__center-catalot__list-tlv li a {
 	height: 140px;
 }
 
-
-
 li.list ul.none.header__center-catalot__list-tlv li:nth-child(5),
 li.list ul.none.header__center-catalot__list-tlv li:nth-child(10) {
 	margin-right: 0;
@@ -1581,8 +1580,6 @@ li.list ul.none.header__center-catalot__list-tlv li:nth-child(10) {
 li.list ul.none.header__center-catalot__list-tlv li a span {
 	margin-top: 16px;
 }
-
-
 
 @media (max-width: 1250px) {
 	.intro-map {
@@ -1627,7 +1624,6 @@ li.list ul.none.header__center-catalot__list-tlv li a span {
 	.mob_menu.none ol li {
 		margin-bottom: 16px;
 		line-height: 16px;
-
 	}
 
 	.maps_link {
@@ -1687,7 +1683,6 @@ li.list ul.none.header__center-catalot__list-tlv li a span {
 		text-align: center;
 		color: #7f7f7f;
 		line-height: 16px;
-
 	}
 
 	.mob_menu.none ol li:last-child {
@@ -1823,12 +1818,15 @@ li.list ul.none.header__center-catalot__list-tlv li a span {
 		margin-right: auto;
 	}
 
-	.popup__content {
+	.popup__content,
+	.popup__wrapper {
 		padding: 20px 16px 24px;
 		width: 320px;
 	}
 
-	.popup__content .heading-1 {
+	.popup__content .heading-1,
+	.popup__wrapper .heading-1,
+	.popup__wrapper h1 {
 		font-size: 18px;
 		line-height: 18px;
 		margin-bottom: 16px;
@@ -1857,6 +1855,7 @@ li.list ul.none.header__center-catalot__list-tlv li a span {
 
 	.popup__form-input {
 		margin-bottom: 8px;
+		display: flex;
 	}
 
 	.popup__form-group {
@@ -1868,9 +1867,10 @@ li.list ul.none.header__center-catalot__list-tlv li a span {
 		margin-bottom: 0;
 	}
 
-	.popup__form-group .input {
+	.popup .popup__form-group .input,
+	.popup__form .popup__form-group .input {
 		width: 100%;
-		margin-bottom: 20px;
+		margin-bottom: 8px;
 	}
 
 	.popup__form-group .input input {
@@ -2140,19 +2140,19 @@ li.list ul.none.header__center-catalot__list-tlv li a span {
 	}
 }
 
-@media all and (max-width:600px){
-	.input-offer{
-		margin-bottom: 20px !important;
+@media all and (max-width:600px) {
+	.input-offer {
+		margin-bottom: 8px !important;
 	}
 
 	#best-offer-name-error,
-	#best-offer-tel-error{
-		bottom:-26px;
+	#best-offer-tel-error {
+		bottom: -26px;
 	}
-	.check .check__text{
+
+	.check .check__text {
 		font-size: 11px;
 		font-weight: bold;
 		letter-spacing: 0.06px
 	}
-
 }
